@@ -1,0 +1,251 @@
+path,country,kind,departure_state,has_departures_section,has_waitlist_section,book_cta_is_anchor,booking_links,has_price,price_min,word_count,has_product_schema,title_len,meta_desc_len
+/italien/madlavningskursus-paa-amalfikysten,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2443,1,54,139
+/england/haverejse-i-det-sydoestlige-england,england,trip,A bookable online,1,1,1,1,1,12995,3880,1,47,151
+/spanien/autentiske-catalonien-og-costa-brava,spanien,trip,A bookable online,1,1,1,4,1,10495,3034,1,67,131
+/oestrig/kultur-i-alperne,oestrig,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1759,1,59,150
+/portugal/jul-paa-madeira,portugal,trip,A bookable online,1,1,1,1,1,13995,3708,1,51,157
+/frankrig/paris-mon-amour-storbyliv-og-stemning-paa-seinen,frankrig,trip,A bookable online,1,1,1,1,1,7995,1924,1,50,137
+/egypten/cairo-og-nilkrydstogt,egypten,trip,A bookable online,1,1,1,4,1,18999,5489,1,51,149
+/italien/amalfikysten-til-foraarspris,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3832,1,53,147
+/vietnam/det-bedste-af-vietnam,vietnam,trip,A bookable online,1,1,1,1,1,24499,3530,1,53,157
+/thailand/thailand-smilets-land,thailand,trip,A bookable online,1,1,1,2,1,25999,3879,1,44,150
+/italien/det-ukendte-norditalien,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2659,1,54,127
+/portugal/nytaar-i-porto,portugal,trip,A bookable online,1,1,1,1,1,10995,2842,1,45,152
+/italien/kulinariske-vandringer-paa-amalfikysten-september-2026,italien,trip,A bookable online,1,1,1,2,1,8995,3989,1,63,188
+/sverige/gotland-svensk-sommeridyl,sverige,trip,A bookable online,1,1,1,1,1,9995,2339,1,54,175
+/flodkrydstogter/flodkrydstogt-paa-rhone-floden,flodkrydstogter,trip,A bookable online,1,1,1,1,1,17995,3431,1,64,134
+/spanien/andalusiens-lys-med-cadiz-og-sevilla,spanien,trip,A bookable online,1,1,1,2,1,12995,3313,1,58,164
+/portugal/nytaarsrejse-til-lissabon,portugal,trip,A bookable online,1,1,1,1,1,9995,2368,1,59,176
+/portugal/mageloese_madeira_med_blomsterfestival,portugal,trip,A bookable online,1,1,1,1,1,13495,3946,1,68,183
+/spanien/solformoerkelse-i-spanien-med-astrofysiker-michael-linden-voernle,spanien,trip,D empty (Afgange ikke tilgængelige),1,0,1,0,0,,2038,1,60,157
+/spanien/solformoerkelse-i-spanien-bilbao,spanien,trip,D empty (Afgange ikke tilgængelige),1,0,1,0,0,,2018,1,58,179
+/italien/amalfi-a-la-carte,italien,trip,A bookable online,1,1,1,9,1,8995,4654,1,68,159
+/sri-lanka/sri-lanka-for-livsnydere,sri-lanka,trip,A bookable online,1,1,1,1,1,20995,3706,1,48,168
+/flodkrydstogter/flodkrydstogt-paa-rhone-floden-2027,flodkrydstogter,trip,"E departures section, no visible state",1,1,1,0,1,17995,3425,1,64,134
+/sydafrika/sydafrika-for-livsnydere,sydafrika,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3462,1,61,167
+/spanien/rundrejse-i-andalusien-med-tog,spanien,trip,A bookable online,1,1,1,1,1,12995,3373,1,56,146
+/flodkrydstogter/flodkrydstogt-paa-donaufloden,flodkrydstogter,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3081,1,46,159
+/frankrig/flodkrydstogt-paa-rhinen-og-tur-med-gletsjerekspressen,frankrig,trip,A bookable online,1,1,1,2,1,14995,3885,1,63,136
+/portugal/lissabon-a-la-carte,portugal,trip,A bookable online,1,1,1,1,1,8995,2281,1,64,174
+/kina/vandreferie-paa-den-kinesiske-mur,kina,trip,A bookable online,1,1,1,2,1,17495,4300,1,55,161
+/portugal/portugals-groenne-oerige-azorerne-og-madeira,portugal,trip,A bookable online,1,1,1,2,1,14995,4682,1,63,193
+/kina/kina-pagoder-pandaer-og-paladser,kina,trip,A bookable online,1,1,1,1,1,29995,5001,1,58,163
+/kina/kina-og-tibet-ekspressen,kina,trip,A bookable online,1,1,1,1,1,29995,4478,1,61,171
+/spanien/fra-bilbao-til-bordeaux-en-kulturel-rejse-gennem-baskerland-og-sydfrankrig,spanien,trip,A bookable online,1,1,1,1,1,15995,3347,1,53,142
+/marokko/farverige-marokko-fra-tanger-til-marrakech,marokko,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3530,1,53,164
+/skotland/haverejse-til-skotland,skotland,trip,A bookable online,1,1,1,2,1,16495,4283,1,57,141
+/sydafrika/sydafrika-et-eventyr-i-tre-akter,sydafrika,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,4545,1,58,175
+/portugal/lissabon-og-alentejos-herligheder,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3118,1,62,193
+/italien/hjertet-af-italien-paa-elcykel,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2051,1,62,164
+/skotland/sommer-i-skotland,skotland,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3080,1,54,153
+/sydafrika/sydafrika-cape-cabernet-og-safari,sydafrika,trip,A bookable online,1,1,1,2,1,22995,4481,1,63,189
+/italien/siciliens-riviera,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2767,1,52,168
+/baltikum/den-baltiske-odysse,baltikum,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2443,1,58,147
+/portugal/haverejse-til-nordportugal,portugal,trip,A bookable online,1,1,1,1,1,10995,2844,1,70,169
+/bulgarien/bulgariens-skjulte-skatte,bulgarien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2505,1,70,153
+/flodkrydstogter/douro-deluxe-flodkrydstogt-paa-dourofloden,flodkrydstogter,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1749,1,60,168
+/tjekkiet/magiske-prag-en-kulturrejse-i-europas-hjerte,tjekkiet,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2070,1,51,157
+/georgien/vandreferie-i-georgien-svaneti,georgien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2234,1,62,172
+/italien/sommer-ved-gardasoeen,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2489,1,59,189
+/spanien/solformoerkelse-i-spanien-valencia,spanien,trip,D empty (Afgange ikke tilgængelige),1,0,1,0,0,,1642,1,62,169
+/balkan/betagende-syd-balkan,balkan,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3617,1,61,154
+/cypern/charmerende-cypern-kultur-og-livsnydelse,cypern,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1814,1,58,168
+/norge/haverejse-til-stavanger,norge,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2008,1,53,168
+/portugal/essensen-af-madeira,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3166,1,62,173
+/jordan/vandreferie-i-jordan,jordan,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3338,1,55,173
+/portugal/mageloese_madeira_med_blomsterfestivalen,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2918,1,63,193
+/italien/napoli-og-amalfikysten-storbyens-puls-og-kystens-hoejdepunkter,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3067,1,62,130
+/balkan/betagende-nord-balkan,balkan,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2887,1,61,178
+/graekenland/nordgraekenland-mellem-himmel-og-hav,graekenland,trip,A bookable online,1,1,1,1,1,13995,2503,1,61,153
+/portugal/vandreferie-paa-madeira,portugal,trip,A bookable online,1,1,1,10,1,12995,4526,1,58,144
+/portugal/vandreferie-paa-algarvekysten,portugal,trip,A bookable online,1,1,1,2,1,13995,3995,1,61,178
+/faeroeerne/fabelagtige-faeroerne,faeroeerne,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3254,1,63,185
+/italien/cilento-det-hemmelige-syditalienske-paradis,italien,trip,A bookable online,1,1,1,2,1,12995,2337,1,60,180
+/italien/vidunderlige-amalfi,italien,trip,A bookable online,1,1,1,22,1,10995,5354,1,68,182
+/italien/kulinariske-vandringer-paa-amalfikysten,italien,trip,A bookable online,1,1,1,5,1,8995,4080,1,60,175
+/england/vandreferie-i-lake-district,england,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3764,1,64,161
+/flodkrydstogter/flodkrydstogt-paa-douro-floden,flodkrydstogter,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3234,1,66,173
+/italien/et-syditaliensk-eventyr,italien,trip,A bookable online,1,1,1,8,1,13995,2910,1,63,148
+/italien/opera-verona,italien,trip,A bookable online,1,1,1,1,1,10495,2405,1,57,163
+/italien/vidunderlige-norditalien,italien,trip,A bookable online,1,1,1,2,1,11995,2122,1,52,171
+/schweiz/toppen-af-alperne-med-gletsjer-ekspressen,schweiz,trip,"E departures section, no visible state",1,1,1,0,1,20495,2643,1,58,171
+/marokko/marokko-blandt-berbere-og-beduiner,marokko,trip,A bookable online,1,1,1,1,1,17495,4159,1,58,163
+/italien/vesuvs-arkaeologiske-skygge,italien,trip,A bookable online,1,1,1,6,1,11995,2977,1,56,176
+/italien/puccini-operarejse-til-toscana,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2263,1,64,158
+/italien/vidunderlige-toscana,italien,trip,A bookable online,1,1,1,3,1,9995,2783,1,64,173
+/italien/gardasoeens-herligheder,italien,trip,A bookable online,1,1,1,2,1,9995,2636,1,59,184
+/portugal/nytaarsrejse-til-madeira,portugal,trip,A bookable online,1,1,1,1,1,17495,4367,1,69,163
+/graekenland/unik-rundrejse-paa-peloponnes,graekenland,trip,A bookable online,1,1,1,1,1,15095,3417,1,61,180
+/oman/oman-det-fortryllende-oerkenland,oman,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2963,1,61,154
+/irland/fortryllende-irland,irland,trip,A bookable online,1,1,1,2,1,15995,4302,1,59,171
+/cypern/cypern-afrodites-smukke-oe,cypern,trip,A bookable online,1,1,1,1,1,11495,2123,1,58,168
+/italien/klassiske-sicilien,italien,trip,A bookable online,1,1,1,2,1,15495,3485,1,58,174
+/portugal/paa-opdagelse-i-portugal,portugal,trip,A bookable online,1,1,1,3,1,15495,4637,1,70,160
+/portugal/porto-og-douro-dalens-herligheder,portugal,trip,A bookable online,1,1,1,2,1,13695,4331,1,63,198
+/portugal/cascais-portugals-riviera,portugal,trip,A bookable online,1,1,1,2,1,7695,2753,1,64,178
+/italien/vin-og-gastronomi-i-piemonte,italien,trip,A bookable online,1,1,1,1,1,13995,2147,1,62,140
+/skotland/vandreferie-i-skotland,skotland,trip,A bookable online,1,1,1,2,1,15995,4102,1,54,153
+/frankrig/sydfranske-eventyr-i-provence,frankrig,trip,A bookable online,1,1,1,2,1,13495,2786,1,62,182
+/flodkrydstogter/flodkrydstogt-paa-rhinen,flodkrydstogter,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3195,1,56,154
+/flodkrydstogter/flodkrydstogt-paa-seinen,flodkrydstogter,trip,A bookable online,1,1,1,1,1,16995,3298,1,63,167
+/italien/nytaar-i-det-historiske-rom,italien,trip,A bookable online,1,1,1,1,1,11995,1852,1,57,166
+/albanien/autentiske-albanien,albanien,trip,A bookable online,1,1,1,1,1,12295,2570,1,54,170
+/portugal/mageloese-madeira,portugal,trip,A bookable online,1,1,1,34,1,10995,6771,1,64,184
+/spanien/andalusiens-herligheder,spanien,trip,A bookable online,1,1,1,2,1,7495,2368,1,66,185
+/sri-lanka/klassiske-sri-lanka,sri-lanka,trip,A bookable online,1,1,1,1,1,26995,5452,1,65,165
+/england/sydenglands-stolthed-og-charme-fra-stonehenge-og-shakespeare-til-downton-abbey,england,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3050,1,65,174
+/jordan/jordan-et-magisk-kongerige,jordan,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3172,1,65,178
+/spanien/det-gode-liv-langtidsferie-i-andalusien,spanien,trip,A bookable online,1,1,1,2,1,15490,1854,1,49,151
+/skotland/sagnomspundne-skotland,skotland,trip,A bookable online,1,1,1,4,1,14995,3878,1,64,166
+/italien/vandreferie-ved-gardasoeen,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2202,1,56,165
+/marokko/magiske-marrakech-og-essaouira,marokko,trip,A bookable online,1,1,1,4,1,11995,3775,1,69,167
+/sydkorea/essensen-af-sydkorea,sydkorea,trip,A bookable online,1,1,1,4,1,24995,4066,1,58,167
+/graekenland/oe-hop-i-graekenland,graekenland,trip,A bookable online,1,1,1,1,1,13795,3194,1,54,174
+/england/haverejse-i-england-med-chelsea-flower-show,england,trip,A bookable online,1,1,1,1,1,13995,2851,1,66,166
+/portugal/vidunderlige-madeira,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2282,1,69,165
+/portugal/idylliske-tavira,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1886,1,59,168
+/portugal/vandreferie-i-portugal,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3147,1,51,161
+/irland/vandreferie-i-irland,irland,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,3060,1,60,165
+/indien/sydindiens-guddommelige-hjerte-kerala,indien,trip,A bookable online,1,1,1,2,1,19995,4591,1,63,147
+/flodkrydstogter/flodkrydstogt-fra-alsace-til-toppen-af-de-schweiziske-alper,flodkrydstogter,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1359,1,57,142
+/italien/sommer-paa-amalfikysten,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2296,1,59,176
+/spanien/tenerife-det-evige-foraars-oe,spanien,trip,D empty (Afgange ikke tilgængelige),1,0,1,0,1,10995,1760,1,58,168
+/kroatien/kroatiens-smukke-kyst,kroatien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1739,1,65,166
+/italien/vandreferie-i-cinque-terre,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,1,12995,2312,1,60,178
+/portugal/praegtige-portugal,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2588,1,63,182
+/polen/kulturel-kvalitetstid-i-krakow,polen,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1922,1,61,143
+/portugal/nytaar-paa-algarvekysten,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2255,1,66,164
+/spanien/andalusien-til-saerpris,spanien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1894,1,59,165
+/spanien/vandreferie-paa-caminoen,spanien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2115,1,59,156
+/spanien/maleriske-mallorca,spanien,trip,D empty (Afgange ikke tilgængelige),1,0,1,0,0,,1735,1,55,165
+/irland/musikfestival-i-dublin,irland,trip,A bookable online,1,1,1,1,1,9395,1941,1,67,171
+/portugal/azorerne-den-groenne-oe-sao-miguel,portugal,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,1,14995,1984,1,57,170
+/slovenien/ljubljana-og-de-slovenske-perler,slovenien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1809,1,59,169
+/italien/charmerende-cinque-terre,italien,trip,A bookable online,1,1,1,2,1,12495,2414,1,53,171
+/spanien/madrid-spaniens-hjerte,spanien,trip,A bookable online,1,1,1,4,1,8495,1980,1,61,172
+/italien/rom-den-evige-stad,italien,trip,A bookable online,1,1,1,3,1,12995,3439,1,58,147
+/graekenland/vandreferie-i-graekenland,graekenland,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2959,1,55,166
+/italien/andrea-bocelli-i-toscana,italien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,1,11995,1663,1,66,172
+/graekenland/smagen-af-kreta,graekenland,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,1,11995,1754,1,56,177
+/tyrkiet/maegtige-istanbul,tyrkiet,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,1532,1,58,170
+/indien/rajasthan-indiens-juvel,indien,trip,A bookable online,1,1,1,2,1,19995,5455,1,71,173
+/spanien/fra-bilbao-til-toulouse,spanien,trip,D empty (Afgange ikke tilgængelige),1,1,1,0,0,,2244,1,67,152
+/jul-og-nytaar/nytaars-rejser,jul-og-nytaar,editorial-thin,n/a — no departures section,0,0,0,0,1,9995,352,1,60,158
+/marokko/rabat,marokko,editorial-city,n/a — no departures section,0,0,0,0,0,,2052,1,63,169
+/naturrejser/solfoermoerkelsesrejser,naturrejser,editorial-thin,n/a — no departures section,0,0,0,0,0,,367,1,59,147
+/polen/krakow,polen,editorial-city,n/a — no departures section,0,0,0,0,0,,2025,1,59,182
+/spanien/madrid,spanien,editorial-city,n/a — no departures section,0,0,0,0,1,8495,1976,1,56,144
+/naturrejser/haverejser,naturrejser,editorial-city,n/a — no departures section,0,0,0,0,1,10995,733,1,55,177
+/musik-og-underholdning/koncert-rejser,musik-og-underholdning,editorial-thin,n/a — no departures section,0,0,0,0,1,9395,222,1,56,163
+/portugal/algarve,portugal,editorial-city,n/a — no departures section,0,0,0,0,1,13995,2233,1,63,159
+/portugal/tavira,portugal,editorial-city,n/a — no departures section,0,0,0,0,1,13995,2228,1,54,183
+/marokko/marrakech,marokko,editorial-city,n/a — no departures section,0,0,0,0,1,11995,2000,1,59,155
+/marokko/tanger,marokko,editorial-city,n/a — no departures section,0,0,0,0,0,,1920,1,56,188
+/oestrig/salzburg,oestrig,editorial-city,n/a — no departures section,0,0,0,0,0,,2095,1,54,191
+/portugal/porto,portugal,editorial-city,n/a — no departures section,0,0,0,0,1,10995,2630,1,64,197
+/spanien/granada,spanien,editorial-city,n/a — no departures section,0,0,0,0,1,7495,2209,1,65,161
+/portugal/azorerne,portugal,editorial-city,n/a — no departures section,0,0,0,0,1,14995,2293,1,60,168
+/oestrig/wien,oestrig,editorial-city,n/a — no departures section,0,0,0,0,0,,1962,1,62,175
+/italien/milano,italien,editorial-city,n/a — no departures section,0,0,0,0,0,,1763,0,55,160
+/tjekkiet/prag,tjekkiet,editorial-city,n/a — no departures section,0,0,0,0,0,,1666,1,63,170
+/oestrig/tyrol,oestrig,editorial-city,n/a — no departures section,0,0,0,0,0,,1904,1,56,162
+/kina/beijing,kina,editorial-city,n/a — no departures section,0,0,0,0,1,17495,1675,1,58,123
+/serbien/beograd,serbien,editorial-city,n/a — no departures section,0,0,0,0,0,,1769,1,58,177
+/portugal/cascais,portugal,editorial-city,n/a — no departures section,0,0,0,0,1,7695,2204,1,59,171
+/skotland/edinburgh,skotland,editorial-city,n/a — no departures section,0,0,0,0,1,14995,2400,1,61,181
+/oestrig/innsbruck,oestrig,editorial-city,n/a — no departures section,0,0,0,0,0,,2011,1,61,191
+/spanien/bilbao,spanien,editorial-city,n/a — no departures section,0,0,0,0,1,15995,1985,1,60,156
+/england/chester,england,editorial-city,n/a — no departures section,0,0,0,0,0,,1562,0,56,170
+/england/liverpool,england,editorial-city,n/a — no departures section,0,0,0,0,0,,1891,0,54,168
+/portugal/lissabon,portugal,editorial-city,n/a — no departures section,0,0,0,0,1,7695,2511,1,57,186
+/spanien/andalusien,spanien,editorial-city,n/a — no departures section,0,0,0,0,1,7495,2376,1,51,157
+/spanien/caminoen,spanien,editorial-city,n/a — no departures section,0,0,0,0,0,,1861,1,56,172
+/spanien/barcelona,spanien,editorial-city,n/a — no departures section,0,0,0,0,0,,2312,0,66,158
+/spanien/granada/alhambra,spanien,editorial-thin,n/a — no departures section,0,0,0,0,1,7495,377,1,54,161
+/bosnien/sarajevo,bosnien,editorial-city,n/a — no departures section,0,0,0,0,0,,2229,1,58,169
+/litauen/vilnius,litauen,editorial-city,n/a — no departures section,0,0,0,0,0,,1721,1,56,167
+/letland/riga,letland,editorial-city,n/a — no departures section,0,0,0,0,0,,1891,1,55,167
+/portugal/madeira,portugal,editorial-city,n/a — no departures section,0,0,0,0,1,10995,2528,1,57,176
+/naturrejser/blomsterrejser,naturrejser,editorial-city,n/a — no departures section,0,0,0,0,1,10995,847,1,55,151
+/england/bath,england,editorial-city,n/a — no departures section,0,0,0,0,0,,1877,1,60,181
+/england/cornwall,england,editorial-city,n/a — no departures section,0,0,0,0,0,,1841,0,59,161
+/portugal/portugal-langtidsferie,portugal,editorial-thin,n/a — no departures section,0,0,0,0,0,,130,0,53,139
+/kroatien/trogir,kroatien,editorial-city,n/a — no departures section,0,0,0,0,0,,2022,1,65,159
+/italien/ischia,italien,editorial-city,n/a — no departures section,0,0,0,0,0,,2259,0,57,186
+/tyrkiet/istanbul,tyrkiet,editorial-city,n/a — no departures section,0,0,0,0,0,,2357,1,68,169
+/italien/rom,italien,editorial-city,n/a — no departures section,0,0,0,0,1,11995,2187,1,66,170
+/graekenland/athen,graekenland,editorial-city,n/a — no departures section,0,0,0,0,1,13795,2080,1,66,175
+/graekenland/peloponnes,graekenland,editorial-city,n/a — no departures section,0,0,0,0,1,15095,2208,1,56,160
+/italien/napoli,italien,editorial-city,n/a — no departures section,0,0,0,0,1,11995,2343,1,57,140
+/italien/syditalien,italien,editorial-city,n/a — no departures section,0,0,0,0,1,8995,2625,1,61,176
+/italien/gardasoeen,italien,editorial-city,n/a — no departures section,0,0,0,0,1,9995,2457,1,62,163
+/italien/norditalien,italien,editorial-city,n/a — no departures section,0,0,0,0,1,9995,2337,1,65,184
+/italien/verona,italien,editorial-city,n/a — no departures section,0,0,0,0,1,10495,1992,1,54,171
+/italien/venedig,italien,editorial-city,n/a — no departures section,0,0,0,0,1,9995,2240,1,59,154
+/italien/sicilien,italien,editorial-city,n/a — no departures section,0,0,0,0,1,15495,2410,1,57,171
+/italien/ravello,italien,editorial-city,n/a — no departures section,0,0,0,0,1,10995,2247,1,58,149
+/frankrig/normandiet,frankrig,editorial-city,n/a — no departures section,0,0,0,0,1,16995,2062,1,64,181
+/frankrig/provence,frankrig,editorial-city,n/a — no departures section,0,0,0,0,1,17995,1986,1,62,168
+/frankrig/saint-tropez,frankrig,editorial-city,n/a — no departures section,0,0,0,0,1,13495,1943,1,63,180
+/frankrig/seinen,frankrig,editorial-city,n/a — no departures section,0,0,0,0,1,7995,2037,1,57,179
+/italien/sorrento,italien,editorial-city,n/a — no departures section,0,0,0,0,0,,2102,0,53,176
+/frankrig/strasbourg,frankrig,editorial-city,n/a — no departures section,0,0,0,0,0,,1767,1,57,161
+/italien/stresa,italien,editorial-city,n/a — no departures section,0,0,0,0,1,11995,2275,1,63,154
+/italien/toscana,italien,editorial-city,n/a — no departures section,0,0,0,0,1,9995,2019,1,63,168
+/italien/umbrien,italien,editorial-city,n/a — no departures section,0,0,0,0,0,,2036,0,61,175
+/irland/kilkenny,irland,editorial-city,n/a — no departures section,0,0,0,0,1,15995,1858,1,62,161
+/italien/lago-maggiore,italien,editorial-city,n/a — no departures section,0,0,0,0,1,20495,2513,1,56,182
+/italien/pompeji,italien,editorial-city,n/a — no departures section,0,0,0,0,1,10995,2191,1,60,165
+/italien/piemonte,italien,editorial-city,n/a — no departures section,0,0,0,0,1,11995,2083,1,66,182
+/italien/amalfikysten,italien,editorial-city,n/a — no departures section,0,0,0,0,1,8995,1349,1,76,178
+/italien/apulien,italien,editorial-city,n/a — no departures section,0,0,0,0,1,13995,2007,1,56,171
+/belgien/bruxelles,belgien,editorial-city,n/a — no departures section,0,0,0,0,0,,2241,0,61,168
+/sverige/gotland,sverige,editorial-city,n/a — no departures section,0,0,0,0,1,9995,2438,1,56,166
+/faeroeerne/torshavn,faeroeerne,editorial-city,n/a — no departures section,0,0,0,0,0,,2261,1,57,170
+/irland/dublin,irland,editorial-city,n/a — no departures section,0,0,0,0,1,9395,2144,1,58,171
+/tyskland/munchen,tyskland,editorial-city,n/a — no departures section,0,0,0,0,0,,2082,1,67,150
+/italien/genova,italien,editorial-city,n/a — no departures section,0,0,0,0,1,12495,2279,1,60,162
+/kroatien/dubrovnik,kroatien,editorial-city,n/a — no departures section,0,0,0,0,0,,2076,1,62,149
+/italien/firenze,italien,editorial-city,n/a — no departures section,0,0,0,0,1,9995,1979,1,55,173
+/italien/cinque-terre,italien,editorial-city,n/a — no departures section,0,0,0,0,1,12495,1918,1,63,162
+/frankrig/paris,frankrig,editorial-city,n/a — no departures section,0,0,0,0,1,7995,2243,1,55,186
+/bosnien/mostar,bosnien,editorial-city,n/a — no departures section,0,0,0,0,0,,2060,1,57,180
+/england/london,england,editorial-city,n/a — no departures section,0,0,0,0,1,13995,1692,1,64,165
+/estland/tallinn,estland,editorial-city,n/a — no departures section,0,0,0,0,0,,1618,1,58,155
+/holland/amsterdam,holland,editorial-city,n/a — no departures section,0,0,0,0,0,,1569,1,54,173
+/tyskland/koln,tyskland,editorial-city,n/a — no departures section,0,0,0,0,0,,1799,1,60,165
+/england/sydengland,england,editorial-city,n/a — no departures section,0,0,0,0,1,12995,2499,1,60,164
+/kroatien/split,kroatien,editorial-city,n/a — no departures section,0,0,0,0,0,,2309,0,55,154
+/belgien/antwerpen,belgien,editorial-city,n/a — no departures section,0,0,0,0,0,,1948,0,53,167
+/graekenland/mykonos,graekenland,editorial-city,n/a — no departures section,0,0,0,0,0,,1902,0,50,159
+/graekenland/santorini,graekenland,editorial-city,n/a — no departures section,0,0,0,0,0,,2126,0,55,173
+/portugal/madeira/madeira-vandreferie,portugal,editorial-thin,n/a — no departures section,0,0,0,0,1,12995,215,1,60,175
+/england/haverejser-england,england,editorial-thin,n/a — no departures section,0,0,0,0,1,12995,270,1,60,158
+/portugal/madeira/madeira-rundrejser,portugal,editorial-thin,n/a — no departures section,0,0,0,0,1,14995,185,1,60,162
+/portugal/madeira/madeira-blomsterfestival,portugal,editorial-thin,n/a — no departures section,0,0,0,0,1,13495,214,1,61,160
+/portugal/portugal-flodkrydstogter,portugal,editorial-thin,n/a — no departures section,0,0,0,0,0,,239,1,59,154
+/schweiz/schweiz-togrejser,schweiz,editorial-thin,n/a — no departures section,0,0,0,0,1,20495,218,1,59,172
+/spanien/mallorca/soller,spanien,editorial-city,n/a — no departures section,0,0,0,0,0,,1753,1,57,162
+/spanien/mallorca,spanien,editorial-city,n/a — no departures section,0,0,0,0,0,,2107,1,61,173
+/spanien/mallorca/palma,spanien,editorial-city,n/a — no departures section,0,0,0,0,0,,1812,1,54,179
+/musik-og-underholdning/koncert-rejser/andrea-bocelli,musik-og-underholdning,editorial-thin,n/a — no departures section,0,0,0,0,0,,180,1,64,155
+/jul-og-nytaar/julerejser,jul-og-nytaar,editorial-thin,n/a — no departures section,0,0,0,0,1,13995,177,1,66,168
+/musik-og-underholdning/operarejser,musik-og-underholdning,editorial-thin,n/a — no departures section,0,0,0,0,1,10495,372,1,57,154
+/spanien/tenerife,spanien,editorial-city,n/a — no departures section,0,0,0,0,0,,2398,1,62,186
+/spanien/ronda,spanien,editorial-city,n/a — no departures section,0,0,0,0,0,,1928,0,54,155
+/ungarn/budapest,ungarn,editorial-city,n/a — no departures section,0,0,0,0,0,,2089,1,64,146
+/england/rundrejser-england,england,editorial-thin,n/a — no departures section,0,0,0,0,0,,232,1,63,157
+/frankrig/rouen,frankrig,editorial-city,n/a — no departures section,0,0,0,0,1,16995,2042,1,55,174
+/frankrig/cannes,frankrig,editorial-city,n/a — no departures section,0,0,0,0,1,13495,2001,1,58,178
+/madrejser/gastronomirejser,madrejser,editorial-city,n/a — no departures section,0,0,0,0,1,11995,513,1,60,157
+/italien/amalfi,italien,editorial-city,n/a — no departures section,0,0,0,0,1,8995,2520,1,60,188
+/vinrejser/portvinsrejser,vinrejser,editorial-city,n/a — no departures section,0,0,0,0,1,10995,830,1,63,175
+/spanien/san-sebastian,spanien,editorial-city,n/a — no departures section,0,0,0,0,1,15995,1980,1,73,169
+/portugal/portugal-rundrejser,portugal,editorial-thin,n/a — no departures section,0,0,0,0,1,10995,428,1,52,170
+/spanien/malaga,spanien,editorial-city,n/a — no departures section,0,0,0,0,1,12995,2284,1,62,175
+/italien/amalfi/amalfi-kulturrejser,italien,editorial-city,n/a — no departures section,0,0,0,0,1,8995,518,1,60,152
+/england/oxford,england,editorial-city,n/a — no departures section,0,0,0,0,0,,2106,1,61,178
+/italien/apulien/apulien-kulturrejser,italien,editorial-thin,n/a — no departures section,0,0,0,0,1,13995,191,1,57,156
+/portugal/portugal-kulturrejser,portugal,editorial-city,n/a — no departures section,0,0,0,0,1,7695,1328,1,62,183
+/portugal/madeira/madeira-langtidsferie,portugal,editorial-thin,n/a — no departures section,0,0,0,0,0,,134,0,53,162
+/europa/kulturrejser,europa,editorial-city,n/a — no departures section,0,0,0,0,1,7495,4873,1,59,168

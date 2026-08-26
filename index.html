@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smilrejser — Conversion Rate Optimisation Audit | Coupler</title>
+<meta name="description" content="A structural CRO audit of smilrejser.dk: 421 pages crawled, booking funnel walked, GTM container parsed. Every claim documented. Internal, noindex.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1720;
+  --ink-2:#33414f;
+  --muted:#68788a;
+  --line:#dfe5ec;
+  --line-2:#eef2f6;
+  --paper:#ffffff;
+  --bg:#e9edf2;
+  --brand:#3b55a4;
+  --brand-2:#5f7ad0;
+  --brand-wash:#eef1fb;
+  --bad:#c22f2f;
+  --bad-wash:#fdeeec;
+  --warn:#9a6b12;
+  --warn-wash:#fdf5e4;
+  --good:#12724f;
+  --good-wash:#e8f6ef;
+  --code-bg:#101b2b;
+  --code-ink:#dbe6f3;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(15,23,32,.05), 0 10px 30px rgba(15,23,32,.07);
+  --mono:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  font-size:16px;
+  line-height:1.55;
+}
+img{max-width:100%}
+
+/* ---------- deck shell ---------- */
+.deck{position:relative}
+.slide{
+  display:none;
+  min-height:100vh;
+  padding:26px 30px 96px;
+}
+.slide.is-active{display:block}
+.sheet{
+  max-width:1240px;
+  margin:0 auto;
+  background:var(--paper);
+  border-radius:20px;
+  box-shadow:var(--shadow);
+  padding:34px 40px 40px;
+  min-height:calc(100vh - 122px);
+  border:1px solid #e6ebf1;
+}
+.slide--cover .sheet{
+  display:flex; flex-direction:column; justify-content:center;
+  background:
+    radial-gradient(1200px 420px at 88% -8%, #eaeffc 0%, rgba(234,239,252,0) 62%),
+    radial-gradient(900px 400px at -6% 106%, #eef1fb 0%, rgba(238,241,251,0) 60%),
+    var(--paper);
+}
+
+/* ---------- head of slide ---------- */
+.eyebrow{
+  display:inline-flex; align-items:center; gap:9px;
+  font-size:11.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--brand); background:var(--brand-wash);
+  border:1px solid #dbe2f7; border-radius:999px; padding:5px 12px;
+  margin:0 0 14px;
+}
+.eyebrow.is-bad{color:var(--bad); background:var(--bad-wash); border-color:#f6d8d4}
+.eyebrow.is-good{color:var(--good); background:var(--good-wash); border-color:#cfe9dd}
+.eyebrow.is-warn{color:var(--warn); background:var(--warn-wash); border-color:#f0e2bf}
+h1.title{font-size:38px; line-height:1.14; letter-spacing:-.02em; margin:0 0 10px; font-weight:800}
+h2.title{font-size:31px; line-height:1.18; letter-spacing:-.019em; margin:0 0 8px; font-weight:800}
+.lede{font-size:17px; color:var(--ink-2); max-width:88ch; margin:0 0 22px; line-height:1.5}
+.lede strong{color:var(--ink)}
+.rule{height:1px;background:var(--line-2);margin:20px 0 22px;border:0}
+h3.sub{font-size:15px; font-weight:700; margin:0 0 10px; letter-spacing:-.006em}
+h4.mini{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 9px}
+
+/* ---------- layout helpers ---------- */
+.grid{display:grid; gap:16px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.g6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.split-60{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:22px}
+.split-40{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:22px}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.split-phone{display:grid;grid-template-columns:200px minmax(0,1fr);gap:26px}
+.stack{display:flex;flex-direction:column;gap:14px}
+.tight{gap:10px}
+@media (max-width:1080px){
+  .g3,.g4,.g5,.g6{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .split,.split-60,.split-40{grid-template-columns:minmax(0,1fr)}
+  .sheet{padding:26px 20px 30px}
+  h1.title{font-size:29px} h2.title{font-size:25px}
+}
+
+/* ---------- cards ---------- */
+.card{
+  background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
+  padding:16px 18px;
+}
+.card--wash{background:#f8fafc}
+.card--bad{border-color:#f3d4d0; background:var(--bad-wash)}
+.card--good{border-color:#cbe7da; background:var(--good-wash)}
+.card--warn{border-color:#efe0bd; background:var(--warn-wash)}
+.card--brand{border-color:#d9e0f6; background:var(--brand-wash)}
+.card p{margin:0 0 8px; font-size:14.5px; color:var(--ink-2)}
+.card p:last-child{margin-bottom:0}
+.card h5{margin:0 0 7px; font-size:15px; font-weight:700; letter-spacing:-.005em}
+.card .num{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.08em}
+
+.kpi{border:1px solid var(--line); border-radius:var(--radius); padding:16px; background:var(--paper)}
+.kpi .big{font-size:38px; font-weight:800; letter-spacing:-.035em; line-height:1; margin-bottom:7px; font-variant-numeric:tabular-nums}
+.kpi .lbl{font-size:13px; color:var(--ink-2); line-height:1.4}
+.kpi .src{font-size:11px;color:var(--muted);margin-top:8px}
+.kpi--bad{background:var(--bad-wash);border-color:#f3d4d0} .kpi--bad .big{color:var(--bad)}
+.kpi--warn{background:var(--warn-wash);border-color:#efe0bd} .kpi--warn .big{color:var(--warn)}
+.kpi--good{background:var(--good-wash);border-color:#cbe7da} .kpi--good .big{color:var(--good)}
+.kpi--brand{background:var(--brand-wash);border-color:#d9e0f6} .kpi--brand .big{color:var(--brand)}
+
+/* ---------- lists ---------- */
+ul.list,ol.list{margin:0; padding-left:0; list-style:none}
+ul.list li,ol.list li{position:relative; padding-left:22px; margin-bottom:8px; font-size:14.5px; color:var(--ink-2); line-height:1.5}
+ul.list li:last-child,ol.list li:last-child{margin-bottom:0}
+ul.list li::before{content:""; position:absolute; left:6px; top:8px; width:6px; height:6px; border-radius:50%; background:var(--brand-2)}
+ul.list.is-bad li::before{background:var(--bad)}
+ul.list.is-good li::before{content:"✓"; left:2px; top:-1px; width:auto;height:auto;background:none; color:var(--good); font-weight:800; font-size:13px}
+ul.list.is-cross li::before{content:"✕"; left:3px; top:-1px; width:auto;height:auto;background:none; color:var(--bad); font-weight:800; font-size:12px}
+ol.list{counter-reset:c}
+ol.list li{counter-increment:c; padding-left:28px}
+ol.list li::before{
+  content:counter(c); position:absolute; left:0; top:1px;
+  width:19px;height:19px;border-radius:6px;background:var(--brand-wash);color:var(--brand);
+  font-size:11px;font-weight:700;display:grid;place-items:center;border:1px solid #dbe2f7
+}
+.list strong{color:var(--ink)}
+
+/* ---------- tables ---------- */
+.tbl{width:100%; border-collapse:separate; border-spacing:0; font-size:13.5px; overflow:hidden; border:1px solid var(--line); border-radius:12px}
+.tbl th{
+  text-align:left; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+  font-weight:700; padding:10px 12px; background:#f6f8fb; border-bottom:1px solid var(--line)
+}
+.tbl td{padding:10px 12px; border-bottom:1px solid var(--line-2); color:var(--ink-2); vertical-align:top; line-height:1.45}
+.tbl tr:last-child td{border-bottom:0}
+.tbl tbody tr:hover td{background:#fbfcfe}
+.tbl code{font-size:12px}
+.tbl .n{font-variant-numeric:tabular-nums; white-space:nowrap}
+.tbl--compact td,.tbl--compact th{padding:7px 10px; font-size:12.5px}
+.was{color:var(--bad); text-decoration:none}
+.now{color:var(--good); font-weight:600}
+.u{font-family:var(--mono); font-size:12px; color:var(--brand); white-space:nowrap}
+
+/* ---------- code ---------- */
+.code{
+  background:var(--code-bg); color:var(--code-ink); border-radius:12px; padding:14px 16px;
+  font-family:var(--mono); font-size:12.2px; line-height:1.62; overflow-x:auto; white-space:pre;
+  border:1px solid #1b2b41;
+}
+.code--sm{font-size:11.4px;line-height:1.6;padding:12px 14px}
+.code .c{color:#7b8ca3}
+.code .t{color:#8ec9ff}
+.code .a{color:#c4a0ff}
+.code .s{color:#9ee6b8}
+.code .k{color:#ffb4a2}
+.code .hl{background:rgba(255,120,100,.18); border-radius:3px; padding:1px 3px}
+.code .hlg{background:rgba(90,220,160,.16); border-radius:3px; padding:1px 3px}
+.codecap{font-size:11.5px;color:var(--muted);margin-top:7px}
+code.inline{
+  font-family:var(--mono); font-size:12.5px; background:#f1f4f8; border:1px solid var(--line);
+  border-radius:5px; padding:1px 5px; color:#22303f
+}
+
+/* ---------- screenshot frame ---------- */
+.shot{margin:0; border-radius:12px; overflow:hidden; border:1px solid var(--line); background:#fff; box-shadow:0 4px 18px rgba(15,23,32,.07)}
+.shot__bar{
+  display:flex; align-items:center; gap:9px; padding:8px 11px; background:#f3f5f9;
+  border-bottom:1px solid var(--line);
+}
+.shot__bar i{width:8px;height:8px;border-radius:50%;background:#d2d9e3;display:block}
+.shot__url{
+  font-family:var(--mono); font-size:11px; color:var(--muted); background:#fff;
+  border:1px solid var(--line); border-radius:6px; padding:3px 9px; flex:1;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis
+}
+.shot__view{position:relative; overflow:hidden; background:#fff}
+.shot__view img{width:100%; height:100%; display:block; object-fit:cover}
+.shot figcaption{font-size:11.5px; color:var(--muted); padding:8px 11px; background:#fafbfd; border-top:1px solid var(--line-2)}
+.ar-wide{aspect-ratio:16/7}
+.ar-4-3{aspect-ratio:4/3}
+.ar-3-2{aspect-ratio:3/2}
+.ar-1-1{aspect-ratio:1/1}
+.ar-tall{aspect-ratio:5/6}
+.ar-strip{aspect-ratio:16/5}
+.ar-phone{aspect-ratio:39/95}
+
+.marker{
+  position:absolute; border:2.5px solid var(--bad); border-radius:8px;
+  background:rgba(194,47,47,.09); pointer-events:none
+}
+.marker--good{border-color:var(--good); background:rgba(18,114,79,.1)}
+.marker--brand{border-color:var(--brand); background:rgba(59,85,164,.09)}
+.tag{
+  position:absolute; font-size:10.5px; font-weight:700; color:#fff; background:var(--bad);
+  border-radius:5px; padding:2px 7px; white-space:nowrap; letter-spacing:.01em
+}
+.tag--good{background:var(--good)}
+.tag--brand{background:var(--brand)}
+
+/* Arrow for pointing at a specific element. Rotate with transform on the inline
+   style; the head is drawn on the far end so rotation keeps it attached. */
+.arrow{
+  position:absolute; height:2.5px; background:var(--bad); transform-origin:left center;
+  pointer-events:none; border-radius:2px
+}
+.arrow::after{
+  content:""; position:absolute; right:-2px; top:-4.75px;
+  border-left:10px solid var(--bad);
+  border-top:6px solid transparent; border-bottom:6px solid transparent;
+}
+.arrow--good{background:var(--good)}
+.arrow--good::after{border-left-color:var(--good)}
+.arrow--brand{background:var(--brand)}
+.arrow--brand::after{border-left-color:var(--brand)}
+
+/* ---------- callouts ---------- */
+.callout{border-radius:12px; padding:14px 16px; border:1px solid var(--line); background:#f8fafc; font-size:14.5px; color:var(--ink-2)}
+.callout h5{margin:0 0 6px; font-size:13px; font-weight:700; letter-spacing:.02em; display:flex; align-items:center; gap:7px}
+.callout p{margin:0 0 7px} .callout p:last-child{margin-bottom:0}
+.callout--fix{background:var(--good-wash); border-color:#cbe7da} .callout--fix h5{color:var(--good)}
+.callout--risk{background:var(--bad-wash); border-color:#f3d4d0} .callout--risk h5{color:var(--bad)}
+.callout--note{background:var(--brand-wash); border-color:#d9e0f6} .callout--note h5{color:var(--brand)}
+.callout--warn{background:var(--warn-wash); border-color:#efe0bd} .callout--warn h5{color:var(--warn)}
+
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;border-radius:999px;padding:3px 10px;border:1px solid var(--line);background:#f6f8fb;color:var(--ink-2)}
+.pill--bad{background:var(--bad-wash);border-color:#f3d4d0;color:var(--bad)}
+.pill--good{background:var(--good-wash);border-color:#cbe7da;color:var(--good)}
+.pill--warn{background:var(--warn-wash);border-color:#efe0bd;color:var(--warn)}
+.pill--brand{background:var(--brand-wash);border-color:#d9e0f6;color:var(--brand)}
+.pills{display:flex;flex-wrap:wrap;gap:7px}
+
+.src{font-size:11.5px; color:var(--muted); line-height:1.5}
+.src a{color:var(--muted)}
+.src code{font-family:var(--mono);font-size:11px}
+
+/* ---------- outline tree ---------- */
+.tree{font-family:var(--mono); font-size:12.4px; line-height:1.75; color:var(--ink-2)}
+.tree div{padding:1px 0}
+.tree .h1{color:var(--brand); font-weight:700}
+.tree .h2{padding-left:18px; color:#26313d}
+.tree .h3{padding-left:38px; color:var(--muted)}
+.tree .note{padding-left:18px;color:#9aa7b5;font-style:italic}
+
+/* ---------- steps / timeline ---------- */
+.phase{border:1px solid var(--line); border-radius:12px; overflow:hidden; background:var(--paper)}
+.phase__hd{padding:11px 14px; background:#f6f8fb; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:9px}
+.phase__hd b{font-size:14px} .phase__hd span{font-size:11.5px;color:var(--muted);font-weight:600}
+.phase__bd{padding:13px 14px}
+
+/* ---------- wireframe ---------- */
+.wire{border:1px solid var(--line); border-radius:12px; background:#fff; overflow:hidden; font-size:12.5px}
+.wire__row{display:grid; grid-template-columns:130px minmax(0,1fr); border-bottom:1px solid var(--line-2)}
+.wire__row:last-child{border-bottom:0}
+.wire__k{padding:9px 11px; background:#f7f9fc; font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); border-right:1px solid var(--line-2)}
+.wire__v{padding:9px 12px; color:var(--ink-2); line-height:1.5}
+.wire__v b{color:var(--ink)}
+.skel{height:7px;border-radius:4px;background:#e7ecf2;margin:5px 0}
+.skel.w80{width:80%} .skel.w60{width:60%} .skel.w40{width:40%} .skel.w95{width:95%}
+
+/* Mock departure row, used to show the proposed states. Clearly a drawing, never
+   mistakable for a screenshot of the live site. */
+.mock{border:1px dashed #c3ccd8; border-radius:10px; background:#fbfcfe; padding:11px 13px}
+.mock__hd{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#9aa7b5;margin-bottom:9px}
+.mockrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-2);padding:7px 0;border-top:1px solid var(--line-2)}
+.mockrow:first-of-type{border-top:0}
+.mockrow b{color:var(--ink);font-weight:600}
+.btnmock{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;border-radius:999px;padding:4px 11px;background:#f0b429;color:#3d2c00;border:1px solid #d9a01f}
+.btnmock--ghost{background:#fff;color:var(--brand);border:1px solid var(--brand-2)}
+.btnmock--quiet{background:#eef2f6;color:var(--muted);border:1px solid var(--line)}
+.chipmock{font-size:10.5px;font-weight:700;border-radius:5px;padding:2px 7px;background:var(--good-wash);color:var(--good);border:1px solid #cbe7da}
+.chipmock--warn{background:var(--warn-wash);color:var(--warn);border-color:#efe0bd}
+.chipmock--bad{background:var(--bad-wash);color:var(--bad);border-color:#f3d4d0}
+
+/* ---------- chrome / nav ---------- */
+.topbar{position:fixed; top:0; left:0; right:0; height:4px; background:#dbe1e9; z-index:60}
+.topbar__fill{height:100%; background:linear-gradient(90deg,var(--brand),var(--brand-2)); width:0; transition:width .25s ease}
+.brandmark{position:fixed; top:16px; right:26px; z-index:55; display:flex; align-items:center; gap:10px; opacity:.9}
+.brandmark img{height:19px; width:auto}
+.navbar{
+  position:fixed; bottom:0; left:0; right:0; z-index:60;
+  display:flex; align-items:center; gap:14px; justify-content:center;
+  padding:11px 18px; background:rgba(255,255,255,.93); backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);
+}
+.navbtn{
+  appearance:none; border:1px solid var(--line); background:#fff; color:var(--ink-2);
+  border-radius:9px; padding:6px 13px; font-size:13px; font-weight:600; cursor:pointer;
+  font-family:inherit; transition:.14s
+}
+.navbtn:hover{border-color:var(--brand-2); color:var(--brand); background:var(--brand-wash)}
+.counter{font-size:12.5px; color:var(--muted); font-variant-numeric:tabular-nums; min-width:74px; text-align:center}
+.counter b{color:var(--ink)}
+.navtitle{font-size:12.5px;color:var(--muted);max-width:34ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hint{font-size:11.5px;color:#9aa7b5}
+@media (max-width:820px){.navtitle,.hint{display:none}}
+
+/* overview */
+.overview{
+  position:fixed; inset:0; z-index:80; background:rgba(233,237,242,.97); backdrop-filter:blur(6px);
+  display:none; padding:26px; overflow-y:auto
+}
+.overview.is-open{display:block}
+.overview__hd{max-width:1240px;margin:0 auto 18px;display:flex;align-items:center;justify-content:space-between}
+.overview__hd h3{margin:0;font-size:16px}
+.ovgrid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:11px}
+.ovcard{
+  text-align:left; background:#fff; border:1px solid var(--line); border-radius:11px; padding:11px 13px;
+  cursor:pointer; font-family:inherit; transition:.14s
+}
+.ovcard:hover{border-color:var(--brand-2); box-shadow:0 4px 14px rgba(59,85,164,.11)}
+.ovcard.is-current{border-color:var(--brand); background:var(--brand-wash)}
+.ovcard .n{font-size:10.5px;font-weight:700;color:var(--muted);letter-spacing:.08em}
+.ovcard .t{font-size:13px;font-weight:600;color:var(--ink);line-height:1.35;margin-top:3px}
+.ovcard .s{font-size:11px;color:var(--muted);margin-top:4px}
+
+/* cover */
+.cover__logo{height:42px;width:auto;flex:0 0 auto;align-self:flex-start;object-fit:contain;margin-bottom:32px}
+.lockup{display:flex;align-items:center;gap:20px;flex:0 0 auto;align-self:flex-start;margin-bottom:32px;flex-wrap:wrap}
+.lockup__coupler{height:38px;width:auto;display:block;object-fit:contain}
+.lockup__for{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9aa7b5}
+/* The Smilrejser mark is a true-transparency SVG in dark teal and green, so it needs
+   no backing chip. Verified against white before dropping the chip. */
+.lockup__client{height:30px;width:auto;display:block;object-fit:contain}
+.cover__kicker{font-size:12.5px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--brand);margin-bottom:16px}
+.cover__h{font-size:57px;line-height:1.03;letter-spacing:-.035em;font-weight:800;margin:0 0 18px;max-width:22ch}
+.cover__h em{font-style:normal;color:var(--brand)}
+.cover__p{font-size:18px;color:var(--ink-2);max-width:62ch;margin:0 0 30px;line-height:1.5}
+.cover__meta{display:flex;flex-wrap:wrap;gap:26px;padding-top:22px;border-top:1px solid var(--line)}
+.cover__meta div{font-size:13px;color:var(--muted)}
+.cover__meta b{display:block;color:var(--ink);font-size:14.5px;font-weight:700;margin-bottom:2px}
+
+@media print{
+  .navbar,.overview,.topbar,.brandmark{display:none!important}
+  .slide{display:block!important;min-height:auto;page-break-after:always;padding:0}
+  .sheet{min-height:auto;box-shadow:none;border:0;border-radius:0}
+  body{background:#fff}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="topbar__fill" id="bar"></div></div>
+<div class="brandmark"><img src="assets/coupler-logo.png" alt="Coupler"></div>
+
+<main class="deck" id="deck">
+
+<!-- ============================== COVER ============================== -->
+<section class="slide slide--cover is-active" data-title="Cover" data-sec="Start">
+  <div class="sheet">
+    <div class="lockup">
+      <img class="lockup__coupler" src="assets/coupler-logo.png" alt="Coupler">
+      <span class="lockup__for">for</span>
+      <img class="lockup__client" src="assets/smilrejser-logo.svg" alt="Smilrejser">
+    </div>
+    <div class="cover__kicker">Conversion Rate Optimisation audit · 26 August 2026</div>
+    <h1 class="cover__h">The traffic is not the problem. <em>Half the shop is shut.</em></h1>
+    <p class="cover__p">We crawled all 421 pages, walked the booking funnel in a real browser and read the tag container line by line. The site is well built and well measured. But 60 of the 131 trips a visitor can find cannot be bought today, and the button that says <em>Bestil rejse</em> takes them there anyway.</p>
+    <div class="cover__meta">
+      <div><b>421 pages</b>crawled, every one HTTP 200</div>
+      <div><b>131 trips</b>assessed departure by departure</div>
+      <div><b>0 estimates</b>every figure in this deck is reproducible</div>
+      <div><b>No analytics yet</b>so no conversion rates are claimed</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SHORT VERSION ============================== -->
+<section class="slide" data-title="The short version" data-sec="Start">
+  <div class="sheet">
+    <span class="eyebrow">The short version</span>
+    <h2 class="title">Four numbers that frame the whole audit</h2>
+    <p class="lede">All four come from a crawl of every URL in the sitemap plus a rendered check of each trip page. <strong>None of them require analytics access</strong>, which is why we could produce them now rather than waiting.</p>
+
+    <div class="grid g4" style="margin-bottom:16px">
+      <div class="kpi kpi--bad">
+        <div class="big">60</div>
+        <div class="lbl">of 131 sellable trip pages show an <b>empty departures table</b>. Nothing on the page can be bought.</div>
+        <div class="src">Source: rendered check, all 131 trip pages</div>
+      </div>
+      <div class="kpi kpi--bad">
+        <div class="big">151,722</div>
+        <div class="lbl">words of trip copy sit on those 60 pages — an average of 2,528 each.</div>
+        <div class="src">Source: <code>page_taxonomy.csv</code></div>
+      </div>
+      <div class="kpi kpi--warn">
+        <div class="big">103<span style="font-size:.46em">/103</span></div>
+        <div class="lbl">destination pages tell Google their trip list is <b>“Rejser til Frankrig”</b> — trips to France.</div>
+        <div class="src">Source: itemlist.csv</div>
+      </div>
+      <div class="kpi kpi--good">
+        <div class="big">6/6</div>
+        <div class="lbl">GA4 ecommerce funnel events are <b>already configured</b>, through server-side tagging.</div>
+        <div class="src">Source: container <code>GTM-NKQTDQPX</code></div>
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="callout callout--risk">
+        <h5>What it costs today</h5>
+        <p>Almost half of the trip catalogue is a dead end. A visitor arrives on a well-written page for a trip to South Africa, reads 4,545 words, presses <b>Bestil rejse</b>, and lands on the line <i>“Afgange ikke tilgængelige”</i>. There is no price, no date, and no alternative trip offered.</p>
+      </div>
+      <div class="callout callout--fix">
+        <h5>Why this is cheap to fix</h5>
+        <p>The missing pieces already exist in Smilrejser's own design system. Labels for <code>Forespørg</code> (enquire) and <code>Venteliste</code> (waitlist) ship in every page payload but are never rendered on these pages. This is mostly configuration and template logic, not new design.</p>
+      </div>
+    </div>
+
+    <h4 class="mini" style="margin-top:22px">Five changes worth under a day each</h4>
+    <table class="tbl tbl--compact">
+      <thead><tr><th style="width:42%">Change</th><th style="width:16%">Where</th><th style="width:13%">Effort</th><th>Why it is first</th></tr></thead>
+      <tbody>
+        <tr><td class="now"><b>Default 1 traveller to 1 room</b></td><td>Checkout step 1</td><td class="n">1 hour</td><td>Every booking attempt currently opens in an error state</td></tr>
+        <tr><td class="now"><b>Translate “Required” to “Skal udfyldes”</b></td><td>Checkout step 3</td><td class="n">1 hour</td><td>English error text on a Danish checkout, three times</td></tr>
+        <tr><td class="now"><b>Set a page title on all five funnel steps</b></td><td>Checkout</td><td class="n">1 hour</td><td>Makes the funnel legible the day analytics access lands</td></tr>
+        <tr><td class="now"><b>One name per room type</b></td><td>Checkout</td><td class="n">2 hours</td><td>“Enkeltværelse” is billed as “Dobbeltværelse til 1 person”</td></tr>
+        <tr><td class="now"><b>Eager-load the hero image and logo</b></td><td>Components</td><td class="n">1 day</td><td>All 35 images on the homepage are lazy-loaded, including the logo</td></tr>
+      </tbody>
+    </table>
+    <div class="src" style="margin-top:8px">Effort is our estimate for a developer familiar with this codebase. Full list on the action-list slide.</div>
+  </div>
+</section>
+
+<!-- ============================== METHOD ============================== -->
+<section class="slide" data-title="Method and limits" data-sec="Start">
+  <div class="sheet">
+    <span class="eyebrow">Method and limits</span>
+    <h2 class="title">What we measured, and what we deliberately cannot say</h2>
+    <p class="lede">You asked for this before analytics access landed. That shapes the audit: everything here is <strong>structural evidence anyone can re-run</strong>, and there is not a single conversion rate or projected uplift figure in the deck.</p>
+
+    <div class="split-60" style="margin-bottom:16px">
+      <div>
+        <h4 class="mini">What we did</h4>
+        <table class="tbl tbl--compact">
+          <thead><tr><th style="width:30%">Track</th><th>Method</th><th style="width:16%">Output</th></tr></thead>
+          <tbody>
+            <tr><td><b>Crawl</b></td><td>Purpose-built crawler over all 421 sitemap URLs, capturing price presence, CTA paths, schema, headings, images, TTFB</td><td class="u">crawl.csv</td></tr>
+            <tr><td><b>Departure states</b></td><td>Every trip page re-fetched and classified by rendered departures table, cross-validated against unique <code>/booking/</code> links</td><td class="u">page_taxonomy.csv</td></tr>
+            <tr><td><b>Visual</b></td><td>Real Chrome over DevTools Protocol, Danish locale, consent pre-accepted, desktop 1440 and mobile 390</td><td class="u">assets/shots</td></tr>
+            <tr><td><b>Funnel</b></td><td>Booking funnel walked with dummy data, field inventory and validation probes at each step</td><td class="u">funnel.md</td></tr>
+            <tr><td><b>Structured data</b></td><td>Genuine <code>ld+json</code> blocks parsed and walked on all 250 trip-shaped URLs — never a string match on raw HTML, which on Next.js also matches the RSC payload</td><td class="u">schema_census.csv</td></tr>
+            <tr><td><b>Measurement</b></td><td>Public GTM container parsed for configured tags, events, consent mode and server-side routing</td><td class="u">gtm.md</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h4 class="mini">What we could not see</h4>
+        <ul class="list is-cross tight" style="font-size:13.5px">
+          <li><b>Google Analytics</b> — no conversion rates, no traffic, no drop-off percentages</li>
+          <li><b>Search Console</b> — no impressions, clicks or queries</li>
+          <li><b>Ads platforms</b> — no CPA, ROAS or paid landing performance</li>
+          <li><b>Session recordings</b> — no behavioural evidence</li>
+          <li><b>Revenue, PAX, AOV</b> — no financial modelling</li>
+          <li><b>Funnel steps 4 and 5</b> — the walk stopped at step 3 rather than commit a real order</li>
+        </ul>
+        <div class="callout callout--warn" style="margin-top:14px">
+          <h5>The rule we held to</h5>
+          <p>If we could not show it, we did not claim it. Everything above is logged in <code class="inline">evidence/log.md</code>, including the things we suspected and then disproved.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout--note">
+      <h5>One note on tooling</h5>
+      <p>Screaming Frog was the plan, but the local licence is inactive, and the free tier has no CLI, no rendering and no export. We wrote a crawler instead — which turned out better, because it captures CRO-specific fields Screaming Frog has no column for, such as whether a departure is actually bookable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINDING 1 ============================== -->
+<section class="slide" data-title="Finding 1: Half the catalogue is unbuyable" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow is-bad">Finding 1 · Critical</span>
+    <h2 class="title">60 of 131 trip pages cannot be booked, and the page does not say so until you scroll</h2>
+    <p class="lede">The page looks complete. Highlights, day-by-day programme, what's included, a hotel section, an FAQ. Then the departures table renders one line of grey text. <strong>45.8% of the sellable catalogue is in this state.</strong></p>
+
+    <div class="split" style="margin-bottom:14px">
+      <div>
+        <h4 class="mini">What a visitor sees</h4>
+        <figure class="shot">
+          <div class="shot__bar"><i></i><i></i><i></i><span class="shot__url">https://smilrejser.dk/italien/madlavningskursus-paa-amalfikysten</span></div>
+          <div class="shot__view ar-4-3">
+            <img src="assets/shots/trip-empty-dep-desktop.png" alt="Empty departures table on a trip page" style="object-position:50% 0">
+            <div class="marker" style="top:0.2%;left:83.5%;width:11%;height:4%"></div>
+            <span class="tag" style="top:5.5%;left:78%">1 · Primary CTA</span>
+            <div class="marker" style="top:21%;left:26%;width:48%;height:5%"></div>
+            <span class="tag" style="top:27%;left:26%">2 · …scrolls the visitor here</span>
+            <div class="marker marker--good" style="top:33%;left:5%;width:90%;height:24%"></div>
+            <span class="tag tag--good" style="top:58%;left:5%">3 · The only action: a waitlist</span>
+          </div>
+          <figcaption>26.08.2026, Danish locale. “Afgange ikke tilgængelige” = “Departures not available”.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h4 class="mini">Why the CTA leads nowhere</h4>
+        <div class="code code--sm"><span class="c">// The "Bestil rejse" button on all 131 trip pages</span>
+&lt;<span class="t">a</span> <span class="a">href</span>=<span class="s">"<span class="hl">#TRAVEL_DEPARTURES</span>"</span>&gt;Bestil rejse&lt;/<span class="t">a</span>&gt;
+
+<span class="c">// It is an in-page anchor, not a booking link.
+// On the 60 empty trips it scrolls to:</span>
+&lt;<span class="t">div</span> <span class="a">class</span>=<span class="s">"…text-center"</span>&gt;
+  <span class="hl">Afgange ikke tilgængelige</span>
+&lt;/<span class="t">div</span>&gt;</div>
+        <div class="codecap">Verbatim from the rendered DOM, 26.08.2026.</div>
+
+        <table class="tbl tbl--compact" style="margin-top:14px">
+          <thead><tr><th>Departure state</th><th class="n">Pages</th><th class="n">Share</th></tr></thead>
+          <tbody>
+            <tr><td>Bookable online</td><td class="n">69</td><td class="n">52.7%</td></tr>
+            <tr><td class="was">Empty table, nothing to buy</td><td class="n">60</td><td class="n">45.8%</td></tr>
+            <tr><td>No visible state at all</td><td class="n">2</td><td class="n">1.5%</td></tr>
+          </tbody>
+        </table>
+        <div class="src" style="margin-top:8px">Classified by rendered departures section, cross-validated against unique <code>/booking/</code> hrefs. Both measures agree on every page.</div>
+      </div>
+    </div>
+
+    <div class="grid g3">
+      <div class="callout callout--risk"><h5>The concentration</h5><p>Italy 12, Portugal 9, Spain 8, river cruises 5. These are the destinations the brand leads with.</p></div>
+      <div class="callout callout--warn"><h5>Found on the way</h5><p>55 of 131 trip pages carry no price, yet still headline <i>“Det får du med i prisen”</i> — “what you get for the price”.</p></div>
+      <div class="callout callout--fix"><h5>The fix is already built</h5><p>The payload ships <code>…WAITLIST_BTN</code> = “Venteliste” and <code>…ON_REQUEST_BTN</code> = “Forespørg”. Neither renders. See proposal 1.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINDING 2 ============================== -->
+<section class="slide" data-title="Finding 2: The same table, done right" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow is-good">Finding 2 · The good news, in one comparison</span>
+    <h2 class="title">When a trip does have a departure, the design is genuinely strong</h2>
+    <p class="lede">This matters for the recommendation. The bookable state already has everything a conversion-focused table needs — date, duration, airport, price, scarcity, a clear button. <strong>Nothing new has to be designed. The empty state simply has to inherit it.</strong></p>
+
+    <div class="split" style="margin-bottom:16px">
+      <div>
+        <h4 class="mini">Bookable — 69 pages</h4>
+        <figure class="shot">
+          <div class="shot__bar"><i></i><i></i><i></i><span class="shot__url">/portugal/nytaarsrejse-til-lissabon</span></div>
+          <div class="shot__view ar-3-2">
+            <img src="assets/shots/trip-bookable-dep-desktop.png" alt="Bookable departures table" style="object-position:50% 0">
+            <div class="marker marker--good" style="top:19.5%;left:4%;width:92%;height:13.5%"></div>
+            <span class="tag tag--good" style="top:12%;left:4%">Date · duration · airport · price · seats · CTA</span>
+          </div>
+          <figcaption>29.12.2026 · 5 dage · København · 9.995 DKK · “+8 pladser” · Bestil rejse.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h4 class="mini">Empty — 60 pages</h4>
+        <figure class="shot">
+          <div class="shot__bar"><i></i><i></i><i></i><span class="shot__url">/italien/madlavningskursus-paa-amalfikysten</span></div>
+          <div class="shot__view ar-3-2">
+            <img src="assets/shots/trip-empty-dep-desktop.png" alt="Empty departures table" style="object-position:50% 0">
+            <div class="marker" style="top:19.5%;left:4%;width:92%;height:9.5%"></div>
+            <span class="tag" style="top:12%;left:4%">Same headers, one line of grey text</span>
+          </div>
+          <figcaption>Identical column headers. No date, no price, no status, no action.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="grid g3">
+      <div class="callout callout--fix">
+        <h5>Already right on the bookable state</h5>
+        <ul class="list is-good tight" style="font-size:13.5px;margin-top:7px">
+          <li>Scarcity is honest and specific — “+8 pladser”</li>
+          <li>Price is shown inclusive, with the fee broken out</li>
+          <li>Flight times are on the page before checkout</li>
+        </ul>
+      </div>
+      <div class="callout callout--warn"><h5>One inconsistency</h5><p>The primary CTA is amber inside the table but dark green in the sticky header — same label, two colours, competing for the same click.</p></div>
+      <div class="callout callout--note"><h5>Also worth noting</h5><p>The waitlist form appears on bookable pages too, directly under a single available departure, where it competes with the sale.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINDING 3 ============================== -->
+<section class="slide" data-title="Finding 3: Every trip list is labelled France" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow is-warn">Finding 3 · Serious, and invisible without a crawl</span>
+    <h2 class="title">Every destination page tells Google its trip list is “Trips to France”</h2>
+    <p class="lede">103 destination pages emit an <code>ItemList</code> of the trips they link to. <strong>All 103 name that list <code>"Rejser til Frankrig"</code></strong> — trips to France — including pages about Porto, Marrakech, Madrid and Salzburg. It is one hardcoded string.</p>
+
+    <div class="split-60" style="margin-bottom:16px">
+      <div>
+        <div class="code code--sm"><span class="c">// https://smilrejser.dk/portugal/porto — a Portugal page</span>
+{
+  <span class="a">"@type"</span>: <span class="s">"ItemList"</span>,
+  <span class="a">"name"</span>: <span class="s">"<span class="hl">Rejser til Frankrig</span>"</span>,
+  <span class="a">"numberOfItems"</span>: <span class="s">8</span>,
+  <span class="a">"itemListElement"</span>: [{
+    <span class="a">"@type"</span>: <span class="s">"ListItem"</span>, <span class="a">"position"</span>: <span class="s">1</span>,
+    <span class="a">"item"</span>: {
+      <span class="a">"@type"</span>: <span class="s">"Product"</span>,
+      <span class="a">"name"</span>: <span class="s">"Porto og Douro-dalens herligheder"</span>
+    }
+  }, <span class="c">/* …7 more, all Portugal */</span> ]
+}</div>
+        <div class="codecap">Verbatim <code>application/ld+json</code> block, fetched 26.08.2026.</div>
+
+        <table class="tbl tbl--compact" style="margin-top:14px">
+          <thead><tr><th>Pages checked</th><th class="n">Count</th><th class="n">List name</th></tr></thead>
+          <tbody>
+            <tr><td class="was">Destination pages emitting an <code>ItemList</code></td><td class="n">103</td><td class="n">“Rejser til Frankrig”</td></tr>
+            <tr><td>…of which the country is demonstrably not France</td><td class="n">70</td><td class="n">Same string</td></tr>
+            <tr><td>Trip pages — no <code>ItemList</code> at all</td><td class="n">131</td><td class="n">n/a</td></tr>
+          </tbody>
+        </table>
+        <div class="src" style="margin-top:8px">All 103 fetched individually; <code>evidence/itemlist.csv</code>. The remaining 33 sit on themed URLs like <code>/europa/kulturrejser</code> with no country to compare against, so they are counted as unverifiable rather than wrong.</div>
+      </div>
+      <div>
+        <h4 class="mini">A correction we owe you</h4>
+        <div class="callout callout--note">
+          <p>Our first-pass crawler flagged 103 editorial pages as “claiming to be products”. That was <b>wrong</b>, and re-checking is how we found the real bug. The <code>Product</code> entries are list items describing linked trips — correct, conventional markup for a listing page. Only the list's <i>name</i> is broken.</p>
+        </div>
+
+        <div class="callout callout--risk" style="margin-top:13px">
+          <h5>Why it matters</h5>
+          <p>This is the data Google uses to understand what a page sells, and every destination page tells it the same wrong thing. <code>numberOfItems</code> and the item names are correct, so one string carries the whole defect.</p>
+        </div>
+
+        <div class="callout callout--fix" style="margin-top:13px">
+          <h5>The fix — one line</h5>
+          <p>Interpolate the destination the page is already rendering in its own H1. A hardcoded default that happens to say “Frankrig” suggests this was written against a France page and never parameterised.</p>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="mini">Found in the same pass — what actually sits on these trip-shaped URLs</h4>
+    <div class="grid g3">
+      <div class="callout callout--note"><h5>131 are real trips</h5><p>They render a departures section. 76 of them show a price.</p></div>
+      <div class="callout callout--warn"><h5>101 are destination guides</h5><p>No departures section. A URL like <code>/italien/milano</code> is indistinguishable from a trip URL, but it is a 1,763-word city guide.</p></div>
+      <div class="callout callout--risk"><h5>18 are stubs under 500 words</h5><p>Thinnest is <code>/portugal/portugal-langtidsferie</code> at 130 words. These compete with the trips they should be feeding.</p></div>
+    </div>
+    <div class="src" style="margin-top:8px">Classified structurally by the presence of <code>data-id-section="TRAVEL_DEPARTURES"</code> in the rendered DOM, not by URL pattern.</div>
+  </div>
+</section>
+
+<!-- ============================== FUNNEL WALKTHROUGH ============================== -->
+<section class="slide" data-title="The funnel, walked end to end" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow">The walkthrough you asked for</span>
+    <h2 class="title">We booked a real trip with fake data, and stopped before paying</h2>
+    <p class="lede">Entry <code class="inline">/booking/travel/49000/6095/accommodation</code>, a New Year trip to Lisbon at 9.995 DKK. Five steps. <strong>We reached step 3 and stopped there</strong> — going further commits an order against live inventory and holds a real seat.</p>
+
+    <div class="split-60" style="margin-bottom:14px">
+      <div>
+        <table class="tbl tbl--compact">
+          <thead><tr><th style="width:7%">#</th><th style="width:26%">Step</th><th class="n" style="width:12%">Fields</th><th style="width:22%">Total visible</th><th>What we found</th></tr></thead>
+          <tbody>
+            <tr><td class="n">1</td><td><b>Overnatning</b></td><td class="n">0</td><td class="now">10.090 DKK</td><td class="was">Opens in an error state — finding 4</td></tr>
+            <tr><td class="n">2</td><td><b>Tilvalg</b></td><td class="n">0</td><td class="now">11.085 DKK</td><td>Clean. Three add-ons, full price breakdown</td></tr>
+            <tr><td class="n">3</td><td><b>Personlige oplysninger</b></td><td class="n">27</td><td class="now">11.085 DKK</td><td class="was">Does the work of three steps — finding 5</td></tr>
+            <tr><td class="n">4</td><td>Opsummering</td><td class="n">—</td><td>—</td><td class="u">Not reached, not assessed</td></tr>
+            <tr><td class="n">5</td><td>Betaling</td><td class="n">—</td><td>—</td><td class="u">Deliberately not entered</td></tr>
+          </tbody>
+        </table>
+        <div class="src" style="margin-top:8px">Field inventory and validation probes per step in <code>evidence/funnel.md</code>. Dummy data throughout: <code>audit-test@example.invalid</code>, no card details, nothing submitted.</div>
+
+        <div class="grid g2" style="margin-top:13px">
+          <div class="callout callout--fix">
+            <h5>What the funnel gets right</h5>
+            <p>Five named steps with a visible progress bar. A live summary panel that recalculates as you choose. The administration fee itemised rather than buried. Honest, inclusive pricing.</p>
+          </div>
+          <div class="callout callout--warn">
+            <h5>Why we stopped at step 3</h5>
+            <p>Two required fields would not take scripted input — the <code>Køn</code> select and <code>Fødselsdato</code>. A real customer types these in seconds, so this is a limit of our automation, not a defect. Steps 4 and 5 are therefore unassessed.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <figure class="shot">
+          <div class="shot__bar"><i></i><i></i><i></i><span class="shot__url">/booking/travel/49000/6095/addons</span></div>
+          <div class="shot__view ar-4-3">
+            <img src="assets/shots/funnel-2-tilvalg-desktop.png" alt="Step 2 of the booking funnel, showing add-ons and the price summary" style="object-position:50% 0">
+            <div class="marker marker--good" style="top:64%;left:56%;width:39%;height:15%"></div>
+            <span class="tag tag--good" style="top:57.5%;left:56%">Full breakdown</span>
+            <div class="marker" style="top:51.5%;left:18%;width:17%;height:6%"></div>
+            <span class="tag" style="top:44.5%;left:11%">No price on the card</span>
+          </div>
+          <figcaption>Step 2, the best step in the funnel. Two of the three add-ons show no price on the card.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="callout callout--note">
+      <h5>One thing visible in the summary panel on every step from 1 onward</h5>
+      <p>Under <b>Overnatning</b> it reads “Værelse 1 — <b>Enkeltværelse</b>”, and directly beneath, “<b>Dobbeltværelse til 1 person</b> — +995 DKK”. The same room, named two ways, one line apart, at the moment the customer is deciding whether 995 DKK is worth it. This is the room-naming defect in finding 5, caught in a single frame.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINDING 4 ============================== -->
+<section class="slide" data-title="Finding 4: Checkout opens in an error state" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow is-bad">Finding 4 · Critical, and a five-line fix</span>
+    <h2 class="title">Step 1 of checkout cannot be submitted as it is presented</h2>
+    <p class="lede">Travellers defaults to <b>1</b>. Both room counters default to <b>0</b>. Those two facts contradict each other, so <strong>every single customer hits an error on the first click</strong> — and only finds out after pressing the button.</p>
+
+    <div class="split" style="margin-bottom:14px">
+      <div>
+        <figure class="shot">
+          <div class="shot__bar"><i></i><i></i><i></i><span class="shot__url">/booking/travel/49000/6095/accommodation</span></div>
+          <div class="shot__view ar-4-3">
+            <img src="assets/shots/funnel-1-validation-desktop.png" alt="Booking step 1 showing a validation error" style="object-position:50% 0">
+            <div class="marker" style="top:55%;left:39.5%;width:11.5%;height:4.5%"></div>
+            <span class="tag" style="top:55.5%;left:21%">Travellers: 1</span>
+            <div class="marker" style="top:70%;left:39.5%;width:11.5%;height:11.5%"></div>
+            <span class="tag" style="top:73%;left:18%">Rooms: 0 and 0</span>
+            <div class="marker" style="top:89%;left:5%;width:45%;height:11%"></div>
+            <span class="tag" style="top:83.5%;left:5%">The error, only after clicking</span>
+          </div>
+          <figcaption>Screenshot 26.08.2026. Reproduced on desktop and mobile.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h4 class="mini">The error, verbatim</h4>
+        <div class="code code--sm"><span class="k">Der opstod en fejl</span>
+Antallet af værelser og personer
+matcher ikke. Ret venligst til korrekt
+antal for at komme videre med din
+booking.
+
+<span class="c">// "An error occurred. The number of
+// rooms and people do not match.
+// Please correct to the right number
+// to continue with your booking."</span></div>
+        <div class="codecap">Verbatim from the live funnel, 26.08.2026.</div>
+
+        <div class="callout callout--fix" style="margin-top:14px">
+          <h5>The fix — under an hour</h5>
+          <p>Default one traveller to one single room. Better still, disable <b>Videre</b> until the counts reconcile and show the reason inline next to the room picker, so the customer never reaches a red error at all.</p>
+        </div>
+        <div class="callout callout--warn" style="margin-top:12px">
+          <h5>Two more things on this step</h5>
+          <p>Cancel is offered twice — “Annuller booking” top-left and “Annuller” bottom-left — while the primary action is a modest green button. And the +/− counters have no text and no <code>aria-label</code>, so they are unusable by screen reader or voice control.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout--note">
+      <h5>Worth saying out loud</h5>
+      <p>This is the single cheapest item in the audit. It sits on the first step of the only path to revenue, it affects every booking attempt, and it is a default-value change.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINDING 5 ============================== -->
+<section class="slide" data-title="Finding 5: 27 fields and an English error" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow is-bad">Finding 5 · Serious</span>
+    <h2 class="title">One step carries 27 fields, and rejects them in English</h2>
+    <p class="lede">Step 3 does the work of three steps: traveller details, booker details, two insurance products, a discount code, payment choice and consent. Submitted empty, it returns the word <strong>“Required”</strong> — three times, in English, on a Danish checkout.</p>
+
+    <div class="split" style="margin-bottom:14px">
+      <div>
+        <figure class="shot">
+          <div class="shot__bar"><i></i><i></i><i></i><span class="shot__url">/booking/travel/49000/6095/personal-information</span></div>
+          <div class="shot__view ar-4-3">
+            <img src="assets/shots/funnel-3-still-blocked-desktop.png" alt="Booking step 3 with insurance dropdowns" style="object-position:50% 0">
+            <div class="marker" style="top:68%;left:4%;width:44%;height:13%"></div>
+            <span class="tag" style="top:63.5%;left:4%">Two near-identical insurance products</span>
+            <div class="marker marker--brand" style="top:41%;left:57%;width:38%;height:6%"></div>
+            <span class="tag tag--brand" style="top:35.5%;left:57%">Single room, billed as a double</span>
+          </div>
+          <figcaption>26.08.2026, dummy data. The live summary panel is a genuine strength.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h4 class="mini">What step 3 contains</h4>
+        <table class="tbl tbl--compact">
+          <thead><tr><th>Group</th><th class="n">Fields</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td>Traveller details</td><td class="n">8</td><td>Name, birth date, diet, emergency contact</td></tr>
+            <tr><td>Booker details</td><td class="n">9</td><td>Name, address, postcode, city, phone, email</td></tr>
+            <tr><td class="was">Insurance</td><td class="n">2</td><td>Two Gouda products with near-identical names</td></tr>
+            <tr><td class="was">Discount code</td><td class="n">1</td><td>“Din rabatkode”, inside the checkout</td></tr>
+            <tr><td>Payment option</td><td class="n">3</td><td>Radio group</td></tr>
+            <tr><td>Consent</td><td class="n">2</td><td>Terms and marketing</td></tr>
+            <tr><td>Other</td><td class="n">2</td><td>Previous customer, “how did you hear about this trip?”</td></tr>
+          </tbody>
+        </table>
+
+        <div class="code code--sm" style="margin-top:12px"><span class="c">// Submitting the step empty returns:</span>
+<span class="hl">"Required"</span>  <span class="hl">"Required"</span>  <span class="hl">"Required"</span>
+
+<span class="c">// And on all 27 fields:</span>
+required: <span class="hl">false</span>   aria-required: <span class="hl">false</span>
+<span class="c">// even though 10 labels are marked with *</span></div>
+        <div class="codecap">Field inventory from the live funnel, 26.08.2026.</div>
+      </div>
+    </div>
+
+    <div class="grid g3">
+      <div class="callout callout--risk"><h5>The two insurances</h5><p>“Afbestillings- <b>og rejse</b>forsikring” sits directly above “Afbestillingsforsikring”, both defaulting to “Nej, tak”. One word tells them apart, so most will take neither.</p></div>
+      <div class="callout callout--warn"><h5>The room naming</h5><p>The customer selects <b>Enkeltværelse</b> (single room). The summary bills it as <b>“Dobbeltværelse til 1 person +995 DKK”</b> (double room for one person). Same thing, two names, at the moment of payment.</p></div>
+      <div class="callout callout--fix"><h5>Fixes, in order of cheapness</h5><p>Translate the validation strings. Add real <code>required</code> attributes. Split step 3 into traveller and booker. Move the discount field to the summary. Name the room the same way twice.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINDING 6 ============================== -->
+<section class="slide" data-title="Finding 6: Mobile hides the price" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow is-bad">Finding 6 · Critical on the majority device</span>
+    <h2 class="title">On mobile, the running total disappears from the first two checkout steps</h2>
+    <p class="lede">On desktop the total is pinned beside the form. On mobile it collapses behind a button labelled <b>Opsummering</b> — <strong>the customer chooses a room and the cost of that choice is not on screen.</strong></p>
+
+    <div class="split-phone" style="margin-bottom:16px">
+      <div>
+        <figure class="shot">
+          <div class="shot__bar"><i></i><i></i><i></i><span class="shot__url">390 px · step 1</span></div>
+          <div class="shot__view ar-phone">
+            <img src="assets/shots/funnel-1-overnatning-mobile.png" alt="Booking step 1 on mobile, with the price summary collapsed" style="object-position:50% 0">
+            <div class="marker" style="top:68%;left:3%;width:94%;height:14.5%"></div>
+            <span class="tag" style="top:61.5%;left:3%">Adds 995 DKK</span>
+            <div class="marker marker--brand" style="top:90.2%;left:3%;width:94%;height:7.5%"></div>
+            <span class="tag tag--brand" style="top:84%;left:3%">Total collapsed in here</span>
+          </div>
+          <figcaption>Step 1 at 390 px, consent accepted.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <table class="tbl" style="margin-bottom:14px">
+          <thead><tr><th>Checkout step</th><th>Desktop 1440 px</th><th>Mobile 390 px</th></tr></thead>
+          <tbody>
+            <tr><td><b>1 Overnatning</b></td><td class="now">Total visible — 10.090 DKK</td><td class="was">No total on screen</td></tr>
+            <tr><td><b>2 Tilvalg</b></td><td class="now">Total visible — 11.085 DKK</td><td class="was">No total on screen</td></tr>
+            <tr><td><b>3 Personlige oplysninger</b></td><td class="now">Total visible</td><td>Total visible</td></tr>
+            <tr><td><b>Progress indicator</b></td><td class="now">All five steps named</td><td class="was">“1 Overnatning 2 3 4 5” — the rest unnamed</td></tr>
+          </tbody>
+        </table>
+        <div class="src">Measured by reading the rendered DOM at each viewport, not by eye. Tablet at 768 px shows all five step names, so the breakpoint is between 390 and 768.</div>
+
+        <div class="grid g2" style="margin-top:14px">
+          <div class="callout callout--risk"><h5>Why it matters here</h5><p>The single-room supplement adds 995 DKK between step 1 and step 2. On mobile that increase happens off-screen, and the customer meets it for the first time at payment.</p></div>
+          <div class="callout callout--fix"><h5>The fix — one to two days</h5><p>Pin a slim sticky bar to the bottom of the mobile viewport showing the running total and a “details” toggle. Restore the step names, or at least the current step's name plus a “3 of 5” counter.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="callout callout--warn">
+      <h5>One more, cheap and worth doing</h5>
+      <p><code class="inline">document.title</code> is empty on every step of the funnel. Browser tabs, browser history and GA4's <code>page_title</code> dimension all show blank for the entire checkout. Setting five titles makes the funnel legible in reporting the day analytics access arrives.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FINDING 7 ============================== -->
+<section class="slide" data-title="Finding 7: Nothing is prioritised for loading" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow is-warn">Finding 7 · Site-wide, mechanical to fix</span>
+    <h2 class="title">13,321 of 13,448 images are lazy-loaded, including every hero and the logo</h2>
+    <p class="lede">Lazy loading is correct for images below the fold and wrong for the one image that defines the page. Across 421 pages, <strong><code>fetchpriority="high"</code> appears exactly zero times</strong>, so the browser is never told which image matters.</p>
+
+    <div class="split-60" style="margin-bottom:16px">
+      <div>
+        <table class="tbl tbl--compact">
+          <thead><tr><th>Template</th><th class="n">Pages</th><th class="n">Median TTFB</th><th class="n">Median HTML</th></tr></thead>
+          <tbody>
+            <tr><td class="was"><b>Travel type</b> — e.g. /vandreferier</td><td class="n">21</td><td class="n">2,106 ms</td><td class="n">1,050 KB</td></tr>
+            <tr><td>Trip page</td><td class="n">250</td><td class="n">1,333 ms</td><td class="n">636 KB</td></tr>
+            <tr><td>Homepage</td><td class="n">1</td><td class="n">1,258 ms</td><td class="n">2,612 KB</td></tr>
+            <tr><td>Blog post</td><td class="n">67</td><td class="n">1,182 ms</td><td class="n">329 KB</td></tr>
+            <tr><td>Destination hub</td><td class="n">54</td><td class="n">1,075 ms</td><td class="n">581 KB</td></tr>
+          </tbody>
+        </table>
+        <div class="src" style="margin-top:9px">Server response time only, measured from this machine. Not Core Web Vitals — that needs field data from Search Console.</div>
+
+        <div class="grid g2" style="margin-top:14px">
+          <div class="kpi kpi--warn" style="padding:13px"><div class="big" style="font-size:29px">73</div><div class="lbl">pages respond slower than 2 seconds</div></div>
+          <div class="kpi kpi--warn" style="padding:13px"><div class="big" style="font-size:29px">44</div><div class="lbl">pages ship more than 1 MB of HTML</div></div>
+        </div>
+      </div>
+      <div>
+        <h4 class="mini">The homepage, verbatim</h4>
+        <div class="code code--sm"><span class="c">&lt;!-- the logo, 176x40, above the fold --&gt;</span>
+&lt;<span class="t">img</span> <span class="a">loading</span>=<span class="s">"<span class="hl">lazy</span>"</span> <span class="a">width</span>=<span class="s">"176"</span> <span class="a">height</span>=<span class="s">"40"</span>
+     <span class="a">src</span>=<span class="s">"…/smilrejser_logo_long.svg"</span>&gt;
+
+<span class="c">&lt;!-- third-party scripts, preloaded --&gt;</span>
+&lt;<span class="t">link</span> <span class="a">rel</span>=<span class="s">"preload"</span> <span class="a">as</span>=<span class="s">"script"</span>
+      <span class="a">href</span>=<span class="s">"…googletagmanager.com/gtm.js"</span>&gt;
+
+<span class="c">&lt;!-- the site's own code, deprioritised --&gt;</span>
+&lt;<span class="t">link</span> <span class="a">rel</span>=<span class="s">"preload"</span> <span class="a">as</span>=<span class="s">"script"</span>
+      <span class="a">fetchPriority</span>=<span class="s">"<span class="hl">low</span>"</span>
+      <span class="a">href</span>=<span class="s">"/_next/static/chunks/webpack…"</span>&gt;</div>
+        <div class="codecap">From the homepage HTML, 26.08.2026. 35 of 35 images are lazy.</div>
+
+        <div class="callout callout--fix" style="margin-top:14px">
+          <h5>The fix — a day, mostly in one component</h5>
+          <p>Set <code>loading="eager"</code> and <code>fetchpriority="high"</code> on the hero image of each template and on the logo. Leave every other image lazy. Then stop preloading Trustpilot's widget ahead of the site's own JavaScript.</p>
+        </div>
+      </div>
+    </div>
+    <div class="callout callout--note">
+      <h5>Also: 4,167 images have no alt text</h5>
+      <p>That is 31% of every image on the site. It is an accessibility issue for an audience that skews older, and it removes the only text signal Google has for the imagery on a travel site. Bulk-generating alt text from existing captions and trip names is a scriptable job, not a manual one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== STRENGTHS ============================== -->
+<section class="slide" data-title="What is already strong" data-sec="Findings">
+  <div class="sheet">
+    <span class="eyebrow is-good">Before the recommendations</span>
+    <h2 class="title">Four things we went looking for and found already done properly</h2>
+    <p class="lede">This is not padding. It changes what we recommend, because <strong>the foundations are sound and the fixes are configuration rather than rebuild</strong>. Any agency telling you this site needs replacing has not looked at it.</p>
+
+    <div class="grid g2" style="margin-bottom:16px">
+      <div class="card card--good">
+        <div class="num">STRENGTH 1</div>
+        <h5>Server-side tagging, live and healthy</h5>
+        <p>A shared container serves ten Aller travel brands, routing each hostname to its own GA4 property and its own server-side endpoint. Smilrejser's is <code class="inline">sgtm.smilrejser.dk</code>, which answered <code class="inline">/healthy</code> with HTTP 200 in 0.22 s. Consent Mode is wired with <code>wait_for_update</code> and <code>ads_data_redaction</code>, and enhanced-conversion PII is SHA-256 hashed client-side.</p>
+      </div>
+      <div class="card card--good">
+        <div class="num">STRENGTH 2</div>
+        <h5>The full ecommerce funnel is already configured</h5>
+        <p><code>view_item</code>, <code>add_to_cart</code>, <code>begin_checkout</code>, <code>add_payment_info</code>, <code>add_shipping_info</code> and <code>purchase</code> all exist as configured GA4 tags — plus <code>purchase_giftcard</code>, <code>waitinglist_form_submit</code>, <code>site_search</code>, <code>click_tel</code> and <code>click_mail</code>. The waitlist is already tracked, which means the empty-departure problem is measurable the moment we get access.</p>
+      </div>
+      <div class="card card--good">
+        <div class="num">STRENGTH 3</div>
+        <h5>Structured data is genuinely well built</h5>
+        <p>Every trip page emits <code>Product</code>, <code>AggregateOffer</code> and <code>BreadcrumbList</code>, and 56 add <code>FAQPage</code>. Destination pages correctly emit <code>Collection</code> and <code>TouristDestination</code> instead — the page types are properly distinguished. Better than most travel sites we audit; finding 3 is one wrong string inside otherwise sound markup.</p>
+      </div>
+      <div class="card card--good">
+        <div class="num">STRENGTH 4</div>
+        <h5>Trust and price transparency</h5>
+        <p>Trustpilot, Rejsegarantifonden and Travelife appear on all 421 pages, and a phone number is on every one of them. Checkout shows the administration fee as a separate line and a true total. All 421 URLs returned HTTP 200 with a canonical tag and exactly one H1 — no broken pages, no redirect chains.</p>
+      </div>
+    </div>
+
+    <div class="callout callout--warn">
+      <h5>And one thing we suspected, checked, and were wrong about</h5>
+      <p>Our first screenshots showed the cookie banner in <b>Norwegian</b> on a Danish site, which looked like a significant defect. It was not: Cookiebot picks its language from the browser, and the Norwegian text came from this Mac's own locale. Re-run with a Danish locale, the banner is correct Danish. It is in the evidence log as a rejected finding, and every screenshot in this deck was re-captured with a Danish locale.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SECTION BREAK ============================== -->
+<section class="slide slide--cover" data-title="Part 2: What to do" data-sec="Proposals">
+  <div class="sheet">
+    <div class="cover__kicker">Part 2 of 2</div>
+    <h1 class="cover__h" style="font-size:48px">From a catalogue that half works to one that always offers a next step</h1>
+    <p class="cover__p">Nothing in part one was a criticism of the build. It is a well-made site with a sophisticated measurement stack and one structural gap: it assumes every trip has a departure. The rest of this deck is what we would change, in the order we would change it.</p>
+    <div class="grid g3" style="margin-top:14px">
+      <div class="card card--bad"><div class="num">TRACK 1 · WEEK 1</div><h5>Stop losing the ready-to-buy</h5><p>Give the 60 empty trips a real action. Fix the checkout default that errors on every first click.</p></div>
+      <div class="card card--warn"><div class="num">TRACK 2 · WEEKS 2–6</div><h5>Make the catalogue honest</h5><p>Separate editorial from product. Match schema to what a page actually sells. Show prices consistently.</p></div>
+      <div class="card card--good"><div class="num">TRACK 3 · WEEKS 4–12</div><h5>Close the measurement gap</h5><p>Add the two missing ecommerce events, retire the legacy variables, then let data drive the next round.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROPOSAL 1 ============================== -->
+<section class="slide" data-title="Proposal 1: Four departure states" data-sec="Proposals">
+  <div class="sheet">
+    <span class="eyebrow is-good">Proposal 1 of 3 · The highest-value change</span>
+    <h2 class="title">Give the departures table four states instead of two</h2>
+    <p class="lede">Today the table is either a sale or a blank. The rule we would apply: <strong>a trip page must always offer exactly one clear next action</strong>. The labels for three of these four states already ship in the page payload.</p>
+
+    <div class="split-60" style="margin-bottom:14px">
+      <div>
+        <div class="mock">
+          <div class="mock__hd">Proposed — Coupler mock-up, not a screenshot of the live site</div>
+          <div class="mockrow"><b>29.12.2026</b><span>5 dage</span><span>København</span><b>9.995 DKK</b><span class="chipmock">+8 pladser</span><span class="btnmock">Bestil rejse →</span></div>
+          <div class="mockrow"><b>14.03.2027</b><span>8 dage</span><span>København</span><b>12.495 DKK</b><span class="chipmock chipmock--warn">Få pladser</span><span class="btnmock">Bestil rejse →</span></div>
+          <div class="mockrow"><b>02.05.2027</b><span>8 dage</span><span>Billund</span><b>Fra 12.495 DKK</b><span class="chipmock chipmock--warn">På forespørgsel</span><span class="btnmock btnmock--ghost">Forespørg →</span></div>
+          <div class="mockrow"><b>Efterår 2027</b><span>8 dage</span><span>—</span><b>Fra 12.495 DKK</b><span class="chipmock chipmock--bad">Udsolgt</span><span class="btnmock btnmock--ghost">Skriv mig op →</span></div>
+          <div class="mockrow" style="border-top:1px dashed #c3ccd8;margin-top:6px;padding-top:10px"><span style="color:var(--muted);font-size:12px">Ingen datoer endnu? <b>Se 4 lignende rejser du kan booke nu</b> — Amalfikysten, Sorrento, Napoli, Cinque Terre</span></div>
+        </div>
+        <div class="src" style="margin-top:9px">Prices and dates above are illustrative. The point is the state machine and the guarantee that every row ends in an action.</div>
+        <div class="callout callout--warn" style="margin-top:14px">
+          <h5>What we would not do</h5>
+          <p>Not unpublish the 60 pages. They hold 151,722 words that rank and inform. The goal is to convert their traffic into enquiries and waitlist signups, not to delete the asset.</p>
+        </div>
+      </div>
+      <div>
+        <table class="tbl tbl--compact">
+          <thead><tr><th>State</th><th>Action</th><th class="n">Exists?</th></tr></thead>
+          <tbody>
+            <tr><td>Bookable</td><td class="now">Bestil rejse</td><td class="n">Live</td></tr>
+            <tr><td>On request</td><td class="now">Forespørg</td><td class="n">In payload, unused</td></tr>
+            <tr><td>Sold out / no dates</td><td class="now">Venteliste</td><td class="n">In payload, unused</td></tr>
+            <tr><td class="was">Empty table</td><td class="was">Nothing — remove this state</td><td class="n">60 pages</td></tr>
+          </tbody>
+        </table>
+        <div class="callout callout--fix" style="margin-top:13px">
+          <h5>Rules we would hold to</h5>
+          <ul class="list is-good tight" style="font-size:13.5px;margin-top:7px">
+            <li>Never render a table with headers and no rows</li>
+            <li>Always show a price, even as “Fra …”, so the page can be compared</li>
+            <li>Every trip page links to bookable alternatives in the same destination</li>
+            <li>Say <i>when</i> new dates are expected, not just that there are none</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="callout callout--note">
+      <h5>Where the work happens</h5>
+      <p>The departures component and the trip template, plus whatever populates departures from Travelize. The waitlist form and its <code>waitinglist_form_submit</code> event already exist, so success is measurable from day one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROPOSAL 2 ============================== -->
+<section class="slide" data-title="Proposal 2: Checkout, before and after" data-sec="Proposals">
+  <div class="sheet">
+    <span class="eyebrow is-good">Proposal 2 of 3</span>
+    <h2 class="title">Nine checkout changes, ready to hand to a developer</h2>
+    <p class="lede">The funnel is structurally sound — five clear steps, a live summary, honest pricing. These are defects on top of a good design, listed cheapest first. <strong>The first four are less than a day together.</strong></p>
+
+    <table class="tbl tbl--compact" style="margin-bottom:14px">
+      <thead><tr><th style="width:17%">Where</th><th style="width:30%">Today</th><th style="width:38%">Proposed</th><th style="width:15%">Effort</th></tr></thead>
+      <tbody>
+        <tr><td class="u">Step 3 validation</td><td class="was">“Required”, in English</td><td class="now">“Skal udfyldes”, and name the field in the message</td><td>1 hour</td></tr>
+        <tr><td class="u">Step 1 defaults</td><td class="was">1 traveller, 0 rooms — errors on first click</td><td class="now">1 traveller defaults to 1 single room</td><td>1 hour</td></tr>
+        <tr><td class="u">All funnel steps</td><td class="was"><code>document.title</code> is empty</td><td class="now">“Booking 1 af 5 — Overnatning | Smilrejser”</td><td>1 hour</td></tr>
+        <tr><td class="u">Room naming</td><td class="was">“Enkeltværelse” becomes “Dobbeltværelse til 1 person”</td><td class="now">One name for one thing, in picker and summary</td><td>2 hours</td></tr>
+        <tr><td class="u">Mobile steps 1–2</td><td class="was">No total on screen</td><td class="now">Sticky bottom bar with running total and a details toggle</td><td>1–2 days</td></tr>
+        <tr><td class="u">All 27 fields</td><td class="was">No <code>required</code> or <code>aria-required</code></td><td class="now">Real attributes, so assistive tech announces them</td><td>3 hours</td></tr>
+        <tr><td class="u">+/− counters</td><td class="was">No text, no <code>aria-label</code></td><td class="now"><code>aria-label="Tilføj en rejsende"</code> and similar</td><td>2 hours</td></tr>
+        <tr><td class="u">Insurance block</td><td class="was">Two near-identical Gouda dropdowns, both “Nej, tak”</td><td class="now">One comparison: what each covers, what it costs, side by side</td><td>1–2 days</td></tr>
+        <tr><td class="u">Discount field</td><td class="was">“Din rabatkode” mid-checkout</td><td class="now">Collapsed link in the summary panel, not a field in the flow</td><td>3 hours</td></tr>
+      </tbody>
+    </table>
+
+    <div class="grid g3">
+      <div class="callout callout--fix"><h5>Sequencing</h5><p>The top four are a single afternoon and touch defaults and strings only — no layout risk, no design review needed.</p></div>
+      <div class="callout callout--warn"><h5>What we deliberately left out</h5><p>We are not proposing fewer steps. Five steps with a visible summary suits a considered, high-value purchase. The problem is the density of step 3, not the step count.</p></div>
+      <div class="callout callout--note"><h5>Not assessed</h5><p>Steps 4 and 5. We stopped rather than commit a real order against live inventory. Both need a review on staging before we recommend anything there.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROPOSAL 3 / MEASUREMENT ============================== -->
+<section class="slide" data-title="Proposal 3: Close the measurement gap" data-sec="Proposals">
+  <div class="sheet">
+    <span class="eyebrow is-good">Proposal 3 of 3</span>
+    <h2 class="title">Two missing events stand between you and knowing what this costs</h2>
+    <p class="lede">The container already measures nearly everything. What it cannot tell you is <strong>how many people see an unbookable trip and leave</strong> — because the two events that would show it are the two that are missing.</p>
+
+    <div class="split-60" style="margin-bottom:16px">
+      <div>
+        <table class="tbl tbl--compact">
+          <thead><tr><th>GA4 ecommerce event</th><th class="n">Configured</th><th>What it would tell us</th></tr></thead>
+          <tbody>
+            <tr><td><code>view_item</code></td><td class="n">Yes</td><td>Trip page views</td></tr>
+            <tr><td><code>add_to_cart</code></td><td class="n">Yes</td><td>Booking started</td></tr>
+            <tr><td><code>begin_checkout</code></td><td class="n">Yes</td><td>Entered the funnel</td></tr>
+            <tr><td><code>add_shipping_info</code></td><td class="n">Yes</td><td>Step progression</td></tr>
+            <tr><td><code>add_payment_info</code></td><td class="n">Yes</td><td>Reached payment</td></tr>
+            <tr><td><code>purchase</code></td><td class="n">Yes</td><td>Booking completed</td></tr>
+            <tr><td class="was"><code>view_item_list</code></td><td class="n">No</td><td class="was">Which trips get impressions on hub and category pages</td></tr>
+            <tr><td class="was"><code>select_item</code></td><td class="n">No</td><td class="was">Which trip cards get clicked — and how many clicks land on the 60 dead ends</td></tr>
+          </tbody>
+        </table>
+        <div class="src" style="margin-top:9px">Read from <code>vtp_eventName</code> inside the container's tag array. Searching the whole container file is unreliable — GTM bundles the GA4 runtime, which names every standard event whether configured or not.</div>
+      </div>
+      <div>
+        <div class="callout callout--note">
+          <h5>The one thing we need from you</h5>
+          <p>Viewer access to GA4 property <b><code class="inline">G-2STC9KYPG1</code></b> — that is Smilrejser's own property, not the shared container and not the other nine brands. Plus Search Console for <code>smilrejser.dk</code>.</p>
+        </div>
+        <div class="callout callout--warn" style="margin-top:13px">
+          <h5>Housekeeping we found</h5>
+          <p>Nine Universal Analytics Enhanced Ecommerce variables are still in the container — <code>ecommerce.purchase.actionField.revenue</code> and siblings. UA stopped processing data in 2023 and GA4 expects a different structure, so any tag still reading these reads an object the site may no longer populate. There are also 3 paused tags worth a decision: revive or delete.</p>
+        </div>
+        <div class="callout callout--risk" style="margin-top:13px">
+          <h5>Release discipline</h5>
+          <p>One container serves ten brands. Every change ships to all of them at once, so these edits want a workspace, a preview and a named approver — not a live edit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ACTION LIST ============================== -->
+<section class="slide" data-title="Prioritised action list" data-sec="Plan">
+  <div class="sheet">
+    <span class="eyebrow">The list</span>
+    <h2 class="title">Everything we found, ordered by value per hour of work</h2>
+    <p class="lede">Effort is our estimate for a developer who knows this codebase. <strong>Impact is ranked, not quantified</strong> — without analytics we will not put a number on it, and we would not trust anyone who did.</p>
+
+    <table class="tbl tbl--compact">
+      <thead><tr><th style="width:4%">#</th><th style="width:39%">Action</th><th style="width:12%">Where</th><th style="width:10%">Effort</th><th style="width:10%">Impact</th><th>Evidence</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1</td><td class="now"><b>Default 1 traveller to 1 room</b> so step 1 never opens in error</td><td>Checkout</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>Finding 4</td></tr>
+        <tr><td class="n">2</td><td class="now"><b>Translate validation strings</b> — “Required” to “Skal udfyldes”</td><td>Checkout</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>Finding 5</td></tr>
+        <tr><td class="n">3</td><td class="now"><b>Set page titles</b> on all five funnel steps</td><td>Checkout</td><td class="n">1 hour</td><td><span class="pill pill--warn">High</span></td><td>Finding 6</td></tr>
+        <tr><td class="n">4</td><td class="now"><b>One name per room type</b> across picker and summary</td><td>Checkout</td><td class="n">2 hours</td><td><span class="pill pill--warn">High</span></td><td>Finding 5</td></tr>
+        <tr><td class="n">5</td><td class="now"><b>Replace the empty departures table</b> with Forespørg / Venteliste</td><td>Trip template</td><td class="n">3–5 days</td><td><span class="pill pill--bad">Critical</span></td><td>Findings 1, 2</td></tr>
+        <tr><td class="n">6</td><td class="now"><b>Add <code>view_item_list</code> and <code>select_item</code></b> to the container</td><td>GTM</td><td class="n">1 day</td><td><span class="pill pill--bad">Critical</span></td><td>Proposal 3</td></tr>
+        <tr><td class="n">7</td><td class="now"><b>Fix the hardcoded “Rejser til Frankrig”</b> list name</td><td>Templates</td><td class="n">1 hour</td><td><span class="pill pill--warn">High</span></td><td>Finding 3</td></tr>
+        <tr><td class="n">8</td><td class="now"><b>Eager-load hero and logo</b>, add <code>fetchpriority="high"</code></td><td>Components</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>Finding 7</td></tr>
+        <tr><td class="n">9</td><td class="now"><b>Sticky price bar on mobile</b> for funnel steps 1–2</td><td>Checkout</td><td class="n">1–2 days</td><td><span class="pill pill--bad">Critical</span></td><td>Finding 6</td></tr>
+        <tr><td class="n">10</td><td class="now"><b>Show a price on every trip page</b>, “Fra …” where exact is unavailable</td><td>Trip template</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>Finding 1</td></tr>
+        <tr><td class="n">11</td><td class="now"><b>Rewrite the insurance block</b> as a single comparison</td><td>Checkout</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>Finding 5</td></tr>
+        <tr><td class="n">12</td><td class="now"><b>Real <code>required</code> attributes and counter labels</b></td><td>Checkout</td><td class="n">5 hours</td><td><span class="pill">Medium</span></td><td>Findings 4, 5</td></tr>
+        <tr><td class="n">13</td><td class="now"><b>Bulk-generate alt text</b> for 4,167 images from captions and trip names</td><td>CMS / script</td><td class="n">2–3 days</td><td><span class="pill">Medium</span></td><td>Finding 7</td></tr>
+        <tr><td class="n">14</td><td class="now"><b>Consolidate the 18 thin stubs</b> into their parent destination pages</td><td>Content</td><td class="n">2 days</td><td><span class="pill">Medium</span></td><td>Finding 3</td></tr>
+        <tr><td class="n">15</td><td class="now"><b>Trim 289 meta descriptions and 154 titles</b> to length</td><td>CMS</td><td class="n">2 days</td><td><span class="pill">Low</span></td><td>Crawl</td></tr>
+        <tr><td class="n">16</td><td class="now"><b>Remove 9 legacy UA variables</b> and resolve 3 paused tags</td><td>GTM</td><td class="n">3 hours</td><td><span class="pill">Low</span></td><td>Proposal 3</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================== PHASE PLAN ============================== -->
+<section class="slide" data-title="Plan" data-sec="Plan">
+  <div class="sheet">
+    <span class="eyebrow">Plan</span>
+    <h2 class="title">The first 90 days, and what is different at the end of each</h2>
+    <p class="lede">Ordered so that the cheapest fixes ship before the measurement work, and the measurement work lands before anything expensive is decided.</p>
+
+    <div class="grid g3" style="margin-bottom:16px">
+      <div class="phase">
+        <div class="phase__hd"><b>Phase 1</b><span>Week 1 · Stop the leaks</span></div>
+        <div class="phase__bd">
+          <ul class="list tight" style="font-size:13.5px">
+            <li>Actions 1–4: checkout defaults, Danish validation, page titles, room naming</li>
+            <li>Request GA4 <code>G-2STC9KYPG1</code> and Search Console access</li>
+            <li>Agree the four departure states</li>
+          </ul>
+          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> no customer meets an error on their first click, and the checkout speaks Danish throughout. Five hours of work.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase__hd"><b>Phase 2</b><span>Weeks 2–6 · Fix the catalogue</span></div>
+        <div class="phase__bd">
+          <ul class="list tight" style="font-size:13.5px">
+            <li>Action 5: the departure state machine across 60 pages</li>
+            <li>Actions 6–8: the two GA4 events, schema gating, image priority</li>
+            <li>Actions 9–10: mobile price bar, price on every trip page</li>
+          </ul>
+          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> every trip page offers an action, and we can finally see which trips get seen and clicked.</p>
+        </div>
+      </div>
+      <div class="phase">
+        <div class="phase__hd"><b>Phase 3</b><span>Weeks 6–12 · Let data lead</span></div>
+        <div class="phase__bd">
+          <ul class="list tight" style="font-size:13.5px">
+            <li>Read four weeks of <code>view_item_list</code> and <code>select_item</code></li>
+            <li>Actions 11–16: insurance block, accessibility, alt text, thin pages, metadata</li>
+            <li>Re-run this crawl and diff it against 26.08.2026</li>
+          </ul>
+          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> the first round of decisions made on Smilrejser's own numbers rather than on structural inference.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout--warn">
+      <h5>One thing we want to be explicit about</h5>
+      <p>This deck contains no conversion rates, no traffic figures and no projected uplift, because we have not seen a single analytics number. Everything here is structural: things that are broken, missing or inconsistent in the HTML, and which we can show you line by line. When access lands, some of these will turn out to matter more than others — and we would rather re-prioritise on your data than defend a forecast we invented today.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CLOSE ============================== -->
+<section class="slide slide--cover" data-title="Next steps" data-sec="Plan">
+  <div class="sheet">
+    <img class="cover__logo" src="assets/coupler-logo.png" alt="Coupler">
+    <div class="cover__kicker">Next steps</div>
+    <h1 class="cover__h" style="font-size:47px">Five hours of work removes the two worst problems we found</h1>
+    <p class="cover__p">Smilrejser has 35 years of trips, 151,722 words of trip writing on pages nobody can buy from, and a measurement stack better than most of its competitors. The work is not building something new. It is letting the good parts reach the people who already want them.</p>
+    <div class="grid g3" style="margin:8px 0 26px">
+      <div class="card card--bad"><h5>This week</h5><p>Actions 1–4, five hours total. Plus viewer access to <code class="inline">G-2STC9KYPG1</code>.</p></div>
+      <div class="card card--warn"><h5>Weeks 2–6</h5><p>The four departure states across 60 pages, and the two missing GA4 events.</p></div>
+      <div class="card card--good"><h5>Weeks 6–12</h5><p>Re-run this audit and diff it. Decide the next round on your own data.</p></div>
+    </div>
+    <div class="cover__meta">
+      <div><b>Coupler</b>Audit performed 26 August 2026</div>
+      <div><b>Every finding is documented</b>421 pages, 3 crawl passes, 1 funnel walk, 1 container parse</div>
+      <div><b>2 corrections logged</b>including one finding we disproved ourselves</div>
+      <div><b>Next meeting</b>Confirm analytics access and sign off the departure states</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDES END -->
+
+</main>
+
+<div class="overview" id="overview">
+  <div class="overview__hd">
+    <h3>Overview</h3>
+    <button class="navbtn" id="ovClose">Close (Esc)</button>
+  </div>
+  <div class="ovgrid" id="ovgrid"></div>
+</div>
+
+<nav class="navbar">
+  <button class="navbtn" id="prev">← Previous</button>
+  <span class="counter"><b id="cur">1</b> / <span id="tot">1</span></span>
+  <button class="navbtn" id="next">Next →</button>
+  <button class="navbtn" id="ovOpen">Overview</button>
+  <span class="navtitle" id="navtitle"></span>
+  <span class="hint">Arrow keys to navigate · O for overview</span>
+</nav>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var i = 0;
+  var bar = document.getElementById('bar');
+  var cur = document.getElementById('cur');
+  var tot = document.getElementById('tot');
+  var navtitle = document.getElementById('navtitle');
+  var overview = document.getElementById('overview');
+  var ovgrid = document.getElementById('ovgrid');
+  tot.textContent = slides.length;
+
+  function render(){
+    slides.forEach(function(s,n){ s.classList.toggle('is-active', n===i); });
+    cur.textContent = i+1;
+    bar.style.width = ((i+1)/slides.length*100) + '%';
+    navtitle.textContent = slides[i].dataset.title || '';
+    if(history.replaceState) history.replaceState(null,'','#'+(i+1));
+    Array.prototype.forEach.call(ovgrid.children, function(c,n){ c.classList.toggle('is-current', n===i); });
+    window.scrollTo(0,0);
+  }
+  function go(n){ i = Math.max(0, Math.min(slides.length-1, n)); render(); }
+
+  slides.forEach(function(s,n){
+    var b = document.createElement('button');
+    b.className = 'ovcard';
+    b.innerHTML = '<span class="n">'+(n+1)+'</span><div class="t">'+(s.dataset.title||'')+'</div>'+
+                  '<div class="s">'+(s.dataset.sec||'')+'</div>';
+    b.addEventListener('click', function(){ overview.classList.remove('is-open'); go(n); });
+    ovgrid.appendChild(b);
+  });
+
+  document.getElementById('next').addEventListener('click', function(){ go(i+1); });
+  document.getElementById('prev').addEventListener('click', function(){ go(i-1); });
+  document.getElementById('ovOpen').addEventListener('click', function(){ overview.classList.add('is-open'); });
+  document.getElementById('ovClose').addEventListener('click', function(){ overview.classList.remove('is-open'); });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){ overview.classList.remove('is-open'); return; }
+    if(e.key==='o'||e.key==='O'){ overview.classList.toggle('is-open'); return; }
+    if(overview.classList.contains('is-open')) return;
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){ e.preventDefault(); go(i+1); }
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); go(i-1); }
+    if(e.key==='Home'){ go(0); }
+    if(e.key==='End'){ go(slides.length-1); }
+  });
+
+  var h = parseInt((location.hash||'').replace('#',''),10);
+  if(h && h>=1 && h<=slides.length) i = h-1;
+  render();
+})();
+</script>
+</body>
+</html>
