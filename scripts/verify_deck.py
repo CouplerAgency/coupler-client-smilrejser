@@ -48,9 +48,9 @@ noalt = sum(i(r, "img_missing_alt") for r in crawl)
 fp = sum(i(r, "fetchpriority_high") for r in crawl)
 check("images total", imgs, "13,448 images")
 check("images lazy", lazy, "13,321 of 13,448")
-check("images no alt", noalt, "4,167 images have no alt")
+check("images no alt", noalt, "4,167 images have no text description")
 check("fetchpriority=high anywhere", fp)
-check("alt-text share", f"{noalt / imgs:.1%}", "31% of every image")
+check("alt-text share", f"{noalt / imgs:.0%}", "31% of all images")
 
 slow = sum(1 for r in crawl if i(r, "ttfb_ms") > 2000)
 heavy = sum(1 for r in crawl if i(r, "html_bytes") > 1_000_000)
@@ -65,8 +65,8 @@ check("titles over 60", sum(1 for r in crawl if i(r, "title_len") > 60))
 # --- departure states ------------------------------------------------------
 kinds = Counter(r["kind"] for r in tax)
 check("trip pages", kinds["trip"], "131 trip pages")
-check("editorial-city", kinds["editorial-city"], "101 are destination guides")
-check("editorial-thin", kinds["editorial-thin"], "18 are stubs under 500 words")
+check("editorial-city", kinds["editorial-city"], "101 are city guides")
+check("editorial-thin", kinds["editorial-thin"], "18 are near-empty pages")
 
 trips = [r for r in tax if r["kind"] == "trip"]
 is_empty = lambda r: "empty" in r["departure_state"]  # noqa: E731
@@ -78,13 +78,13 @@ check("empty-table trips", f"{empty} ({empty / len(trips):.1%})", "45.8%")
 check("no visible state", none_, ">2<")
 check("trip pages with a price", sum(1 for r in trips if r["has_price"] == "1"), "76 of them")
 check("trip pages with no price", sum(1 for r in trips if r["has_price"] != "1"),
-      "55 of 131 pages carry no price")
+      "55 of 131 pages show no price")
 words_empty = sum(i(r, "word_count") for r in trips if is_empty(r))
 check("words on empty trips", f"{words_empty:,}", "151,722")
 
 # --- structured data ------------------------------------------------------
 names = Counter(r["list_name"] for r in il)
-check("ItemList blocks found", len(il), "103 destination pages emit")
+check("ItemList blocks found", len(il), "On 103 country and city pages")
 check("all named Rejser til Frankrig", list(names) == ["Rejser til Frankrig"])
 check("wrong-country pages", sum(1 for r in il if r["name_matches_country"] == "0"), ">70<")
 check("numberOfItems always accurate",
@@ -108,8 +108,10 @@ med = lambda xs: sorted(xs)[len(xs) // 2]  # noqa: E731
 t_book = [r["path"] for r in trips if "bookable" in r["departure_state"]]
 t_empty = [r["path"] for r in trips if is_empty(r)]
 inb = lambda p: int(lgi.get(p, {}).get("inbound_contextual") or 0)  # noqa: E731
-check("median inbound links, bookable trips", med([inb(p) for p in t_book]), "13 to a bookable one")
-check("median inbound links, dead trips", med([inb(p) for p in t_empty]), "Median <b>12</b>")
+check("median inbound links, bookable trips", med([inb(p) for p in t_book]),
+      "one you can buy gets 13")
+check("median inbound links, dead trips", med([inb(p) for p in t_empty]),
+      "cannot buy gets 12 links")
 
 # Two distinct orphan definitions, kept apart because they have different word
 # totals and the evidence files each cite one of them.
@@ -170,13 +172,19 @@ if os.path.exists("ga4/landing_pages.csv"):
     rps = lambda ps: (lambda t: t[1] / t[0] if t[0] else 0)(  # noqa: E731
         [sum(L.get(p, [0, 0])[j] for p in ps) for j in (0, 1)])
     base = rps(t_book)
-    check("unbookable rev/session index", f"{rps(t_empty) / base * 100:.0f}", ">71<")
+    mult = lambda ps: f"{rps(ps) / base:.1f}\u00d7"  # noqa: E731
+    check("unbookable revenue per visit", mult(t_empty), ">0.7\u00d7<")
+    check("unbookable shortfall vs bookable",
+          f"{(1 - rps(t_empty) / base):.0%}", "29% less per visit")
     tt = [r["path"] for r in crawl if r["template"] == "travel-type"]
-    check("travel-type index", f"{rps(tt) / base * 100:.0f}", ">274<")
-    check("homepage index", f"{rps(['/']) / base * 100:.0f}", ">497<")
-    blog = [r["path"] for r in crawl if r["path"].startswith("/blog")]
+    check("holiday-type revenue per visit", mult(tt), ">2.7\u00d7<")
+    hub = [r["path"] for r in crawl if r["template"] == "destination-hub"]
+    check("country-page revenue per visit", mult(hub), ">1.5\u00d7<")
+    check("homepage revenue per visit", mult(["/"]), ">5.0\u00d7<")
+    blog = [r["path"] for r in crawl if r["template"] == "blog-post"]
     check("blog revenue is zero", rps(blog) == 0)
-    check("blog sessions", f"{sum(L.get(p, [0, 0])[0] for p in blog):,.0f}", "4,127")
+    check("blog posts", sum(1 for _ in blog), "67 posts")
+    check("blog sessions", f"{sum(L.get(p, [0, 0])[0] for p in blog):,.0f}", "4,118")
     tot_rev = sum(v[1] for v in L.values())
     es = sum(L.get(p, [0, 0])[0] for p in t_empty)
     check("catalogue gap as share of revenue",

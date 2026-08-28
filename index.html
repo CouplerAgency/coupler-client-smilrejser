@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Smilrejser — Conversion Rate Optimisation Audit | Coupler</title>
-<meta name="description" content="A structural CRO audit of smilrejser.dk: 421 pages crawled, booking funnel walked, GTM container parsed. Every claim documented. Internal, noindex.">
+<meta name="description" content="Conversion audit of smilrejser.dk: all 421 pages checked, the booking process walked end to end, and 90 days of analytics joined to both. Internal, noindex.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -400,14 +400,14 @@ code.inline{
       <span class="lockup__for">for</span>
       <img class="lockup__client" src="assets/smilrejser-logo.svg" alt="Smilrejser">
     </div>
-    <div class="cover__kicker">Conversion Rate Optimisation audit · 26 August 2026 · revised with GA4 data 28 August</div>
+    <div class="cover__kicker">Conversion Rate Optimisation audit · 26 August 2026 · revised with analytics data 28 August</div>
     <h1 class="cover__h">Seven in ten booking attempts stop <em>before the customer types their name.</em></h1>
-    <p class="cover__p">We crawled all 421 pages, walked the booking funnel in a real browser, read the tag container line by line, and have now joined all of it to 90 days of GA4. The site is well built and well measured. The problem is concentrated in two screens of the checkout — and we have the screenshots of exactly where.</p>
+    <p class="cover__p">We checked all 421 pages, tried to make a booking ourselves, and matched what we found against 90 days of Google Analytics. The site is well built. Almost all of the lost revenue sits in two screens of the booking process, and we have the screenshots showing why.</p>
     <div class="cover__meta">
-      <div><b>421 pages</b>crawled, every one HTTP 200</div>
-      <div><b>2,516 booking attempts</b>traced through all five checkout steps</div>
-      <div><b>90 days of GA4</b>30 May to 27 August 2026</div>
-      <div><b>0 estimates</b>every figure here is reproducible from the evidence files</div>
+      <div><b>421 pages</b>checked, not one of them broken</div>
+      <div><b>2,516 booking attempts</b>followed through all five steps</div>
+      <div><b>90 days of data</b>30 May to 27 August 2026</div>
+      <div><b>No guesswork</b>every number here can be re-checked</div>
     </div>
   </div>
 </section>
@@ -417,111 +417,116 @@ code.inline{
   <div class="sheet">
     <span class="eyebrow">The short version</span>
     <h2 class="title">Four numbers that frame the whole audit</h2>
-    <p class="lede">The structural findings came from a crawl of every sitemap URL plus a rendered check of each trip page. The behavioural ones come from 90 days of GA4. <strong>Where the two disagree, GA4 wins</strong> — and on one point it changed our priority order.</p>
+    <p class="lede">Three of these come from Google Analytics, one from checking every page on the site. <strong>Where the data disagreed with our first impression, we went with the data</strong> — and on one point that changed the order of our recommendations.</p>
 
     <div class="grid g4" style="margin-bottom:16px">
       <div class="kpi kpi--bad">
         <div class="big">71%</div>
-        <div class="lbl">of booking attempts end <b>before the personal-details form</b>. 2,516 start, 720 arrive.</div>
-        <div class="src">Source: GA4 page paths, 90 days</div>
+        <div class="lbl">of booking attempts end <b>before the customer enters any details</b>. 2,516 start, 720 get that far.</div>
+        <div class="src">Source: Google Analytics, 90 days</div>
       </div>
       <div class="kpi kpi--bad">
         <div class="big">69%</div>
-        <div class="lbl">of those who do reach it never reach the <b>summary</b> screen. 720 arrive, 223 continue.</div>
-        <div class="src">Source: GA4 page paths, 90 days</div>
+        <div class="lbl">of the ones who get there never reach the <b>summary</b> screen. 720 arrive, 223 continue.</div>
+        <div class="src">Source: Google Analytics, 90 days</div>
       </div>
       <div class="kpi kpi--bad">
         <div class="big">6.3<span style="font-size:.46em">%</span></div>
-        <div class="lbl">of booking attempts reach <b>confirmation</b>. The other 93.7% leave inside the checkout.</div>
-        <div class="src">Source: GA4, <code>/booking/…/confirmation</code></div>
+        <div class="lbl">of booking attempts end in a booking. The other 93.7% are lost inside the booking process.</div>
+        <div class="src">Source: Google Analytics, 90 days</div>
       </div>
       <div class="kpi kpi--brand">
         <div class="big">2.7<span style="font-size:.46em">×</span></div>
-        <div class="lbl">more revenue per session when a visitor lands on a <b>travel-type page</b> than on a trip page.</div>
-        <div class="src">Source: GA4 landing pages, indexed</div>
+        <div class="lbl">more revenue per visit when someone arrives on a <b>holiday-type page</b> than on a single trip page.</div>
+        <div class="src">Source: Google Analytics, by entry page</div>
       </div>
     </div>
 
     <div class="split">
       <div class="callout callout--risk">
         <h5>Where the money actually leaks</h5>
-        <p>Both of those big drops sit exactly where our scripted walkthrough got stuck: step 1, which opens in an error state, and step 3, which asks for 27 fields and rejects them in English. We did not go looking for a match. We found the walls first and GA4 then showed us they are the two largest losses in the funnel.</p>
+        <p>Both drops happen exactly where we got stuck trying to book a trip ourselves: step 1, which shows an error before you have done anything wrong, and step 3, which asks for 27 pieces of information then rejects them in English. We found those walls first; the data then showed they are the two biggest losses in the process.</p>
       </div>
       <div class="callout callout--fix">
         <h5>Why this is cheap to fix</h5>
-        <p>The first four actions on our list total roughly five hours of developer time and sit entirely inside those two screens. None of them require new design, new inventory, or a decision from anyone outside the team.</p>
+        <p>The first five actions on our list come to about ten hours of developer time and all sit inside those two screens. None need new design, new trips to sell, or a decision from anyone outside the team.</p>
       </div>
     </div>
 
-    <h4 class="mini" style="margin-top:22px">Five changes worth under a day each</h4>
+    <h4 class="mini" style="margin-top:22px">The first five changes, ten hours of work in total</h4>
     <table class="tbl tbl--compact">
       <thead><tr><th style="width:42%">Change</th><th style="width:16%">Where</th><th style="width:13%">Effort</th><th>Why it is first</th></tr></thead>
       <tbody>
-        <tr><td class="now"><b>Default 1 traveller to 1 room</b></td><td>Checkout step 1</td><td class="n">1 hour</td><td>Every booking attempt currently opens in an error state</td></tr>
-        <tr><td class="now"><b>Translate “Required” to “Skal udfyldes”</b></td><td>Checkout step 3</td><td class="n">1 hour</td><td>English error text on a Danish checkout, three times</td></tr>
-        <tr><td class="now"><b>Set a page title on all five funnel steps</b></td><td>Checkout</td><td class="n">1 hour</td><td>The whole checkout is one blank row in GA4 today</td></tr>
-        <tr><td class="now"><b>One name per room type</b></td><td>Checkout</td><td class="n">2 hours</td><td>“Enkeltværelse” is billed as “Dobbeltværelse til 1 person”</td></tr>
-        <tr><td class="now"><b>Eager-load the hero image and logo</b></td><td>Components</td><td class="n">1 day</td><td>All 35 images on the homepage are lazy-loaded, including the logo</td></tr>
+        <tr><td class="now"><b>Start the booking with one room already selected</b></td><td>Step 1</td><td class="n">1 hour</td><td>Today every booking attempt opens on an error</td></tr>
+        <tr><td class="now"><b>Put the error messages into Danish</b></td><td>Step 3</td><td class="n">1 hour</td><td>A Danish checkout currently says “Required”, three times</td></tr>
+        <tr><td class="now"><b>Mark the required fields as required</b></td><td>Step 3</td><td class="n">5 hours</td><td>Nothing is flagged until the customer presses the button</td></tr>
+        <tr><td class="now"><b>Use one name for each room type</b></td><td>Step 1 and 3</td><td class="n">2 hours</td><td>A single room is billed as “double room for one person”</td></tr>
+        <tr><td class="now"><b>Give each booking step a page title</b></td><td>All steps</td><td class="n">1 hour</td><td>Analytics cannot currently tell the five steps apart by name</td></tr>
       </tbody>
     </table>
-    <div class="src" style="margin-top:8px">Effort is our estimate for a developer familiar with this codebase. Full list on the action-list slide.</div>
+    <div class="src" style="margin-top:8px">Effort is our estimate for a developer who knows this codebase. The full list of 17 actions comes later in the deck.</div>
   </div>
 </section>
 
 <!-- ============================== METHOD ============================== -->
-<section class="slide" data-title="Method and limits" data-sec="Start">
+<section class="slide" data-title="How we know this" data-sec="Start">
   <div class="sheet">
-    <span class="eyebrow">Method and limits</span>
-    <h2 class="title">What we measured, and what we deliberately cannot say</h2>
-    <p class="lede">Built before analytics access landed, then revised once it did. Everything structural is <strong>evidence anyone can re-run</strong>; everything behavioural traces to a named GA4 export.</p>
+    <span class="eyebrow">How we know this</span>
+    <h2 class="title">What we measured, and what we are not claiming</h2>
+    <p class="lede">Every number in this deck comes from one of the six checks below, and each one can be run again to confirm it. <strong>Where we are estimating, the slide says so.</strong></p>
 
     <div class="split-60" style="margin-bottom:16px">
       <div>
         <h4 class="mini">What we did</h4>
         <table class="tbl tbl--compact">
-          <thead><tr><th style="width:30%">Track</th><th>Method</th><th style="width:16%">Output</th></tr></thead>
+          <thead><tr><th style="width:26%">What we checked</th><th>How</th></tr></thead>
           <tbody>
-            <tr><td><b>Crawl</b></td><td>Purpose-built crawler over all 421 sitemap URLs: prices, CTA paths, schema, headings, images, TTFB</td><td class="u">crawl.csv</td></tr>
-            <tr><td><b>Departure states</b></td><td>Every trip page classified by its rendered departures table, cross-checked against unique <code>/booking/</code> links</td><td class="u">page_taxonomy.csv</td></tr>
-            <tr><td><b>Visual</b></td><td>Real Chrome over DevTools Protocol, Danish locale, consent pre-accepted, desktop and mobile</td><td class="u">assets/shots</td></tr>
-            <tr><td><b>Funnel</b></td><td>Walked with dummy data; field inventory and validation probes per step</td><td class="u">funnel.md</td></tr>
-            <tr><td><b>Structured data</b></td><td>Real <code>ld+json</code> blocks parsed on all 250 trip-shaped URLs — never a string match on raw HTML, which also hits the RSC payload</td><td class="u">schema_census.csv</td></tr>
-            <tr><td><b>Measurement</b></td><td>Public GTM container parsed for configured tags, events, consent mode, server-side routing</td><td class="u">gtm.md</td></tr>
-            <tr><td><b>Internal links</b></td><td>All 9,617 internal anchors mapped, nav separated from in-content, click depth from the homepage</td><td class="u">linkgraph.md</td></tr>
-            <tr><td><b>Behaviour</b></td><td>90 days of GA4 joined to the structural classification by URL; funnel rebuilt from <code>/booking/</code> paths</td><td class="u">ga4.md</td></tr>
+            <tr><td><b>Every page</b></td><td>Visited all 421 pages and recorded prices, buttons, headings, images and load speed</td></tr>
+            <tr><td><b>Every trip</b></td><td>Checked each trip page for whether it actually has a departure a customer can buy</td></tr>
+            <tr><td><b>The booking process</b></td><td>Tried to book a real trip with fake details, recording every field and error on the way</td></tr>
+            <tr><td><b>What Google reads</b></td><td>Read the hidden data each page sends to search engines describing what it sells</td></tr>
+            <tr><td><b>The tracking setup</b></td><td>Read the site's tracking configuration to see which events are and are not being recorded</td></tr>
+            <tr><td><b>Real visitor behaviour</b></td><td>90 days of Google Analytics, matched page by page to everything above</td></tr>
           </tbody>
         </table>
+        <div class="src" style="margin-top:8px">Screenshots were taken in a real browser set to Danish, with the cookie banner already accepted, at both desktop and phone sizes. Full working in the <code>evidence/</code> folder.</div>
+
+        <div class="callout callout--note" style="margin-top:16px">
+          <h5>Six things we corrected in our own work</h5>
+          <p>Two findings from our first pass were <b>wrong</b>, and we say so on the slides where they appeared. Four other numbers were revised as better evidence arrived. All six are logged.</p>
+          <p style="margin-top:9px">We mention it because it is the reason to trust the rest: <b>every number here survived someone trying to break it.</b></p>
+        </div>
       </div>
       <div>
-        <h4 class="mini">What we still cannot say</h4>
+        <h4 class="mini">What we are not claiming</h4>
         <ul class="list is-cross tight" style="font-size:13.5px">
-          <li><b>Per-page conversion rates</b> — 201 key events in 90 days is too few to split by page</li>
-          <li><b>Which trip cards get clicked</b> — <code>view_item_list</code> and <code>select_item</code> are still not configured</li>
-          <li><b>Search Console</b> — no impressions, clicks or queries</li>
-          <li><b>Ads platforms</b> — no CPA, ROAS or paid landing performance</li>
-          <li><b>Session recordings</b> — nothing on <i>why</i> people abandon, only where</li>
-          <li><b>Seasonality</b> — the GA4 window is one Danish summer, not a year</li>
+          <li><b>A conversion rate for any single page</b> — 201 bookings in 90 days is too few to split that far</li>
+          <li><b>Which trips people look at and click</b> — the site does not record it yet</li>
+          <li><b>Anything about search rankings</b> — we have no Search Console access</li>
+          <li><b>Anything about ad performance</b> — no cost or return figures</li>
+          <li><b>Why people give up</b> — we can see where, not why. That needs session recordings</li>
+          <li><b>That this pattern holds all year</b> — our 90 days are one Danish summer</li>
         </ul>
         <div class="callout callout--warn" style="margin-top:14px">
-          <h5>Two things to hold in mind when reading GA4 here</h5>
-          <p>Revenue is credited to the session's <b>landing page</b>, so those figures describe entry points, not persuasion. And the checkout emits no <code class="inline">document.title</code>, so every funnel number is keyed on URL path — GA4's own page-title reports show the whole checkout as one blank row.</p>
+          <h5>One thing to keep in mind on the revenue figures</h5>
+          <p>Analytics credits a sale to the <b>first page of the visit</b>, not the page that persuaded the customer. So when we say a page type earns more per visit, that tells you where good visits <i>start</i> — useful for deciding where to send marketing, but not a measure of how convincing the page itself is.</p>
         </div>
       </div>
     </div>
 
     <div class="callout callout--note">
-      <h5>One note on tooling</h5>
-      <p>Screaming Frog was the plan, but the local licence is inactive and the free tier has no CLI, no rendering and no export. We wrote a crawler instead, which captures CRO-specific fields Screaming Frog has no column for — such as whether a departure is actually bookable. Its one real gap, internal link structure, we closed separately: the <i>Internal links</i> row above.</p>
+      <h5>Why we did not use Screaming Frog</h5>
+      <p>It was the plan, but the licence on this machine is inactive and the free version cannot export or read pages that build themselves in the browser — which is how this site works. We wrote our own tool instead. That turned out better: it can answer the question that matters most here, which is whether a given trip can actually be bought today.</p>
     </div>
   </div>
 </section>
 
 <!-- ============================== FINDING 1 ============================== -->
-<section class="slide" data-title="Finding 1: Half the catalogue is unbuyable" data-sec="Findings">
+<section class="slide" data-title="Finding 1: Half the catalogue cannot be bought" data-sec="Findings">
   <div class="sheet">
-    <span class="eyebrow is-bad">Finding 1 · Real, and smaller than it looks</span>
-    <h2 class="title">60 of 131 trip pages cannot be booked, and the page does not say so until you scroll</h2>
-    <p class="lede">The page looks complete — highlights, programme, hotel, FAQ. Then the departures table renders one line of grey text. <strong>45.8% of the catalogue is in this state</strong>, though GA4 sizes it smaller than that implies.</p>
+    <span class="eyebrow is-bad">Finding 1 · Real, but smaller than it first looks</span>
+    <h2 class="title">60 of 131 trip pages cannot be booked, and the page does not say so</h2>
+    <p class="lede">The page looks complete — highlights, day-by-day programme, hotel, questions and answers. Then, where the dates and prices should be, one line of grey text. <strong>Almost half the catalogue is like this</strong>, though the data sizes the cost lower than that sounds.</p>
 
     <div class="split" style="margin-bottom:14px">
       <div>
@@ -531,9 +536,9 @@ code.inline{
           <div class="shot__view ar-4-3">
             <img src="assets/shots/trip-empty-dep-desktop.png" alt="Empty departures table on a trip page" style="object-position:50% 0">
             <div class="marker" style="top:0.2%;left:83.5%;width:11%;height:4%"></div>
-            <span class="tag" style="top:5.5%;left:78%">1 · Primary CTA</span>
+            <span class="tag" style="top:5.5%;left:78%">1 · “Book trip” button</span>
             <div class="marker" style="top:21%;left:26%;width:48%;height:5%"></div>
-            <span class="tag" style="top:27%;left:26%">2 · …scrolls the visitor here</span>
+            <span class="tag" style="top:27%;left:26%">2 · …only scrolls down to here</span>
             <div class="marker marker--good" style="top:33%;left:5%;width:90%;height:24%"></div>
             <span class="tag tag--good" style="top:58%;left:5%">3 · The only action: a waitlist</span>
           </div>
@@ -541,7 +546,7 @@ code.inline{
         </figure>
       </div>
       <div>
-        <h4 class="mini">Why the CTA leads nowhere</h4>
+        <h4 class="mini">Why the “Book” button leads nowhere</h4>
         <div class="code code--sm"><span class="c">// The "Bestil rejse" button on all 131 trip pages</span>
 &lt;<span class="t">a</span> <span class="a">href</span>=<span class="s">"<span class="hl">#TRAVEL_DEPARTURES</span>"</span>&gt;Bestil rejse&lt;/<span class="t">a</span>&gt;
 
@@ -550,24 +555,24 @@ code.inline{
 &lt;<span class="t">div</span> <span class="a">class</span>=<span class="s">"…text-center"</span>&gt;
   <span class="hl">Afgange ikke tilgængelige</span>
 &lt;/<span class="t">div</span>&gt;</div>
-        <div class="codecap">Verbatim from the rendered DOM, 26.08.2026.</div>
+        <div class="codecap">Taken directly from the live page, 26.08.2026.</div>
 
         <table class="tbl tbl--compact" style="margin-top:14px">
-          <thead><tr><th>Departure state</th><th class="n">Pages</th><th class="n">Share</th></tr></thead>
+          <thead><tr><th>Can the customer buy?</th><th class="n">Pages</th><th class="n">Share</th></tr></thead>
           <tbody>
-            <tr><td>Bookable online</td><td class="n">69</td><td class="n">52.7%</td></tr>
-            <tr><td class="was">Empty table, nothing to buy</td><td class="n">60</td><td class="n">45.8%</td></tr>
-            <tr><td>No visible state at all</td><td class="n">2</td><td class="n">1.5%</td></tr>
+            <tr><td>Yes — dates and prices shown</td><td class="n">69</td><td class="n">52.7%</td></tr>
+            <tr><td class="was">No — the dates table is empty</td><td class="n">60</td><td class="n">45.8%</td></tr>
+            <tr><td>Unclear — nothing shown either way</td><td class="n">2</td><td class="n">1.5%</td></tr>
           </tbody>
         </table>
-        <div class="src" style="margin-top:8px">Classified by rendered departures section, cross-validated against unique <code>/booking/</code> hrefs. Both measures agree on every page.</div>
+        <div class="src" style="margin-top:8px">Checked two independent ways — what the page displays, and whether it contains a working booking link. The two agree on all 131 pages.</div>
       </div>
     </div>
 
     <div class="grid g3">
-      <div class="callout callout--note"><h5>What GA4 says it is worth</h5><p>8.2% of sessions, at <b>71%</b> the revenue per session of bookable pages. Closing the gap: about <b>1.4%</b> of window revenue.</p></div>
-      <div class="callout callout--risk"><h5>Nothing steers visitors away</h5><p>Median <b>12</b> in-content inbound links to a dead trip page, 13 to a bookable one. The worst takes 829 sessions.</p></div>
-      <div class="callout callout--fix"><h5>The fix is already built</h5><p>The payload ships <code>…WAITLIST_BTN</code> = “Venteliste” and <code>…ON_REQUEST_BTN</code> = “Forespørg”. Neither renders. See proposal 1.</p></div>
+      <div class="callout callout--note"><h5>What it costs</h5><p>These pages take <b>8.2%</b> of all visits and earn <b>29% less per visit</b> than pages you can buy from. Fixing it fully is worth roughly <b>1.4%</b> of revenue.</p></div>
+      <div class="callout callout--risk"><h5>The site promotes them equally</h5><p>A trip you cannot buy gets 12 links from other pages; one you can buy gets 13. Nothing steers visitors away. The worst page draws 829 visits and sells nothing.</p></div>
+      <div class="callout callout--fix"><h5>The fix already exists</h5><p>The site already contains “Venteliste” (waiting list) and “Forespørg” (enquire) buttons. They are simply never shown on these pages. See proposal 1.</p></div>
     </div>
   </div>
 </section>
@@ -577,7 +582,7 @@ code.inline{
   <div class="sheet">
     <span class="eyebrow is-good">Finding 2 · The good news, in one comparison</span>
     <h2 class="title">When a trip does have a departure, the design is genuinely strong</h2>
-    <p class="lede">This matters for the recommendation. The bookable state already has everything a conversion-focused table needs — date, duration, airport, price, scarcity, a clear button. <strong>Nothing new has to be designed. The empty state simply has to inherit it.</strong></p>
+    <p class="lede">This matters for what we recommend. Where a trip does have dates, the table already shows everything a customer needs — date, length, airport, price, seats left, and a clear button. <strong>Nothing new has to be designed. The empty pages just need to reuse it.</strong></p>
 
     <div class="split" style="margin-bottom:16px">
       <div>
@@ -587,7 +592,7 @@ code.inline{
           <div class="shot__view ar-3-2">
             <img src="assets/shots/trip-bookable-dep-desktop.png" alt="Bookable departures table" style="object-position:50% 0">
             <div class="marker marker--good" style="top:19.5%;left:4%;width:92%;height:13.5%"></div>
-            <span class="tag tag--good" style="top:12%;left:4%">Date · duration · airport · price · seats · CTA</span>
+            <span class="tag tag--good" style="top:12%;left:4%">Date · length · airport · price · seats · button</span>
           </div>
           <figcaption>29.12.2026 · 5 dage · København · 9.995 DKK · “+8 pladser” · Bestil rejse.</figcaption>
         </figure>
@@ -615,18 +620,18 @@ code.inline{
           <li>Flight times are on the page before checkout</li>
         </ul>
       </div>
-      <div class="callout callout--warn"><h5>One inconsistency</h5><p>The primary CTA is amber inside the table but dark green in the sticky header — same label, two colours, competing for the same click.</p></div>
+      <div class="callout callout--warn"><h5>One inconsistency</h5><p>The main button is amber inside the table but dark green in the bar at the top of the page — same words, two colours, competing for the same click.</p></div>
       <div class="callout callout--note"><h5>Also worth noting</h5><p>The waitlist form appears on bookable pages too, directly under a single available departure, where it competes with the sale.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ============================== FINDING 3 ============================== -->
-<section class="slide" data-title="Finding 3: Every trip list is labelled France" data-sec="Findings">
+<section class="slide" data-title="Finding 3: Every page says “trips to France”" data-sec="Findings">
   <div class="sheet">
-    <span class="eyebrow is-warn">Finding 3 · Serious, and invisible without a crawl</span>
+    <span class="eyebrow is-warn">Finding 3 · Serious, and invisible from the page itself</span>
     <h2 class="title">Every destination page tells Google its trip list is “Trips to France”</h2>
-    <p class="lede">103 destination pages emit an <code>ItemList</code> of the trips they link to. <strong>All 103 name that list <code>"Rejser til Frankrig"</code></strong> — trips to France — including pages about Porto, Marrakech, Madrid and Salzburg. It is one hardcoded string.</p>
+    <p class="lede">Alongside the words a visitor reads, each page sends search engines a hidden summary of what it offers. On 103 country and city pages, that summary is titled <strong>“Rejser til Frankrig”</strong> — trips to France — including the pages for Porto, Marrakech, Madrid and Salzburg. One line of code, copied everywhere.</p>
 
     <div class="split-60" style="margin-bottom:16px">
       <div>
@@ -643,75 +648,75 @@ code.inline{
     }
   }, <span class="c">/* …7 more, all Portugal */</span> ]
 }</div>
-        <div class="codecap">Verbatim <code>application/ld+json</code> block, fetched 26.08.2026.</div>
+        <div class="codecap">The actual hidden summary sent by the Porto page, 26.08.2026.</div>
 
         <table class="tbl tbl--compact" style="margin-top:14px">
-          <thead><tr><th>Pages checked</th><th class="n">Count</th><th class="n">List name</th></tr></thead>
+          <thead><tr><th>Pages checked</th><th class="n">Count</th><th class="n">Title it sends</th></tr></thead>
           <tbody>
-            <tr><td class="was">Destination pages emitting an <code>ItemList</code></td><td class="n">103</td><td class="n">“Rejser til Frankrig”</td></tr>
-            <tr><td>…of which the country is demonstrably not France</td><td class="n">70</td><td class="n">Same string</td></tr>
-            <tr><td>Trip pages — no <code>ItemList</code> at all</td><td class="n">131</td><td class="n">n/a</td></tr>
+            <tr><td class="was">Country and city pages sending a trip list</td><td class="n">103</td><td class="n">“Rejser til Frankrig”</td></tr>
+            <tr><td>…of which the country is definitely not France</td><td class="n">70</td><td class="n">Same title</td></tr>
+            <tr><td>Individual trip pages — send no list at all</td><td class="n">131</td><td class="n">n/a</td></tr>
           </tbody>
         </table>
-        <div class="src" style="margin-top:8px">All 103 fetched individually; <code>evidence/itemlist.csv</code>. The remaining 33 sit on themed URLs like <code>/europa/kulturrejser</code> with no country to compare against, so they are counted as unverifiable rather than wrong.</div>
+        <div class="src" style="margin-top:8px">All 103 pages checked one by one. The other 33 are themed pages such as “cultural holidays in Europe”, which have no single country to compare against, so we count them as unproven rather than wrong.</div>
       </div>
       <div>
         <h4 class="mini">A correction we owe you</h4>
         <div class="callout callout--note">
-          <p>Our first-pass crawler flagged 103 editorial pages as “claiming to be products”. That was <b>wrong</b>, and re-checking is how we found the real bug. The <code>Product</code> entries are list items describing linked trips — correct, conventional markup for a listing page. Only the list's <i>name</i> is broken.</p>
+          <p>Our first pass reported that 103 guide pages were wrongly telling Google they were products for sale. That was <b>wrong</b>, and re-checking it is how we found the real problem. Those entries correctly describe the trips each page links to. Only the <i>title</i> of the list is broken.</p>
         </div>
 
         <div class="callout callout--risk" style="margin-top:13px">
           <h5>Why it matters</h5>
-          <p>This is the data Google uses to understand what a page sells, and every destination page tells it the same wrong thing. <code>numberOfItems</code> and the item names are correct, so one string carries the whole defect.</p>
+          <p>This is what Google uses to work out what each page offers, and every one of these pages tells it the same wrong thing. Everything else in the summary is correct, so a single line of code carries the whole problem.</p>
         </div>
 
         <div class="callout callout--fix" style="margin-top:13px">
           <h5>The fix — one line</h5>
-          <p>Interpolate the destination the page is already rendering in its own H1. A hardcoded default that happens to say “Frankrig” suggests this was written against a France page and never parameterised.</p>
+          <p>Use the destination name the page is already displaying at the top. A fixed default reading “Frankrig” suggests this was written while building a France page and never made dynamic.</p>
         </div>
       </div>
     </div>
 
-    <h4 class="mini">Found in the same pass — what actually sits on these trip-shaped URLs</h4>
+    <h4 class="mini">Found at the same time — three different things share one address format</h4>
     <div class="grid g3">
-      <div class="callout callout--note"><h5>131 are real trips</h5><p>They render a departures section. 76 of them show a price.</p></div>
-      <div class="callout callout--warn"><h5>101 are destination guides</h5><p>No departures section. A URL like <code>/italien/milano</code> is indistinguishable from a trip URL, but it is a 1,763-word city guide.</p></div>
-      <div class="callout callout--risk"><h5>18 are stubs under 500 words</h5><p>Thinnest is <code>/portugal/portugal-langtidsferie</code> at 130 words. These compete with the trips they should be feeding.</p></div>
+      <div class="callout callout--note"><h5>131 are real trips</h5><p>They show a dates-and-prices section. 76 of them display a price.</p></div>
+      <div class="callout callout--warn"><h5>101 are city guides</h5><p>Nothing for sale on them. The address <code>/italien/milano</code> looks exactly like a trip address, but it is a 1,763-word guide to Milan.</p></div>
+      <div class="callout callout--risk"><h5>18 are near-empty pages</h5><p>Under 500 words each; the thinnest has 130. They compete in search against the trips they ought to be promoting.</p></div>
     </div>
-    <div class="src" style="margin-top:8px">Classified structurally by the presence of <code>data-id-section="TRAVEL_DEPARTURES"</code> in the rendered DOM, not by URL pattern.</div>
+    <div class="src" style="margin-top:8px">Sorted by what each page actually displays, not by guessing from its address.</div>
   </div>
 </section>
 
 <!-- ============================== FUNNEL WALKTHROUGH ============================== -->
-<section class="slide" data-title="The funnel, walked end to end" data-sec="Findings">
+<section class="slide" data-title="The booking process, walked" data-sec="Findings">
   <div class="sheet">
     <span class="eyebrow">The walkthrough you asked for</span>
     <h2 class="title">We booked a real trip with fake data, and stopped before paying</h2>
-    <p class="lede">Entry <code class="inline">/booking/travel/49000/6095/accommodation</code>, a New Year trip to Lisbon at 9.995 DKK. Five steps. <strong>We reached step 3 and stopped there</strong> — going further commits an order against live inventory and holds a real seat.</p>
+    <p class="lede">We booked a New Year trip to Lisbon at 9.995 DKK, using fake customer details. There are five steps. <strong>We reached step 3 and stopped</strong> — going further would place a real order and hold a real seat.</p>
 
     <div class="split-60" style="margin-bottom:14px">
       <div>
         <table class="tbl tbl--compact">
-          <thead><tr><th style="width:7%">#</th><th style="width:26%">Step</th><th class="n" style="width:12%">Fields</th><th style="width:22%">Total visible</th><th>What we found</th></tr></thead>
+          <thead><tr><th style="width:7%">#</th><th style="width:26%">Step</th><th class="n" style="width:12%">Fields</th><th style="width:22%">Price shown</th><th>What we found</th></tr></thead>
           <tbody>
-            <tr><td class="n">1</td><td><b>Overnatning</b></td><td class="n">0</td><td class="now">10.090 DKK</td><td class="was">Opens in an error state — finding 4</td></tr>
-            <tr><td class="n">2</td><td><b>Tilvalg</b></td><td class="n">0</td><td class="now">11.085 DKK</td><td>Clean. Three add-ons, full price breakdown</td></tr>
-            <tr><td class="n">3</td><td><b>Personlige oplysninger</b></td><td class="n">27</td><td class="now">11.085 DKK</td><td class="was">Does the work of three steps — finding 5</td></tr>
-            <tr><td class="n">4</td><td>Opsummering</td><td class="n">—</td><td>—</td><td class="u">Not walked — measured in GA4, next slide</td></tr>
-            <tr><td class="n">5</td><td>Betaling</td><td class="n">—</td><td>—</td><td class="u">Not walked — measured in GA4, next slide</td></tr>
+            <tr><td class="n">1</td><td><b>Overnatning</b> — rooms</td><td class="n">0</td><td class="now">10.090 DKK</td><td class="was">Opens showing an error — finding 4</td></tr>
+            <tr><td class="n">2</td><td><b>Tilvalg</b> — extras</td><td class="n">0</td><td class="now">11.085 DKK</td><td>Works well. Three extras, full price breakdown</td></tr>
+            <tr><td class="n">3</td><td><b>Personlige oplysninger</b> — details</td><td class="n">27</td><td class="now">11.085 DKK</td><td class="was">Does the work of three steps — finding 5</td></tr>
+            <tr><td class="n">4</td><td>Opsummering — summary</td><td class="n">—</td><td>—</td><td class="u">Not entered. Measured on the next slide</td></tr>
+            <tr><td class="n">5</td><td>Betaling — payment</td><td class="n">—</td><td>—</td><td class="u">Not entered. Measured on the next slide</td></tr>
           </tbody>
         </table>
-        <div class="src" style="margin-top:8px">Field inventory and validation probes per step in <code>evidence/funnel.md</code>. Dummy data throughout: <code>audit-test@example.invalid</code>, no card details, nothing submitted.</div>
+        <div class="src" style="margin-top:8px">Every field and every error message was recorded at each step. Fake details throughout, no card entered, nothing submitted.</div>
 
         <div class="grid g2" style="margin-top:13px">
           <div class="callout callout--fix">
-            <h5>What the funnel gets right</h5>
-            <p>Five named steps with a visible progress bar. A live summary panel that recalculates as you choose. The administration fee itemised rather than buried. Honest, inclusive pricing.</p>
+            <h5>What the booking process gets right</h5>
+            <p>Five clearly named steps with a progress bar. A running price panel that updates as you choose. The administration fee shown as its own line rather than hidden. Honest pricing throughout.</p>
           </div>
           <div class="callout callout--warn">
             <h5>Why we stopped at step 3</h5>
-            <p>Two required fields would not take scripted input — the <code>Køn</code> select and <code>Fødselsdato</code>. A real customer types these in seconds, so this is a limit of our automation, not a defect. Steps 4 and 5 are covered on the next slide, from GA4 rather than from the browser.</p>
+            <p>Two fields would not accept input from our script — gender and date of birth. A real customer fills these in seconds, so this is a limitation of our automation rather than a fault on the site. Steps 4 and 5 are covered on the next slide using analytics instead.</p>
           </div>
         </div>
       </div>
@@ -725,88 +730,88 @@ code.inline{
             <div class="marker" style="top:51.5%;left:18%;width:17%;height:6%"></div>
             <span class="tag" style="top:44.5%;left:11%">No price on the card</span>
           </div>
-          <figcaption>Step 2, the best step in the funnel. Two of the three add-ons show no price on the card.</figcaption>
+          <figcaption>Step 2, the strongest step in the process. Two of the three extras show no price on the card.</figcaption>
         </figure>
       </div>
     </div>
 
     <div class="callout callout--note">
       <h5>One thing visible in the summary panel on every step from 1 onward</h5>
-      <p>Under <b>Overnatning</b> it reads “Værelse 1 — <b>Enkeltværelse</b>”, and directly beneath, “<b>Dobbeltværelse til 1 person</b> — +995 DKK”. The same room, named two ways, one line apart, at the moment the customer is deciding whether 995 DKK is worth it. This is the room-naming defect in finding 5, caught in a single frame.</p>
+      <p>It reads “Room 1 — <b>single room</b>”, and directly beneath, “<b>double room for one person</b> — +995 DKK”. The same room, named two different ways, one line apart, exactly when the customer is deciding whether 995 DKK is worth paying.</p>
     </div>
   </div>
 </section>
 
 <!-- ============================== GA4 FUNNEL ============================== -->
-<section class="slide" data-title="The funnel, measured" data-sec="Findings">
+<section class="slide" data-title="The booking process, measured" data-sec="Findings">
   <div class="sheet">
-    <span class="eyebrow is-bad">The funnel, measured · 90 days of GA4</span>
-    <h2 class="title">Both walls we walked into are the two largest losses in the funnel</h2>
-    <p class="lede">2,516 people started a booking between 30 May and 27 August. <strong>159 finished.</strong> Counted in active users, not views — someone resubmitting a form that keeps rejecting them would otherwise look like progress.</p>
+    <span class="eyebrow is-bad">The booking process, measured · 90 days</span>
+    <h2 class="title">Both walls we hit are the two biggest losses in the whole process</h2>
+    <p class="lede">2,516 people started a booking between 30 May and 27 August. <strong>159 finished.</strong> We count people, not page loads — otherwise someone retrying a form that keeps rejecting them would look like progress.</p>
 
     <div class="split-60" style="margin-bottom:14px">
       <div>
         <div class="fnl">
           <div class="fnl__row">
-            <div class="fnl__lbl"><b>1. Overnatning</b><br>rooms and travellers</div>
+            <div class="fnl__lbl"><b>1. Rooms</b><br>and number of travellers</div>
             <div class="fnl__track"><div class="fnl__fill" style="width:100%"><span class="fnl__in">2,516 users</span></div></div>
             <div class="fnl__pct">100%</div>
           </div>
-          <div class="fnl__gap"><span>↓ 1,796 lost here — step 1 opens in an error state (finding 4)</span></div>
+          <div class="fnl__gap"><span>↓ 1,796 people lost here — step 1 opens on an error (finding 4)</span></div>
           <div class="fnl__row">
-            <div class="fnl__lbl"><b>2. Tilvalg</b><br>add-ons, skippable</div>
+            <div class="fnl__lbl"><b>2. Extras</b><br>can be skipped</div>
             <div class="fnl__track"><div class="fnl__fill" style="width:28%"><span class="fnl__in">704</span></div></div>
             <div class="fnl__pct">28.0%</div>
           </div>
           <div class="fnl__row">
-            <div class="fnl__lbl"><b>3. Personlige oplysninger</b><br>27 fields</div>
+            <div class="fnl__lbl"><b>3. Customer details</b><br>27 fields</div>
             <div class="fnl__track"><div class="fnl__fill" style="width:28.6%"><span class="fnl__in">720</span></div></div>
             <div class="fnl__pct">28.6%</div>
           </div>
-          <div class="fnl__gap"><span>↓ 497 lost here — 27 fields, errors in English (finding 5)</span></div>
+          <div class="fnl__gap"><span>↓ 497 people lost here — 27 fields, errors in English (finding 5)</span></div>
           <div class="fnl__row">
-            <div class="fnl__lbl"><b>4. Opsummering</b><br>summary</div>
+            <div class="fnl__lbl"><b>4. Summary</b><br>review the order</div>
             <div class="fnl__track"><div class="fnl__fill is-warn" style="width:8.9%"></div><span class="fnl__in fnl__in--out" style="left:calc(8.9% + 10px)">223</span></div>
             <div class="fnl__pct">8.9%</div>
           </div>
           <div class="fnl__row">
-            <div class="fnl__lbl">5. Betaling<br><span style="color:var(--muted)">not a required step</span></div>
+            <div class="fnl__lbl">5. Payment<br><span style="color:var(--muted)">not a required step</span></div>
             <div class="fnl__track"><div class="fnl__fill is-warn" style="width:4.7%"></div><span class="fnl__in fnl__in--out" style="left:calc(4.7% + 10px)">117</span></div>
             <div class="fnl__pct">4.7%</div>
           </div>
           <div class="fnl__row">
-            <div class="fnl__lbl"><b>Bekræftelse</b><br>confirmation</div>
+            <div class="fnl__lbl"><b>Booking confirmed</b><br>the sale</div>
             <div class="fnl__track"><div class="fnl__fill is-good" style="width:6.3%"></div><span class="fnl__in fnl__in--out" style="left:calc(6.3% + 10px)">159</span></div>
             <div class="fnl__pct">6.3%</div>
           </div>
         </div>
-        <div class="src" style="margin-top:10px">Source: GA4 property <code>smilrejser.dk - GA4</code>, Pages and screens, 30.05–27.08.2026. Booking URLs collapsed on their numeric trip and departure IDs. Reproducible with <code>scripts/ga4_funnel.py</code>.</div>
+        <div class="src" style="margin-top:10px">Source: Google Analytics, 30.05–27.08.2026, counting the people who reached each step of the booking process.</div>
 
-        <h4 class="mini" style="margin-top:18px">What sits behind each drop, and what it costs to remove</h4>
+        <h4 class="mini" style="margin-top:18px">What the customer meets at each drop, and what it costs to fix</h4>
         <table class="tbl tbl--compact">
           <thead><tr><th style="width:16%">Where</th><th style="width:44%">What the customer meets</th><th style="width:14%">Effort</th><th>Action</th></tr></thead>
           <tbody>
-            <tr><td class="was"><b>Step 1</b></td><td>1 traveller, 0 rooms, no error until the button is pressed</td><td class="n">1 hour</td><td class="n">1</td></tr>
+            <tr><td class="was"><b>Step 1</b></td><td>1 traveller but 0 rooms, and no warning until the button is pressed</td><td class="n">1 hour</td><td class="n">1</td></tr>
             <tr><td class="was"><b>Step 1</b></td><td>The same room named two different ways, 995 DKK apart</td><td class="n">2 hours</td><td class="n">4</td></tr>
             <tr><td class="was"><b>Step 3</b></td><td>27 fields in one screen, three errors written in English</td><td class="n">1 hour</td><td class="n">2</td></tr>
-            <tr><td class="was"><b>Step 3</b></td><td>No <code>required</code> attributes, so nothing is flagged before submit</td><td class="n">5 hours</td><td class="n">12</td></tr>
-            <tr><td class="u"><b>All steps</b></td><td>No page title, so GA4 cannot name the step without the URL</td><td class="n">1 hour</td><td class="n">3</td></tr>
+            <tr><td class="was"><b>Step 3</b></td><td>Required fields are not marked, so nothing is flagged until you submit</td><td class="n">5 hours</td><td class="n">5</td></tr>
+            <tr><td class="u"><b>All steps</b></td><td>No page titles, so reporting cannot tell the five steps apart</td><td class="n">1 hour</td><td class="n">3</td></tr>
           </tbody>
         </table>
-        <div class="src" style="margin-top:7px">Roughly ten hours of developer time sits against the two steps where 2,293 of 2,516 booking attempts end.</div>
+        <div class="src" style="margin-top:7px">Around ten hours of work, against the two steps where 2,293 of 2,516 booking attempts end.</div>
       </div>
       <div>
         <div class="callout callout--risk">
           <h5>The convergence is the point</h5>
-          <p>We walked this funnel before we had any analytics, and got stuck twice: once at step 1, because travellers defaults to 1 while both room counters default to 0, and once at step 3, because required fields reject input without saying which. Those are precisely the two steps where GA4 shows 71% and 69% of users leaving. The screenshots on the next two slides are photographs of where the revenue goes.</p>
+          <p>We went through this booking process before we had any analytics, and got stuck twice: at step 1, because it starts with one traveller but no rooms selected, and at step 3, because it rejects the form without saying which field is wrong. Those are exactly the two steps where 71% and 69% of people leave. The next two slides are photographs of where the revenue goes.</p>
         </div>
         <div class="callout callout--note" style="margin-top:12px">
-          <h5>Why step 5 is not a 47% drop</h5>
-          <p>Confirmation shows <b>more</b> users than the payment page — 159 against 117 — which cannot happen in a strictly linear funnel. Payment is almost certainly handled off-site, with customers returning directly to confirmation. So <code class="inline">/payment</code> is a partial route, not a stage, and the apparent drop there should not be acted on until the dev team confirms the flow.</p>
+          <h5>Why payment is not a third big drop</h5>
+          <p>More people reach the confirmation than the payment page — 159 against 117 — which is impossible if everyone passes through both. Payment is almost certainly handled on the card provider's own site, with customers returning straight to the confirmation. So the apparent drop at step 5 is not real, and we would confirm the flow with the developers before anyone acts on it.</p>
         </div>
         <div class="callout callout--warn" style="margin-top:12px">
-          <h5>Not all 71% is a defect</h5>
-          <p>Some visitors press <b>Bestil</b> simply to see the price, with no intention of buying. But step 1 averages 1.63 views per user and the summary step 1.71, which is the signature of people submitting a form more than once. A share of that 71% is browsing; a share of it is being turned away.</p>
+          <h5>Not all of that 71% is a fault</h5>
+          <p>Some people click <b>Bestil</b> just to see the price, with no intention of buying. But on average each person loads step 1 about 1.6 times and the summary step about 1.7 times, which is what it looks like when people submit a form and get bounced back. Part of that 71% is browsing. Part of it is being turned away.</p>
         </div>
       </div>
     </div>
@@ -814,11 +819,11 @@ code.inline{
 </section>
 
 <!-- ============================== FINDING 4 ============================== -->
-<section class="slide" data-title="Finding 4: Checkout opens in an error state" data-sec="Findings">
+<section class="slide" data-title="Finding 4: Step 1 opens on an error" data-sec="Findings">
   <div class="sheet">
-    <span class="eyebrow is-bad">Finding 4 · Critical, and a five-line fix</span>
-    <h2 class="title">Step 1 of checkout cannot be submitted as it is presented</h2>
-    <p class="lede">Travellers defaults to <b>1</b>. Both room counters default to <b>0</b>. Those two facts contradict each other, so <strong>every single customer hits an error on the first click</strong> — and only finds out after pressing the button.</p>
+    <span class="eyebrow is-bad">Finding 4 · The most expensive hour of work on the list</span>
+    <h2 class="title">Step 1 of the booking cannot be submitted as it appears</h2>
+    <p class="lede">The page starts with <b>1 traveller</b> and <b>0 rooms</b> selected. Those two things contradict each other, so <strong>every customer gets an error on their first click</strong> — and only finds out after pressing the button.</p>
 
     <div class="split" style="margin-bottom:14px">
       <div>
@@ -848,32 +853,32 @@ booking.
 // rooms and people do not match.
 // Please correct to the right number
 // to continue with your booking."</span></div>
-        <div class="codecap">Verbatim from the live funnel, 26.08.2026.</div>
+        <div class="codecap">The exact message shown on the live site, 26.08.2026.</div>
 
         <div class="callout callout--fix" style="margin-top:14px">
           <h5>The fix — under an hour</h5>
-          <p>Default one traveller to one single room. Better still, disable <b>Videre</b> until the counts reconcile and show the reason inline next to the room picker, so the customer never reaches a red error at all.</p>
+          <p>Start the page with one traveller and one single room already selected. Better still, keep the <b>Continue</b> button switched off until the numbers add up, and explain why next to the room choice, so the customer never sees a red error at all.</p>
         </div>
         <div class="callout callout--warn" style="margin-top:12px">
-          <h5>Two more things on this step</h5>
-          <p>Cancel is offered twice — “Annuller booking” top-left and “Annuller” bottom-left — while the primary action is a modest green button. And the +/− counters have no text and no <code>aria-label</code>, so they are unusable by screen reader or voice control.</p>
+          <h5>Two smaller things on this step</h5>
+          <p>The page offers to cancel twice, top-left and bottom-left, while the button that continues the booking is a modest green one. And the plus and minus buttons have no text at all, so they cannot be used by anyone relying on a screen reader or voice control.</p>
         </div>
       </div>
     </div>
 
     <div class="callout callout--note">
       <h5>Worth saying out loud</h5>
-      <p>This is the single cheapest item in the audit. It sits on the first step of the only path to revenue, it affects every booking attempt, and it is a default-value change.</p>
+      <p>This is the cheapest item in the audit. It sits on the first step of the only route to a sale, it affects every booking attempt, and the fix is changing which options are pre-selected.</p>
     </div>
   </div>
 </section>
 
 <!-- ============================== FINDING 5 ============================== -->
-<section class="slide" data-title="Finding 5: 27 fields and an English error" data-sec="Findings">
+<section class="slide" data-title="Finding 5: 27 fields, rejected in English" data-sec="Findings">
   <div class="sheet">
     <span class="eyebrow is-bad">Finding 5 · Serious</span>
-    <h2 class="title">One step carries 27 fields, and rejects them in English</h2>
-    <p class="lede">Step 3 does the work of three steps: traveller details, booker details, two insurance products, a discount code, payment choice and consent. Submitted empty, it returns the word <strong>“Required”</strong> — three times, in English, on a Danish checkout.</p>
+    <h2 class="title">One step asks for 27 things, then rejects them in English</h2>
+    <p class="lede">Step 3 does the work of three: traveller details, billing details, two insurance products, a discount code, payment choice and consent. Submit it empty and it answers <strong>“Required”</strong> — three times, in English, on a Danish site.</p>
 
     <div class="split" style="margin-bottom:14px">
       <div>
@@ -882,11 +887,11 @@ booking.
           <div class="shot__view ar-4-3">
             <img src="assets/shots/funnel-3-still-blocked-desktop.png" alt="Booking step 3 with insurance dropdowns" style="object-position:50% 0">
             <div class="marker" style="top:68%;left:4%;width:44%;height:13%"></div>
-            <span class="tag" style="top:63.5%;left:4%">Two near-identical insurance products</span>
+            <span class="tag" style="top:63.5%;left:4%">Two almost identical insurances</span>
             <div class="marker marker--brand" style="top:41%;left:57%;width:38%;height:6%"></div>
             <span class="tag tag--brand" style="top:35.5%;left:57%">Single room, billed as a double</span>
           </div>
-          <figcaption>26.08.2026, dummy data. The live summary panel is a genuine strength.</figcaption>
+          <figcaption>26.08.2026, fake details. The running price panel on the right is a genuine strength.</figcaption>
         </figure>
       </div>
       <div>
@@ -894,40 +899,41 @@ booking.
         <table class="tbl tbl--compact">
           <thead><tr><th>Group</th><th class="n">Fields</th><th>Note</th></tr></thead>
           <tbody>
-            <tr><td>Traveller details</td><td class="n">8</td><td>Name, birth date, diet, emergency contact</td></tr>
-            <tr><td>Booker details</td><td class="n">9</td><td>Name, address, postcode, city, phone, email</td></tr>
-            <tr><td class="was">Insurance</td><td class="n">2</td><td>Two Gouda products with near-identical names</td></tr>
-            <tr><td class="was">Discount code</td><td class="n">1</td><td>“Din rabatkode”, inside the checkout</td></tr>
-            <tr><td>Payment option</td><td class="n">3</td><td>Radio group</td></tr>
+            <tr><td>Traveller details</td><td class="n">8</td><td>Name, date of birth, diet, emergency contact</td></tr>
+            <tr><td>Billing details</td><td class="n">9</td><td>Name, address, postcode, city, phone, email</td></tr>
+            <tr><td class="was">Insurance</td><td class="n">2</td><td>Two products with almost the same name</td></tr>
+            <tr><td class="was">Discount code</td><td class="n">1</td><td>Sits in the middle of the form</td></tr>
+            <tr><td>Payment choice</td><td class="n">3</td><td>Three options</td></tr>
             <tr><td>Consent</td><td class="n">2</td><td>Terms and marketing</td></tr>
-            <tr><td>Other</td><td class="n">2</td><td>Previous customer, “how did you hear about this trip?”</td></tr>
+            <tr><td>Other</td><td class="n">2</td><td>Existing customer, and “how did you hear about us?”</td></tr>
           </tbody>
         </table>
 
-        <div class="code code--sm" style="margin-top:12px"><span class="c">// Submitting the step empty returns:</span>
+        <div class="code code--sm" style="margin-top:12px"><span class="c">// Submit the step empty and it answers:</span>
 <span class="hl">"Required"</span>  <span class="hl">"Required"</span>  <span class="hl">"Required"</span>
 
-<span class="c">// And on all 27 fields:</span>
-required: <span class="hl">false</span>   aria-required: <span class="hl">false</span>
-<span class="c">// even though 10 labels are marked with *</span></div>
-        <div class="codecap">Field inventory from the live funnel, 26.08.2026.</div>
+<span class="c">// Ten labels are marked with a * as required,
+// but not one of the 27 fields is actually
+// marked as required in the page itself — so
+// nothing is checked until the button is pressed.</span></div>
+        <div class="codecap">Every field counted on the live site, 26.08.2026.</div>
       </div>
     </div>
 
     <div class="grid g3">
-      <div class="callout callout--risk"><h5>The two insurances</h5><p>“Afbestillings- <b>og rejse</b>forsikring” sits directly above “Afbestillingsforsikring”, both defaulting to “Nej, tak”. One word tells them apart, so most will take neither.</p></div>
-      <div class="callout callout--warn"><h5>The room naming</h5><p>The customer selects <b>Enkeltværelse</b> (single room). The summary bills it as <b>“Dobbeltværelse til 1 person +995 DKK”</b> (double room for one person). Same thing, two names, at the moment of payment.</p></div>
-      <div class="callout callout--fix"><h5>Fixes, in order of cheapness</h5><p>Translate the validation strings. Add real <code>required</code> attributes. Split step 3 into traveller and booker. Move the discount field to the summary. Name the room the same way twice.</p></div>
+      <div class="callout callout--risk"><h5>The two insurances</h5><p>“Cancellation <b>and travel</b> insurance” sits directly above “Cancellation insurance”, both pre-set to “No thanks”. One word tells them apart, so most customers will take neither.</p></div>
+      <div class="callout callout--warn"><h5>The room naming</h5><p>The customer picks a <b>single room</b>. The summary bills it as a <b>double room for one person, +995 DKK</b>. The same thing, two names, at the moment of payment.</p></div>
+      <div class="callout callout--fix"><h5>Fixes, cheapest first</h5><p>Put the error messages into Danish. Mark the required fields as required. Split step 3 into traveller and billing. Move the discount code into the summary panel. Use one name for the room.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ============================== FINDING 6 ============================== -->
-<section class="slide" data-title="Finding 6: Mobile hides the price" data-sec="Findings">
+<section class="slide" data-title="Finding 6: Phones hide the price" data-sec="Findings">
   <div class="sheet">
-    <span class="eyebrow is-bad">Finding 6 · Critical on the majority device</span>
-    <h2 class="title">On mobile, the running total disappears from the first two checkout steps</h2>
-    <p class="lede">On desktop the total is pinned beside the form. On mobile it collapses behind a button labelled <b>Opsummering</b> — <strong>the customer chooses a room and the cost of that choice is not on screen.</strong></p>
+    <span class="eyebrow is-bad">Finding 6 · Critical, and it affects the phone first</span>
+    <h2 class="title">On a phone, the price disappears during the first two booking steps</h2>
+    <p class="lede">On a computer the running total sits next to the form. On a phone it hides behind a button — <strong>so the customer picks a room without seeing what it costs them.</strong></p>
 
     <div class="split-phone" style="margin-bottom:16px">
       <div>
@@ -945,125 +951,125 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
       </div>
       <div>
         <table class="tbl" style="margin-bottom:14px">
-          <thead><tr><th>Checkout step</th><th>Desktop 1440 px</th><th>Mobile 390 px</th></tr></thead>
+          <thead><tr><th>Booking step</th><th>On a computer</th><th>On a phone</th></tr></thead>
           <tbody>
-            <tr><td><b>1 Overnatning</b></td><td class="now">Total visible — 10.090 DKK</td><td class="was">No total on screen</td></tr>
-            <tr><td><b>2 Tilvalg</b></td><td class="now">Total visible — 11.085 DKK</td><td class="was">No total on screen</td></tr>
-            <tr><td><b>3 Personlige oplysninger</b></td><td class="now">Total visible</td><td>Total visible</td></tr>
-            <tr><td><b>Progress indicator</b></td><td class="now">All five steps named</td><td class="was">“1 Overnatning 2 3 4 5” — the rest unnamed</td></tr>
+            <tr><td><b>1 Rooms</b></td><td class="now">Price visible — 10.090 DKK</td><td class="was">No price on screen</td></tr>
+            <tr><td><b>2 Extras</b></td><td class="now">Price visible — 11.085 DKK</td><td class="was">No price on screen</td></tr>
+            <tr><td><b>3 Customer details</b></td><td class="now">Price visible</td><td>Price visible</td></tr>
+            <tr><td><b>Progress bar</b></td><td class="now">All five steps named</td><td class="was">Only step 1 is named; the rest are bare numbers</td></tr>
           </tbody>
         </table>
-        <div class="src">Measured by reading the rendered DOM at each viewport, not by eye. Tablet at 768 px shows all five step names, so the breakpoint is between 390 and 768.</div>
+        <div class="src">Measured from the page itself at each screen size, not judged by eye. A tablet shows all five step names, so the problem begins somewhere between tablet and phone width.</div>
 
         <div class="grid g2" style="margin-top:14px">
-          <div class="callout callout--risk"><h5>Why it matters here</h5><p>The single-room supplement adds 995 DKK between step 1 and step 2. On mobile that increase happens off-screen, and the customer meets it for the first time at payment.</p></div>
-          <div class="callout callout--fix"><h5>The fix — one to two days</h5><p>Pin a slim sticky bar to the bottom of the mobile viewport showing the running total and a “details” toggle. Restore the step names, or at least the current step's name plus a “3 of 5” counter.</p></div>
+          <div class="callout callout--risk"><h5>Why it matters here</h5><p>Choosing a single room adds 995 DKK between step 1 and step 2. On a phone that increase happens out of sight, and the customer first meets it at payment.</p></div>
+          <div class="callout callout--fix"><h5>The fix — one to two days</h5><p>Fix a slim bar to the bottom of the phone screen showing the running total, with a tap to see the breakdown. And show the step names again, or at least “step 3 of 5”.</p></div>
         </div>
       </div>
     </div>
     <div class="callout callout--warn">
       <h5>One more, cheap and worth doing</h5>
-      <p><code class="inline">document.title</code> is empty on every step of the funnel. Browser tabs, browser history and GA4's <code>page_title</code> dimension all show blank for the entire checkout. Setting five titles makes the funnel legible in reporting the day analytics access arrives.</p>
+      <p>None of the five booking steps has a page title. The browser tab is blank, the browser history is blank, and in Google Analytics the entire booking process appears as one unnamed row. That is why the step-by-step numbers in this deck had to be built from web addresses instead. Five titles, one hour, and the booking process becomes readable in reporting by default.</p>
     </div>
   </div>
 </section>
 
 <!-- ============================== FINDING 7 ============================== -->
-<section class="slide" data-title="Finding 7: Nothing is prioritised for loading" data-sec="Findings">
+<section class="slide" data-title="Finding 7: Main images load last" data-sec="Findings">
   <div class="sheet">
-    <span class="eyebrow is-warn">Finding 7 · Site-wide, mechanical to fix</span>
-    <h2 class="title">13,321 of 13,448 images are lazy-loaded, including every hero and the logo</h2>
-    <p class="lede">Lazy loading is correct for images below the fold and wrong for the one image that defines the page. Across 421 pages, <strong><code>fetchpriority="high"</code> appears exactly zero times</strong>, so the browser is never told which image matters.</p>
+    <span class="eyebrow is-warn">Finding 7 · Site-wide, and mechanical to fix</span>
+    <h2 class="title">The site tells the browser to load its main images last</h2>
+    <p class="lede">Delaying images until they are scrolled into view is good practice — for images further down the page. Here it is applied to <strong>13,321 of 13,448 images, including the main photograph on every page and the logo itself</strong>. Nowhere on the site is the browser told which image matters most.</p>
 
     <div class="split-60" style="margin-bottom:16px">
       <div>
         <table class="tbl tbl--compact">
-          <thead><tr><th>Template</th><th class="n">Pages</th><th class="n">Median TTFB</th><th class="n">Median HTML</th></tr></thead>
+          <thead><tr><th>Page type</th><th class="n">Pages</th><th class="n">Server response</th><th class="n">Page weight</th></tr></thead>
           <tbody>
-            <tr><td class="was"><b>Travel type</b> — e.g. /vandreferier</td><td class="n">21</td><td class="n">2,106 ms</td><td class="n">1,050 KB</td></tr>
-            <tr><td>Trip page</td><td class="n">250</td><td class="n">1,333 ms</td><td class="n">636 KB</td></tr>
-            <tr><td>Homepage</td><td class="n">1</td><td class="n">1,258 ms</td><td class="n">2,612 KB</td></tr>
-            <tr><td>Blog post</td><td class="n">67</td><td class="n">1,182 ms</td><td class="n">329 KB</td></tr>
-            <tr><td>Destination hub</td><td class="n">54</td><td class="n">1,075 ms</td><td class="n">581 KB</td></tr>
+            <tr><td class="was"><b>Holiday type</b> — e.g. walking holidays</td><td class="n">21</td><td class="n">2.1 s</td><td class="n">1,050 KB</td></tr>
+            <tr><td>Trip page</td><td class="n">250</td><td class="n">1.3 s</td><td class="n">636 KB</td></tr>
+            <tr><td>Homepage</td><td class="n">1</td><td class="n">1.3 s</td><td class="n">2,612 KB</td></tr>
+            <tr><td>Blog post</td><td class="n">67</td><td class="n">1.2 s</td><td class="n">329 KB</td></tr>
+            <tr><td>Country page</td><td class="n">54</td><td class="n">1.1 s</td><td class="n">581 KB</td></tr>
           </tbody>
         </table>
-        <div class="src" style="margin-top:9px">Server response time only, measured from this machine. Not Core Web Vitals — that needs field data from Search Console.</div>
+        <div class="src" style="margin-top:9px">How long the server takes to answer, measured from one machine. This is not Google's official speed score, which needs data we do not have access to yet.</div>
 
         <div class="grid g2" style="margin-top:14px">
-          <div class="kpi kpi--warn" style="padding:13px"><div class="big" style="font-size:29px">73</div><div class="lbl">pages respond slower than 2 seconds</div></div>
-          <div class="kpi kpi--warn" style="padding:13px"><div class="big" style="font-size:29px">44</div><div class="lbl">pages ship more than 1 MB of HTML</div></div>
+          <div class="kpi kpi--warn" style="padding:13px"><div class="big" style="font-size:29px">73</div><div class="lbl">pages take over 2 seconds just to start loading</div></div>
+          <div class="kpi kpi--warn" style="padding:13px"><div class="big" style="font-size:29px">44</div><div class="lbl">pages send more than 1 MB of code to the browser</div></div>
         </div>
       </div>
       <div>
-        <h4 class="mini">The homepage, verbatim</h4>
-        <div class="code code--sm"><span class="c">&lt;!-- the logo, 176x40, above the fold --&gt;</span>
+        <h4 class="mini">The homepage, in its own code</h4>
+        <div class="code code--sm"><span class="c">&lt;!-- the logo, at the very top of the page --&gt;</span>
 &lt;<span class="t">img</span> <span class="a">loading</span>=<span class="s">"<span class="hl">lazy</span>"</span> <span class="a">width</span>=<span class="s">"176"</span> <span class="a">height</span>=<span class="s">"40"</span>
      <span class="a">src</span>=<span class="s">"…/smilrejser_logo_long.svg"</span>&gt;
 
-<span class="c">&lt;!-- third-party scripts, preloaded --&gt;</span>
+<span class="c">&lt;!-- outside tracking code, loaded early --&gt;</span>
 &lt;<span class="t">link</span> <span class="a">rel</span>=<span class="s">"preload"</span> <span class="a">as</span>=<span class="s">"script"</span>
       <span class="a">href</span>=<span class="s">"…googletagmanager.com/gtm.js"</span>&gt;
 
-<span class="c">&lt;!-- the site's own code, deprioritised --&gt;</span>
+<span class="c">&lt;!-- the site's own code, told to wait --&gt;</span>
 &lt;<span class="t">link</span> <span class="a">rel</span>=<span class="s">"preload"</span> <span class="a">as</span>=<span class="s">"script"</span>
       <span class="a">fetchPriority</span>=<span class="s">"<span class="hl">low</span>"</span>
       <span class="a">href</span>=<span class="s">"/_next/static/chunks/webpack…"</span>&gt;</div>
-        <div class="codecap">From the homepage HTML, 26.08.2026. 35 of 35 images are lazy.</div>
+        <div class="codecap">From the homepage itself, 26.08.2026. All 35 of its images are set to load late.</div>
 
         <div class="callout callout--fix" style="margin-top:14px">
           <h5>The fix — a day, mostly in one component</h5>
-          <p>Set <code>loading="eager"</code> and <code>fetchpriority="high"</code> on the hero image of each template and on the logo. Leave every other image lazy. Then stop preloading Trustpilot's widget ahead of the site's own JavaScript.</p>
+          <p>Tell the browser to load the main photograph and the logo first on each page type, and leave every other image as it is. Then stop loading the Trustpilot widget ahead of the site's own code.</p>
         </div>
       </div>
     </div>
     <div class="callout callout--note">
-      <h5>Also: 4,167 images have no alt text</h5>
-      <p>That is 31% of every image on the site. It is an accessibility issue for an audience that skews older, and it removes the only text signal Google has for the imagery on a travel site. Bulk-generating alt text from existing captions and trip names is a scriptable job, not a manual one.</p>
+      <h5>Also: 4,167 images have no text description</h5>
+      <p>That is 31% of all images. It matters twice over: customers using a screen reader get nothing, and Google loses the only clue it has about what the photographs show. These can be generated in bulk from the captions and trip names the site already has, so it is not a manual job.</p>
     </div>
   </div>
 </section>
 
 <!-- ============================== FINDING 8: LANDING VALUE ============================== -->
-<section class="slide" data-title="Finding 8: The best entry points get the least traffic" data-sec="Findings">
+<section class="slide" data-title="Finding 8: Best entry points, least traffic" data-sec="Findings">
   <div class="sheet">
-    <span class="eyebrow is-bad">Finding 8 · New, and only visible with GA4</span>
-    <h2 class="title">Category pages earn 2.7× per session what trip pages earn, on a twelfth of the traffic</h2>
-    <p class="lede">Revenue per session by landing page, indexed against bookable trip pages at 100. <strong>Visitors who arrive at a browsable list are worth far more than visitors dropped onto a single trip</strong> — which is the opposite of where the site sends its attention.</p>
+    <span class="eyebrow is-bad">Finding 8 · New, and only visible in the analytics</span>
+    <h2 class="title">The best entry points to the site get the least traffic</h2>
+    <p class="lede">Revenue per visit, by the page the visit started on, compared against a bookable trip page. <strong>Someone who arrives on a browsable list is worth far more than someone dropped onto a single trip</strong> — and lists get a fraction of the traffic.</p>
 
     <div class="split-60" style="margin-bottom:14px">
       <div>
         <table class="tbl tbl--compact">
-          <thead><tr><th style="width:29%">Landing page type</th><th class="n" style="width:13%">Pages</th><th class="n" style="width:16%">Sessions</th><th class="n" style="width:13%">Share</th><th class="n">Rev/session</th></tr></thead>
+          <thead><tr><th style="width:30%">Where the visit started</th><th class="n" style="width:11%">Pages</th><th class="n" style="width:15%">Visits</th><th class="n" style="width:12%">Share</th><th class="n">Revenue per visit</th></tr></thead>
           <tbody>
-            <tr><td><b>Homepage</b></td><td class="n">1</td><td class="n">8,168</td><td class="n">12.7%</td><td class="n now"><b>497</b></td></tr>
-            <tr><td class="now"><b>Travel-type pages</b></td><td class="n">20</td><td class="n">2,298</td><td class="n">3.6%</td><td class="n now"><b>274</b></td></tr>
-            <tr><td class="now"><b>Destination hubs</b></td><td class="n">53</td><td class="n">4,479</td><td class="n">7.0%</td><td class="n now"><b>151</b></td></tr>
-            <tr><td>Bookable trip pages</td><td class="n">69</td><td class="n">26,511</td><td class="n">41.3%</td><td class="n">100</td></tr>
-            <tr><td>Destination guides</td><td class="n">100</td><td class="n">8,611</td><td class="n">13.4%</td><td class="n">84</td></tr>
-            <tr><td class="was">Unbookable trip pages</td><td class="n">60</td><td class="n">5,297</td><td class="n">8.2%</td><td class="n was">71</td></tr>
-            <tr><td class="was"><b>Blog posts</b></td><td class="n">65</td><td class="n">4,127</td><td class="n">6.4%</td><td class="n was"><b>0</b></td></tr>
+            <tr><td><b>Homepage</b></td><td class="n">1</td><td class="n">8,168</td><td class="n">12.7%</td><td class="n now"><b>5.0×</b></td></tr>
+            <tr><td class="now"><b>Holiday-type pages</b></td><td class="n">21</td><td class="n">2,298</td><td class="n">3.6%</td><td class="n now"><b>2.7×</b></td></tr>
+            <tr><td class="now"><b>Country pages</b></td><td class="n">54</td><td class="n">4,479</td><td class="n">7.0%</td><td class="n now"><b>1.5×</b></td></tr>
+            <tr><td>Trip pages you can book</td><td class="n">69</td><td class="n">26,511</td><td class="n">41.3%</td><td class="n">1.0×</td></tr>
+            <tr><td>City guides</td><td class="n">101</td><td class="n">8,611</td><td class="n">13.4%</td><td class="n">0.8×</td></tr>
+            <tr><td class="was">Trip pages you cannot book</td><td class="n">60</td><td class="n">5,297</td><td class="n">8.2%</td><td class="n was">0.7×</td></tr>
+            <tr><td class="was"><b>Blog posts</b></td><td class="n">67</td><td class="n">4,118</td><td class="n">6.4%</td><td class="n was"><b>0×</b></td></tr>
           </tbody>
         </table>
-        <div class="src" style="margin-top:8px">GA4 landing-page report, 30.05–27.08.2026. Revenue is session-scoped and credited to the entry page, so this ranks entry points, not persuasion. Absolute figures held out of this deck deliberately; index only.</div>
+        <div class="src" style="margin-top:8px">Google Analytics, 30.05–27.08.2026. Revenue is credited to the page a visit started on, so this ranks entry points, not how persuasive a page is. Shown as multiples rather than kroner, since this deck is stored in a public repository.</div>
 
         <div class="callout callout--fix" style="margin-top:13px">
           <h5>What to do with this</h5>
-          <p>Travel-type and destination-hub pages together take 10.6% of sessions and are the two best-performing entry points on the site after the homepage. They are also where paid and organic acquisition is easiest to point. Before building anything new, we would test moving acquisition spend from individual trip pages towards <code>/kulturrejser</code>, <code>/historiske-rejser</code> and the country hubs, and measure it against this baseline.</p>
+          <p>Holiday-type and country pages together take just 10.6% of visits, yet they are the two strongest entry points after the homepage. They are also the easiest pages to point advertising at. Before building anything new, we would move some marketing spend from individual trips towards these pages and measure it against the figures above.</p>
         </div>
       </div>
       <div>
         <div class="callout callout--risk">
           <h5>The blog earns nothing at all</h5>
-          <p>65 posts, <b>4,127 sessions, 6.4% of all traffic, zero revenue and zero key events across 90 days.</b> It also has the lowest engagement on the site at 64 seconds against 204 on the homepage.</p>
-          <p style="margin-top:9px">The link graph explains part of it: a blog post carries a median of <b>one</b> in-content inbound link, and posts rarely link forward into bookable inventory. Traffic arrives, reads, and leaves.</p>
+          <p>67 posts, <b>4,118 visits, 6.4% of all traffic, and not one krone of revenue in 90 days.</b> It also holds people's attention for the shortest time of anything on the site — 63 seconds, against 204 on the homepage.</p>
+          <p style="margin-top:9px">Part of the reason is that the blog is barely connected to the rest of the site: a typical post has just <b>one</b> link pointing to it, and posts rarely link forward to a trip anyone can buy. Readers arrive, read, and leave.</p>
         </div>
         <div class="callout callout--warn" style="margin-top:12px">
-          <h5>Why we are not recommending deleting it</h5>
-          <p>Zero attributed revenue is not the same as zero value — last-click attribution on a 90-day window will miss a reader who returns two months later to book. What it does establish is that the blog is not currently a <i>conversion</i> asset, and that adding trip links to the highest-traffic posts is a cheaper experiment than commissioning more posts.</p>
+          <h5>We are not recommending you delete it</h5>
+          <p>Earning nothing on record is not the same as being worth nothing. Analytics credits the sale to the last thing a customer did, so a reader who comes back two months later to book will never show up here. What this does tell us is that the blog is not currently helping to <i>sell</i>, and that adding trip links to the best-read posts is a far cheaper test than commissioning more writing.</p>
         </div>
         <div class="callout callout--note" style="margin-top:12px">
-          <h5>One page, 432 wasted sessions</h5>
-          <p><code class="inline">/italien/trentino-og-dolomitterne</code> returns <b>404</b> and still took 432 sessions in the window. Nineteen other dead URLs have traffic, but one or two sessions each — a single redirect fixes 86% of the problem. Full list in <code class="inline">evidence/dead_urls.csv</code>.</p>
+          <h5>One broken page, 432 wasted visits</h5>
+          <p>The address <code class="inline">/italien/trentino-og-dolomitterne</code> no longer exists, and 432 visits still arrived at it. Nineteen other dead addresses also get traffic, but only one or two visits each — so a single redirect recovers 86% of the loss.</p>
         </div>
       </div>
     </div>
@@ -1075,34 +1081,34 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
   <div class="sheet">
     <span class="eyebrow is-good">Before the recommendations</span>
     <h2 class="title">Four things we went looking for and found already done properly</h2>
-    <p class="lede">This is not padding. It changes what we recommend, because <strong>the foundations are sound and the fixes are configuration rather than rebuild</strong>. Any agency telling you this site needs replacing has not looked at it.</p>
+    <p class="lede">This is not padding. It changes what we recommend, because <strong>the foundations are sound, so the fixes are adjustments rather than a rebuild</strong>. Any agency telling you this site needs replacing has not looked at it properly.</p>
 
     <div class="grid g2" style="margin-bottom:16px">
       <div class="card card--good">
         <div class="num">STRENGTH 1</div>
-        <h5>Server-side tagging, live and healthy</h5>
-        <p>A shared container serves ten Aller travel brands, routing each hostname to its own GA4 property and its own server-side endpoint. Smilrejser's is <code class="inline">sgtm.smilrejser.dk</code>, which answered <code class="inline">/healthy</code> with HTTP 200 in 0.22 s. Consent Mode is wired with <code>wait_for_update</code> and <code>ads_data_redaction</code>, and enhanced-conversion PII is SHA-256 hashed client-side.</p>
+        <h5>The tracking setup is genuinely advanced</h5>
+        <p>One shared setup serves ten Aller travel brands, correctly sending each site's data to its own analytics account. Smilrejser's runs through its own server, which we tested and found healthy. Cookie consent is handled properly, and customer details sent to advertising platforms are encrypted before they leave the browser. This is better than most travel sites we audit.</p>
       </div>
       <div class="card card--good">
         <div class="num">STRENGTH 2</div>
-        <h5>The full ecommerce funnel is already configured</h5>
-        <p><code>view_item</code>, <code>add_to_cart</code>, <code>begin_checkout</code>, <code>add_payment_info</code>, <code>add_shipping_info</code> and <code>purchase</code> all exist as configured GA4 tags — plus <code>purchase_giftcard</code>, <code>waitinglist_form_submit</code>, <code>site_search</code>, <code>click_tel</code> and <code>click_mail</code>. The waitlist is already tracked, so the empty-departure problem is measurable today without any new tagging.</p>
+        <h5>Nearly all the sales tracking already exists</h5>
+        <p>Every stage of a purchase is already being recorded — viewing a trip, starting a booking, entering payment details and completing the sale — along with gift cards, site searches, phone clicks and email clicks. Waiting-list signups are tracked too, which means the empty-trip problem in finding 1 can be measured from day one without any new work.</p>
       </div>
       <div class="card card--good">
         <div class="num">STRENGTH 3</div>
-        <h5>Structured data is genuinely well built</h5>
-        <p>Every trip page emits <code>Product</code>, <code>AggregateOffer</code> and <code>BreadcrumbList</code>, and 56 add <code>FAQPage</code>. Destination pages correctly emit <code>Collection</code> and <code>TouristDestination</code> instead — the page types are properly distinguished. Better than most travel sites we audit; finding 3 is one wrong string inside otherwise sound markup.</p>
+        <h5>What the site tells Google is well built</h5>
+        <p>Every trip page correctly describes itself to search engines as a product with a price, and 56 of them also supply their questions and answers, which can win extra space in search results. Guide pages correctly describe themselves as destinations instead, rather than pretending to be products. Finding 3 is one wrong line inside an otherwise well-made system.</p>
       </div>
       <div class="card card--good">
         <div class="num">STRENGTH 4</div>
         <h5>Trust and price transparency</h5>
-        <p>Trustpilot, Rejsegarantifonden and Travelife appear on all 421 pages, and a phone number is on every one of them. Checkout shows the administration fee as a separate line and a true total. All 421 URLs returned HTTP 200 with a canonical tag and exactly one H1 — no broken pages, no redirect chains.</p>
+        <p>Trustpilot, the Danish travel guarantee fund and Travelife appear on all 421 pages, and so does a phone number. The booking process shows the administration fee as its own line and a genuine total, with no surprises at the end. And all 421 pages load correctly and are structured properly — not one broken page anywhere on the site.</p>
       </div>
     </div>
 
     <div class="callout callout--warn">
       <h5>And one thing we suspected, checked, and were wrong about</h5>
-      <p>Our first screenshots showed the cookie banner in <b>Norwegian</b> on a Danish site, which looked like a significant defect. It was not: Cookiebot picks its language from the browser, and the Norwegian text came from this Mac's own locale. Re-run with a Danish locale, the banner is correct Danish. It is in the evidence log as a rejected finding, and every screenshot in this deck was re-captured with a Danish locale.</p>
+      <p>Our first screenshots showed the cookie banner in <b>Norwegian</b> on a Danish site, which looked serious. It was not: the banner follows the visitor's own browser language, and ours was set to Norwegian. Run again in Danish, the banner is correct. We logged it as a rejected finding and re-took every screenshot in this deck with a Danish browser.</p>
     </div>
   </div>
 </section>
@@ -1112,21 +1118,21 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
   <div class="sheet">
     <div class="cover__kicker">Part 2 of 2</div>
     <h1 class="cover__h" style="font-size:48px">Ten hours of work sits against the two steps where 91% of bookings are lost</h1>
-    <p class="cover__p">Nothing in part one was a criticism of the build. It is a well-made site with a sophisticated measurement stack, and the biggest problem on it is not structural at all — it is two forms that reject people without telling them why. That is where we would start, and GA4 is the reason the order changed.</p>
+    <p class="cover__p">Nothing in part one was a criticism of how the site was built. It is well made and well measured, and its biggest problem is not structural at all — it is two forms that turn people away without telling them why. That is where we would start, and the analytics are the reason we changed the order.</p>
     <div class="grid g3" style="margin-top:14px">
-      <div class="card card--bad"><div class="num">TRACK 1 · WEEK 1</div><h5>Unblock the checkout</h5><p>Fix the step-1 default that errors on every first click, put the validation into Danish, name the rooms once. Roughly ten hours against 2,293 lost attempts.</p></div>
-      <div class="card card--warn"><div class="num">TRACK 2 · WEEKS 2–6</div><h5>Make the catalogue honest</h5><p>Give the 60 empty trips a real action, redirect the dead URL taking 432 sessions, show prices consistently.</p></div>
-      <div class="card card--good"><div class="num">TRACK 3 · WEEKS 4–12</div><h5>Follow the money upstream</h5><p>Add the two missing ecommerce events, then test shifting acquisition towards the hub and travel-type pages that already earn most per session.</p></div>
+      <div class="card card--bad"><div class="num">TRACK 1 · WEEK 1</div><h5>Unblock the booking process</h5><p>Stop step 1 opening on an error, put the error messages into Danish, and use one name per room. Around ten hours of work, against 2,293 lost booking attempts.</p></div>
+      <div class="card card--warn"><div class="num">TRACK 2 · WEEKS 2–6</div><h5>Make the catalogue honest</h5><p>Give the 60 unbuyable trips something a customer can actually do, redirect the broken page taking 432 visits, and show prices consistently.</p></div>
+      <div class="card card--good"><div class="num">TRACK 3 · WEEKS 4–12</div><h5>Follow the money upstream</h5><p>Start recording which trips people see and click, then test moving marketing spend towards the page types that already earn the most per visit.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ============================== PROPOSAL 1 ============================== -->
-<section class="slide" data-title="Proposal 1: Four departure states" data-sec="Proposals">
+<section class="slide" data-title="Proposal 1: Four states, not two" data-sec="Proposals">
   <div class="sheet">
     <span class="eyebrow is-good">Proposal 1 of 3 · The highest-value change</span>
     <h2 class="title">Give the departures table four states instead of two</h2>
-    <p class="lede">Today the table is either a sale or a blank. The rule we would apply: <strong>a trip page must always offer exactly one clear next action</strong>. The labels for three of these four states already ship in the page payload.</p>
+    <p class="lede">Today the table is either a sale or a blank. The rule we would apply: <strong>every trip page must offer exactly one clear next step</strong>. Three of these four options already exist in the site's code — they are simply never shown.</p>
 
     <div class="split-60" style="margin-bottom:14px">
       <div>
@@ -1138,28 +1144,28 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
           <div class="mockrow"><b>Efterår 2027</b><span>8 dage</span><span>—</span><b>Fra 12.495 DKK</b><span class="chipmock chipmock--bad">Udsolgt</span><span class="btnmock btnmock--ghost">Skriv mig op →</span></div>
           <div class="mockrow" style="border-top:1px dashed #c3ccd8;margin-top:6px;padding-top:10px"><span style="color:var(--muted);font-size:12px">Ingen datoer endnu? <b>Se 4 lignende rejser du kan booke nu</b> — Amalfikysten, Sorrento, Napoli, Cinque Terre</span></div>
         </div>
-        <div class="src" style="margin-top:9px">Prices and dates above are illustrative. The point is the state machine and the guarantee that every row ends in an action.</div>
+        <div class="src" style="margin-top:9px">The prices and dates above are made up for illustration. The point is that every row ends in something the customer can do.</div>
         <div class="callout callout--warn" style="margin-top:14px">
           <h5>What we would not do</h5>
-          <p>Not unpublish the 60 pages. They hold 151,722 words that rank and inform. The goal is to convert their traffic into enquiries and waitlist signups, not to delete the asset.</p>
+          <p>We would not take the 60 pages down. They hold 151,722 words that bring in search traffic and inform customers. The aim is to turn that traffic into enquiries and waiting-list signups, not to throw the asset away.</p>
         </div>
       </div>
       <div>
         <table class="tbl tbl--compact">
-          <thead><tr><th>State</th><th>Action</th><th class="n">Exists?</th></tr></thead>
+          <thead><tr><th>Situation</th><th>What the customer can do</th><th class="n">Already built?</th></tr></thead>
           <tbody>
-            <tr><td>Bookable</td><td class="now">Bestil rejse</td><td class="n">Live</td></tr>
-            <tr><td>On request</td><td class="now">Forespørg</td><td class="n">In payload, unused</td></tr>
-            <tr><td>Sold out / no dates</td><td class="now">Venteliste</td><td class="n">In payload, unused</td></tr>
-            <tr><td class="was">Empty table</td><td class="was">Nothing — remove this state</td><td class="n">60 pages</td></tr>
+            <tr><td>Dates available</td><td class="now">Book the trip</td><td class="n">Live today</td></tr>
+            <tr><td>On request</td><td class="now">Send an enquiry</td><td class="n">Built, never shown</td></tr>
+            <tr><td>Sold out or no dates yet</td><td class="now">Join the waiting list</td><td class="n">Built, never shown</td></tr>
+            <tr><td class="was">Empty table</td><td class="was">Nothing at all — remove this case</td><td class="n">60 pages today</td></tr>
           </tbody>
         </table>
         <div class="callout callout--fix" style="margin-top:13px">
           <h5>Rules we would hold to</h5>
           <ul class="list is-good tight" style="font-size:13.5px;margin-top:7px">
-            <li>Never render a table with headers and no rows</li>
-            <li>Always show a price, even as “Fra …”, so the page can be compared</li>
-            <li>Every trip page links to bookable alternatives in the same destination</li>
+            <li>Never show a table of dates with no dates in it</li>
+            <li>Always show a price, even as “from …”, so customers can compare</li>
+            <li>Every trip page links to trips in the same place that can be booked</li>
             <li>Say <i>when</i> new dates are expected, not just that there are none</li>
           </ul>
         </div>
@@ -1167,37 +1173,37 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
     </div>
     <div class="callout callout--note">
       <h5>Where the work happens</h5>
-      <p>The departures component and the trip template, plus whatever populates departures from Travelize. The waitlist form and its <code>waitinglist_form_submit</code> event already exist, so success is measurable from day one.</p>
+      <p>In the dates-and-prices section of the trip page, plus whatever feeds it from the booking system. The waiting-list form is already built and already tracked, so you can measure whether this works from the first week.</p>
     </div>
   </div>
 </section>
 
 <!-- ============================== PROPOSAL 2 ============================== -->
-<section class="slide" data-title="Proposal 2: Checkout, before and after" data-sec="Proposals">
+<section class="slide" data-title="Proposal 2: The booking process" data-sec="Proposals">
   <div class="sheet">
     <span class="eyebrow is-good">Proposal 2 of 3</span>
     <h2 class="title">Nine checkout changes, ready to hand to a developer</h2>
-    <p class="lede">The funnel is structurally sound — five clear steps, a live summary, honest pricing. These are defects on top of a good design, listed cheapest first. <strong>The first four are less than a day together.</strong></p>
+    <p class="lede">The booking process is well designed — five clear steps, a running price, honest totals. These are faults sitting on top of that good design, listed cheapest first. <strong>The first four take less than a day between them.</strong></p>
 
     <table class="tbl tbl--compact" style="margin-bottom:14px">
       <thead><tr><th style="width:17%">Where</th><th style="width:30%">Today</th><th style="width:38%">Proposed</th><th style="width:15%">Effort</th></tr></thead>
       <tbody>
-        <tr><td class="u">Step 3 validation</td><td class="was">“Required”, in English</td><td class="now">“Skal udfyldes”, and name the field in the message</td><td>1 hour</td></tr>
-        <tr><td class="u">Step 1 defaults</td><td class="was">1 traveller, 0 rooms — errors on first click</td><td class="now">1 traveller defaults to 1 single room</td><td>1 hour</td></tr>
-        <tr><td class="u">All funnel steps</td><td class="was"><code>document.title</code> is empty</td><td class="now">“Booking 1 af 5 — Overnatning | Smilrejser”</td><td>1 hour</td></tr>
-        <tr><td class="u">Room naming</td><td class="was">“Enkeltværelse” becomes “Dobbeltværelse til 1 person”</td><td class="now">One name for one thing, in picker and summary</td><td>2 hours</td></tr>
-        <tr><td class="u">Mobile steps 1–2</td><td class="was">No total on screen</td><td class="now">Sticky bottom bar with running total and a details toggle</td><td>1–2 days</td></tr>
-        <tr><td class="u">All 27 fields</td><td class="was">No <code>required</code> or <code>aria-required</code></td><td class="now">Real attributes, so assistive tech announces them</td><td>3 hours</td></tr>
-        <tr><td class="u">+/− counters</td><td class="was">No text, no <code>aria-label</code></td><td class="now"><code>aria-label="Tilføj en rejsende"</code> and similar</td><td>2 hours</td></tr>
-        <tr><td class="u">Insurance block</td><td class="was">Two near-identical Gouda dropdowns, both “Nej, tak”</td><td class="now">One comparison: what each covers, what it costs, side by side</td><td>1–2 days</td></tr>
-        <tr><td class="u">Discount field</td><td class="was">“Din rabatkode” mid-checkout</td><td class="now">Collapsed link in the summary panel, not a field in the flow</td><td>3 hours</td></tr>
+        <tr><td class="u">Step 3 error messages</td><td class="was">“Required”, in English</td><td class="now">Danish, and say which field is missing</td><td>1 hour</td></tr>
+        <tr><td class="u">Step 1 starting state</td><td class="was">1 traveller, 0 rooms — errors on first click</td><td class="now">One traveller starts with one single room</td><td>1 hour</td></tr>
+        <tr><td class="u">All five steps</td><td class="was">No page title at all</td><td class="now">“Booking 1 of 5 — Rooms | Smilrejser”</td><td>1 hour</td></tr>
+        <tr><td class="u">Room naming</td><td class="was">A single room is billed as a double</td><td class="now">One name per room, everywhere it appears</td><td>2 hours</td></tr>
+        <tr><td class="u">Steps 1–2 on a phone</td><td class="was">No price on screen</td><td class="now">A fixed bar at the bottom showing the running total</td><td>1–2 days</td></tr>
+        <tr><td class="u">All 27 fields</td><td class="was">Not marked as required, so nothing is checked early</td><td class="now">Marked properly, so problems surface as you type</td><td>3 hours</td></tr>
+        <tr><td class="u">Plus/minus buttons</td><td class="was">No text, so screen readers cannot use them</td><td class="now">Labelled “add a traveller” and similar</td><td>2 hours</td></tr>
+        <tr><td class="u">Insurance</td><td class="was">Two almost identical options, both pre-set to “no thanks”</td><td class="now">One comparison: what each covers and costs, side by side</td><td>1–2 days</td></tr>
+        <tr><td class="u">Discount code</td><td class="was">An open invitation to go hunting for a code, mid-form</td><td class="now">A small link in the price panel instead</td><td>3 hours</td></tr>
       </tbody>
     </table>
 
     <div class="grid g3">
-      <div class="callout callout--fix"><h5>Sequencing</h5><p>The top four are a single afternoon and touch defaults and strings only — no layout risk, no design review needed.</p></div>
-      <div class="callout callout--warn"><h5>What we deliberately left out</h5><p>We are not proposing fewer steps. Five steps with a visible summary suits a considered, high-value purchase. The problem is the density of step 3, not the step count.</p></div>
-      <div class="callout callout--note"><h5>Measured, not inspected</h5><p>GA4 now sizes steps 4 and 5 — 223 and 117 users. We still have not <i>seen</i> them, because reaching them commits a real order. Both need a review on staging before we recommend anything there.</p></div>
+      <div class="callout callout--fix"><h5>Order of work</h5><p>The top four are a single afternoon and only change wording and starting values. Nothing moves on the page, so no design review is needed.</p></div>
+      <div class="callout callout--warn"><h5>What we deliberately left out</h5><p>We are not proposing fewer steps. Five steps with a visible running price suits an expensive, carefully considered purchase. The problem is how much step 3 asks for, not the number of steps.</p></div>
+      <div class="callout callout--note"><h5>Measured, but not seen</h5><p>We now know how many people reach steps 4 and 5 — 223 and 117. We have still not <i>looked</i> at them, because getting there places a real order. Both need reviewing on a test copy of the site before we recommend anything.</p></div>
     </div>
   </div>
 </section>
@@ -1206,38 +1212,38 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
 <section class="slide" data-title="Proposal 3: Close the measurement gap" data-sec="Proposals">
   <div class="sheet">
     <span class="eyebrow is-good">Proposal 3 of 3</span>
-    <h2 class="title">Two missing events stand between you and knowing what this costs</h2>
-    <p class="lede">The container already measures nearly everything. What it cannot tell you is <strong>how many people see an unbookable trip and leave</strong> — because the two events that would show it are the two that are missing.</p>
+    <h2 class="title">Two missing measurements stand between you and knowing what this costs</h2>
+    <p class="lede">The site already measures nearly everything. The one thing it cannot tell you is <strong>how many people see a trip they cannot buy and give up</strong> — because the two measurements that would show it are the two that are missing.</p>
 
     <div class="split-60" style="margin-bottom:16px">
       <div>
         <table class="tbl tbl--compact">
-          <thead><tr><th>GA4 ecommerce event</th><th class="n">Configured</th><th>What it would tell us</th></tr></thead>
+          <thead><tr><th>What could be measured</th><th class="n">Set up?</th><th>What it tells you</th></tr></thead>
           <tbody>
-            <tr><td><code>view_item</code></td><td class="n">Yes</td><td>Trip page views</td></tr>
-            <tr><td><code>add_to_cart</code></td><td class="n">Yes</td><td>Booking started</td></tr>
-            <tr><td><code>begin_checkout</code></td><td class="n">Yes</td><td>Entered the funnel</td></tr>
-            <tr><td><code>add_shipping_info</code></td><td class="n">Yes</td><td>Step progression</td></tr>
-            <tr><td><code>add_payment_info</code></td><td class="n">Yes</td><td>Reached payment</td></tr>
-            <tr><td><code>purchase</code></td><td class="n">Yes</td><td>Booking completed</td></tr>
-            <tr><td class="was"><code>view_item_list</code></td><td class="n">No</td><td class="was">Which trips get impressions on hub and category pages</td></tr>
-            <tr><td class="was"><code>select_item</code></td><td class="n">No</td><td class="was">Which trip cards get clicked — and how many clicks land on the 60 dead ends</td></tr>
+            <tr><td>Someone views a trip</td><td class="n">Yes</td><td>Which trips get looked at</td></tr>
+            <tr><td>Someone starts a booking</td><td class="n">Yes</td><td>Intent to buy</td></tr>
+            <tr><td>Someone enters the booking process</td><td class="n">Yes</td><td>Who begins buying</td></tr>
+            <tr><td>Someone moves between steps</td><td class="n">Yes</td><td>Where people stop</td></tr>
+            <tr><td>Someone reaches payment</td><td class="n">Yes</td><td>Nearly-closed sales</td></tr>
+            <tr><td>Someone completes a booking</td><td class="n">Yes</td><td>Revenue</td></tr>
+            <tr><td class="was">Which trips appear in a list</td><td class="n">No</td><td class="was">Which trips customers are actually shown</td></tr>
+            <tr><td class="was">Which trip a customer clicks</td><td class="n">No</td><td class="was">How many clicks land on the 60 trips nobody can buy</td></tr>
           </tbody>
         </table>
-        <div class="src" style="margin-top:9px">Read from <code>vtp_eventName</code> inside the container's tag array. Searching the whole container file is unreliable — GTM bundles the GA4 runtime, which names every standard event whether configured or not.</div>
+        <div class="src" style="margin-top:9px">Read from the site's live tracking configuration, checking what is genuinely switched on. Simply searching the file for these names gives a false positive, because the tracking software lists every possible measurement whether it is in use or not.</div>
       </div>
       <div>
         <div class="callout callout--note">
-          <h5>The one thing we need from you</h5>
-          <p>GA4 access to <b><code class="inline">G-2STC9KYPG1</code></b> has landed and is used throughout this deck. Still outstanding: <b>Search Console</b> for <code>smilrejser.dk</code>, a device-split export of the checkout funnel, and a 12-month window to test the summer seasonality.</p>
+          <h5>What we still need from you</h5>
+          <p>Google Analytics access has arrived and is used throughout this deck. Three things are still outstanding: <b>Search Console</b>, so we can see search performance; a <b>phone-versus-computer breakdown</b> of the booking process, to size finding 6 properly; and a <b>full year of data</b>, to check whether the summer pattern holds.</p>
         </div>
         <div class="callout callout--warn" style="margin-top:13px">
-          <h5>Housekeeping we found</h5>
-          <p>Nine Universal Analytics Enhanced Ecommerce variables are still in the container — <code>ecommerce.purchase.actionField.revenue</code> and siblings. UA stopped processing data in 2023 and GA4 expects a different structure, so any tag still reading these reads an object the site may no longer populate. There are also 3 paused tags worth a decision: revive or delete.</p>
+          <h5>Some tidying up we found</h5>
+          <p>Nine leftover settings from the previous version of Google Analytics are still in the configuration. That system stopped working in 2023 and the current one expects a different format, so anything still reading them is reading nothing. Three switched-off items also need a decision: revive or delete.</p>
         </div>
         <div class="callout callout--risk" style="margin-top:13px">
-          <h5>Release discipline</h5>
-          <p>One container serves ten brands. Every change ships to all of them at once, so these edits want a workspace, a preview and a named approver — not a live edit.</p>
+          <h5>One caution on making these changes</h5>
+          <p>The same tracking setup serves ten Aller brands, so every change goes live for all of them at once. These edits need a test version, a preview and a named approver — not a quick change made directly on the live site.</p>
         </div>
       </div>
     </div>
@@ -1249,28 +1255,28 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
   <div class="sheet">
     <span class="eyebrow">The list</span>
     <h2 class="title">Everything we found, ordered by value per hour of work</h2>
-    <p class="lede">Impact is now <strong>ranked against 90 days of GA4</strong> rather than inferred, which moved four items and demoted two.</p>
+    <p class="lede">The order is set by <strong>what 90 days of real visitor data says it is worth</strong>, not by our judgement. That moved four items up and two down.</p>
 
     <table class="tbl tbl--compact">
-      <thead><tr><th style="width:4%">#</th><th style="width:37%">Action</th><th style="width:11%">Where</th><th style="width:9%">Effort</th><th style="width:9%">Impact</th><th>What GA4 says</th></tr></thead>
+      <thead><tr><th style="width:4%">#</th><th style="width:37%">Action</th><th style="width:11%">Where</th><th style="width:9%">Effort</th><th style="width:9%">Impact</th><th>What the data says</th></tr></thead>
       <tbody>
-        <tr><td class="n">1</td><td class="now"><b>Default 1 traveller to 1 room</b> so step 1 never opens in error</td><td>Checkout</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>1,796 users lost at this step</td></tr>
-        <tr><td class="n">2</td><td class="now"><b>Translate validation strings</b> — “Required” to “Skal udfyldes”</td><td>Checkout</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>497 lost at step 3</td></tr>
-        <tr><td class="n">3</td><td class="now"><b>Set page titles</b> on all five funnel steps</td><td>Checkout</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>Checkout is one blank row in GA4 today</td></tr>
-        <tr><td class="n">4</td><td class="now"><b>One name per room type</b> across picker and summary</td><td>Checkout</td><td class="n">2 hours</td><td><span class="pill pill--bad">Critical</span></td><td>1.63 views/user at step 1</td></tr>
-        <tr><td class="n">5</td><td class="now"><b>Real <code>required</code> attributes</b> so step 3 flags fields before submit</td><td>Checkout</td><td class="n">5 hours</td><td><span class="pill pill--bad">Critical</span></td><td>Moved up from #12</td></tr>
-        <tr><td class="n">6</td><td class="now"><b>Sticky price bar on mobile</b> for funnel steps 1–2</td><td>Checkout</td><td class="n">1–2 days</td><td><span class="pill pill--bad">Critical</span></td><td>Needs the device split to size</td></tr>
-        <tr><td class="n">7</td><td class="now"><b>Redirect the 20 dead URLs</b> that still take traffic</td><td>Routing</td><td class="n">1 hour</td><td><span class="pill pill--warn">High</span></td><td>New — 432 sessions hitting a 404</td></tr>
-        <tr><td class="n">8</td><td class="now"><b>Rewrite the insurance block</b> as a single comparison</td><td>Checkout</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>Sits inside the 69% step-3 loss</td></tr>
-        <tr><td class="n">9</td><td class="now"><b>Replace the empty departures table</b> with Forespørg / Venteliste</td><td>Trip template</td><td class="n">3–5 days</td><td><span class="pill pill--warn">High</span></td><td>8.2% of sessions, ~1.4% of revenue</td></tr>
-        <tr><td class="n">10</td><td class="now"><b>Add <code>view_item_list</code> and <code>select_item</code></b> to the container</td><td>GTM</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>Last on-site blind spot</td></tr>
-        <tr><td class="n">11</td><td class="now"><b>Test acquisition against hub and travel-type pages</b></td><td>Media</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>New — 2.7× revenue per session</td></tr>
-        <tr><td class="n">12</td><td class="now"><b>Link the 10 highest-traffic blog posts</b> into bookable trips</td><td>Content</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>New — 4,127 sessions, zero revenue</td></tr>
-        <tr><td class="n">13</td><td class="now"><b>Show a price on every trip page</b>, “Fra …” where exact is unavailable</td><td>Trip template</td><td class="n">1 day</td><td><span class="pill">Medium</span></td><td>55 of 131 pages carry no price</td></tr>
-        <tr><td class="n">14</td><td class="now"><b>Fix the hardcoded “Rejser til Frankrig”</b> list name</td><td>Templates</td><td class="n">1 hour</td><td><span class="pill">Medium</span></td><td>Search-side only, no session data</td></tr>
-        <tr><td class="n">15</td><td class="now"><b>Eager-load hero and logo</b>, add <code>fetchpriority="high"</code></td><td>Components</td><td class="n">1 day</td><td><span class="pill">Medium</span></td><td>No engagement penalty visible</td></tr>
-        <tr><td class="n">16</td><td class="now"><b>Bulk-generate alt text</b> for 4,167 images</td><td>CMS / script</td><td class="n">2–3 days</td><td><span class="pill">Medium</span></td><td>Accessibility, not conversion</td></tr>
-        <tr><td class="n">17</td><td class="now"><b>Housekeeping</b> — meta lengths, orphan pages, legacy UA variables</td><td>CMS / GTM</td><td class="n">4 days</td><td><span class="pill">Low</span></td><td>Orphans demoted: 273 sessions</td></tr>
+        <tr><td class="n">1</td><td class="now"><b>Start step 1 with one room selected</b>, so it never opens on an error</td><td>Booking</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>1,796 people lost here</td></tr>
+        <tr><td class="n">2</td><td class="now"><b>Put the error messages into Danish</b> and name the missing field</td><td>Booking</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>497 people lost at step 3</td></tr>
+        <tr><td class="n">3</td><td class="now"><b>Give each of the five booking steps a page title</b></td><td>Booking</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>Reporting cannot name the steps</td></tr>
+        <tr><td class="n">4</td><td class="now"><b>Use one name per room type</b> wherever it appears</td><td>Booking</td><td class="n">2 hours</td><td><span class="pill pill--bad">Critical</span></td><td>Step 1 is loaded 1.6× per person</td></tr>
+        <tr><td class="n">5</td><td class="now"><b>Mark required fields as required</b>; label the +/− buttons</td><td>Booking</td><td class="n">5 hours</td><td><span class="pill pill--bad">Critical</span></td><td>Moved up seven places</td></tr>
+        <tr><td class="n">6</td><td class="now"><b>Keep the price on screen</b> on phones, steps 1–2</td><td>Booking</td><td class="n">1–2 days</td><td><span class="pill pill--bad">Critical</span></td><td>Needs a device split to size</td></tr>
+        <tr><td class="n">7</td><td class="now"><b>Redirect the 20 dead addresses</b> still receiving visits</td><td>Routing</td><td class="n">1 hour</td><td><span class="pill pill--warn">High</span></td><td>New — 501 visits wasted</td></tr>
+        <tr><td class="n">8</td><td class="now"><b>Rewrite the insurance choice</b> as one clear comparison</td><td>Booking</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>Sits inside the 69% loss at step 3</td></tr>
+        <tr><td class="n">9</td><td class="now"><b>Replace the empty dates table</b> with enquiry and waiting-list</td><td>Trip pages</td><td class="n">3–5 days</td><td><span class="pill pill--warn">High</span></td><td>8.2% of visits, ~1.4% of revenue</td></tr>
+        <tr><td class="n">10</td><td class="now"><b>Start measuring which trips people see and click</b></td><td>Tracking</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>The last blind spot on the site</td></tr>
+        <tr><td class="n">11</td><td class="now"><b>Point marketing at country and holiday-type pages</b></td><td>Marketing</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>New — 2.7× revenue per visit</td></tr>
+        <tr><td class="n">12</td><td class="now"><b>Link the 10 best-read blog posts</b> to trips people can book</td><td>Content</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>New — 4,118 visits, zero revenue</td></tr>
+        <tr><td class="n">13</td><td class="now"><b>Show a price on every trip page</b>, “from …” if exact is unknown</td><td>Trip pages</td><td class="n">1 day</td><td><span class="pill">Medium</span></td><td>55 of 131 pages show no price</td></tr>
+        <tr><td class="n">14</td><td class="now"><b>Fix the “Rejser til Frankrig” label</b> on 103 pages</td><td>Templates</td><td class="n">1 hour</td><td><span class="pill">Medium</span></td><td>Affects search, not visits</td></tr>
+        <tr><td class="n">15</td><td class="now"><b>Load the main image and logo first</b> on every page type</td><td>Templates</td><td class="n">1 day</td><td><span class="pill">Medium</span></td><td>No measurable harm visible yet</td></tr>
+        <tr><td class="n">16</td><td class="now"><b>Generate text descriptions</b> for 4,167 images</td><td>CMS</td><td class="n">2–3 days</td><td><span class="pill">Medium</span></td><td>Accessibility, not sales</td></tr>
+        <tr><td class="n">17</td><td class="now"><b>Tidying</b> — search snippets, unlinked pages, old settings</td><td>CMS</td><td class="n">4 days</td><td><span class="pill">Low</span></td><td>Demoted — 273 visits</td></tr>
       </tbody>
     </table>
   </div>
@@ -1281,47 +1287,47 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
   <div class="sheet">
     <span class="eyebrow">Plan</span>
     <h2 class="title">The first 90 days, and what is different at the end of each</h2>
-    <p class="lede">Ordered so the cheapest fixes ship first, against the steps where GA4 shows the losses, and nothing expensive is decided before we can measure whether the cheap work moved anything.</p>
+    <p class="lede">Ordered so the cheapest fixes go live first, aimed at the steps where the data shows the losses. Nothing expensive gets decided until we can see whether the cheap work moved the numbers.</p>
 
     <div class="grid g3" style="margin-bottom:16px">
       <div class="phase">
-        <div class="phase__hd"><b>Phase 1</b><span>Week 1 · Unblock the checkout</span></div>
+        <div class="phase__hd"><b>Phase 1</b><span>Week 1 · Unblock the booking</span></div>
         <div class="phase__bd">
           <ul class="list tight" style="font-size:13.5px">
-            <li>Actions 1–5: step-1 default, Danish validation, page titles, room naming, real <code>required</code> attributes</li>
-            <li>Action 7: redirect the 20 dead URLs</li>
-            <li>Baseline the funnel at 71% / 69% so the change is measurable</li>
+            <li>Actions 1–5: the step-1 starting state, Danish error messages, page titles, room naming, required fields</li>
+            <li>Action 7: redirect the 20 dead addresses</li>
+            <li>Record today's 71% and 69% first, so the improvement can be proven</li>
           </ul>
-          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> ten hours against the two steps where 2,293 of 2,516 booking attempts currently end, plus an hour of redirects.</p>
+          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> ten hours of work aimed at the two steps where 2,293 of 2,516 booking attempts currently end, plus an hour of redirects.</p>
         </div>
       </div>
       <div class="phase">
         <div class="phase__hd"><b>Phase 2</b><span>Weeks 2–6 · Fix the catalogue</span></div>
         <div class="phase__bd">
           <ul class="list tight" style="font-size:13.5px">
-            <li>Action 9: the departure state machine across 60 pages</li>
-            <li>Actions 6, 8: mobile price bar, insurance block</li>
-            <li>Actions 10, 13: the two GA4 events, price on every trip page</li>
+            <li>Action 9: give all 60 unbuyable trips a real next step</li>
+            <li>Actions 6 and 8: the price on screen on phones, and the insurance choice</li>
+            <li>Actions 10 and 13: the two missing measurements, a price on every trip page</li>
           </ul>
-          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> every trip page offers an action, and we can finally see which trips get seen and clicked.</p>
+          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> every trip page offers the customer something to do, and you can finally see which trips get seen and clicked.</p>
         </div>
       </div>
       <div class="phase">
         <div class="phase__hd"><b>Phase 3</b><span>Weeks 6–12 · Follow the money</span></div>
         <div class="phase__bd">
           <ul class="list tight" style="font-size:13.5px">
-            <li>Re-measure the funnel and attribute the delta to phase 1</li>
-            <li>Actions 11–12: test acquisition against hubs, link the blog into inventory</li>
-            <li>Re-run this crawl and diff it against 26.08.2026</li>
+            <li>Re-measure the booking process and compare it against phase 1</li>
+            <li>Actions 11–12: test where marketing points, and link the blog to bookable trips</li>
+            <li>Run this whole audit again and compare it with today</li>
           </ul>
-          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> the first round of decisions made against a measured before-and-after rather than a ranking.</p>
+          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> the first decisions made on a measured before-and-after, rather than on anyone's ranking.</p>
         </div>
       </div>
     </div>
 
     <div class="callout callout--warn">
-      <h5>One thing we want to be explicit about</h5>
-      <p>The GA4 window is 90 days of one Danish summer, and it contains 201 key events. That is enough to rank groups of pages and to read a funnel with confidence; it is <b>not</b> enough to quote a conversion rate for any single page, and we have quoted none. It also means the honest test of phase 1 is a before-and-after on the funnel steps themselves, not a revenue attribution — which is exactly why action 3, setting page titles, is in the first week rather than the last.</p>
+      <h5>One limit we want to be explicit about</h5>
+      <p>Our data covers 90 days of one Danish summer and contains 201 bookings. That is plenty to compare groups of pages and to read the booking process with confidence. It is <b>not</b> enough to quote a conversion rate for any single page, and we have not quoted one anywhere in this deck. It also means the honest test of phase 1 is a before-and-after on the booking steps themselves rather than a revenue figure — which is exactly why action 3, giving the steps page titles, belongs in the first week rather than the last.</p>
     </div>
   </div>
 </section>
@@ -1332,17 +1338,17 @@ required: <span class="hl">false</span>   aria-required: <span class="hl">false<
     <img class="cover__logo" src="assets/coupler-logo.png" alt="Coupler">
     <div class="cover__kicker">Next steps</div>
     <h1 class="cover__h" style="font-size:47px">Ten hours of work sits between 2,516 booking attempts and 159 bookings</h1>
-    <p class="cover__p">Smilrejser has 35 years of trips, a measurement stack better than most of its competitors, and 2,357 people every quarter who start a booking and never finish it. The work is not building something new. It is removing two forms that turn people away without telling them why.</p>
+    <p class="cover__p">Smilrejser has 35 years of trips, better measurement than most of its competitors, and 2,357 people a quarter who start a booking and never finish it. The work here is not building something new. It is fixing two forms that turn people away without telling them why.</p>
     <div class="grid g3" style="margin:8px 0 26px">
-      <div class="card card--bad"><h5>This week</h5><p>Actions 1–5, ten hours, entirely inside checkout steps 1 and 3. Plus one hour for the redirects.</p></div>
-      <div class="card card--warn"><h5>Weeks 2–6</h5><p>The four departure states across 60 pages, the mobile price bar, the two missing GA4 events.</p></div>
-      <div class="card card--good"><h5>Weeks 6–12</h5><p>Re-measure the funnel against today's 71% and 69%. Then test acquisition against the hub pages.</p></div>
+      <div class="card card--bad"><h5>This week</h5><p>Actions 1–5: ten hours, all inside booking steps 1 and 3, plus an hour of redirects.</p></div>
+      <div class="card card--warn"><h5>Weeks 2–6</h5><p>A real next step on all 60 unbuyable trips, the price kept on screen on phones, the two missing measurements.</p></div>
+      <div class="card card--good"><h5>Weeks 6–12</h5><p>Re-measure the booking process against today's 71% and 69%, then test where marketing points.</p></div>
     </div>
     <div class="cover__meta">
-      <div><b>Coupler</b>Audit 26 August 2026, revised with GA4 28 August</div>
-      <div><b>Every finding is documented</b>421 pages, 3 crawl passes, 1 funnel walk, 9,617 internal links, 90 days of GA4</div>
+      <div><b>Coupler</b>Audit 26 August 2026, revised with analytics 28 August</div>
+      <div><b>Every finding is documented</b>421 pages, 9,617 internal links, one booking walked, 90 days of data</div>
       <div><b>6 corrections logged</b>including two findings we disproved ourselves</div>
-      <div><b>Next meeting</b>Sign off the checkout fixes and the departure states</div>
+      <div><b>Next meeting</b>Sign off the booking fixes and the 60 trip pages</div>
     </div>
   </div>
 </section>

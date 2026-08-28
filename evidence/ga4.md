@@ -84,15 +84,19 @@ smaller than the deck's framing implies.
 
 ## Revenue by entry point, indexed to bookable trips = 100
 
+`pages` counts every page of that type. A handful had no entry traffic in the
+window (1 travel-type, 1 hub, 1 guide, 1 blog page), which does not affect the
+session or revenue columns since those pages contribute zero to both.
+
 | entry point | pages | sessions | share | rev/session (indexed) | median engagement |
 |---|---|---|---|---|---|
 | Homepage | 1 | 8,168 | 12.7% | **497** | 204s |
-| Travel-type pages | 20 | 2,298 | 3.6% | **274** | 136s |
-| Destination hubs | 53 | 4,479 | 7.0% | 151 | 98s |
+| Travel-type pages | 21 | 2,298 | 3.6% | **274** | 136s |
+| Destination hubs | 54 | 4,479 | 7.0% | 151 | 98s |
 | Bookable trips | 69 | 26,511 | 41.3% | 100 | 95s |
-| Destination guides | 100 | 8,611 | 13.4% | 84 | 91s |
+| Destination guides | 101 | 8,611 | 13.4% | 84 | 91s |
 | Unbookable trips | 60 | 5,297 | 8.2% | 71 | 74s |
-| Blog posts | 65 | 4,127 | 6.4% | **0** | 64s |
+| Blog posts | 67 posts | 4,118 | 6.4% | **0** | 63s |
 
 Two things stand out.
 
@@ -103,9 +107,9 @@ better than visitors dropped onto one trip. That argues for pointing more
 acquisition spend at hubs and travel-type pages, and it is the opposite of the
 usual instinct to drive traffic to the product page.
 
-**The blog earns nothing.** 4,127 sessions, 6.4% of all traffic, zero revenue
+**The blog earns nothing.** 4,118 sessions, 6.4% of all traffic, zero revenue
 and zero key events across 90 days, with the lowest engagement on the site at
-64 seconds. It is not a conversion asset in its current form and has no internal
+63 seconds. It is not a conversion asset in its current form and has no internal
 linking into bookable inventory worth speaking of (median 1 contextual inbound
 link per post, from `linkgraph.md`).
 
