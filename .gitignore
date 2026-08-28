@@ -2,3 +2,9 @@
 raw/
 node_modules/
 .DS_Store
+
+# Client analytics exports. This repo is public and evidence/ is served over
+# GitHub Pages, so raw GA4 data and revenue figures must stay local.
+ga4/
+*Landing_page*.csv
+*Pages_and_screens*.csv

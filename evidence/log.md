@@ -117,7 +117,9 @@ runtime references every standard event name regardless of configuration.
 | **3 paused tags** inside the tags array (6 `__paused` references across the file) | `"function":"__paused"` in tags array | 2026-08-26 | Y |
 | No Google Ads conversion IDs (`AW-`) or Floodlight IDs (`DC-`) in the container | Regex over full container | 2026-08-26 | Y |
 
-**CORRECTION 2 — 2026-08-26.** The pre-read framed "nine GA4 measurement IDs in one
+**CORRECTION 3 — 2026-08-26.** (Numbered out of sequence because it belongs with the
+measurement evidence above; corrections 1 and 2 are in the Corrections section below.)
+The pre-read framed "nine GA4 measurement IDs in one
 container" as a finding, implying fragmented or duplicated tracking. That framing is wrong.
 The IDs are a hostname lookup table for ten sibling brands, each with its own GA4 property
 and its own server-side endpoint. It is a deliberate multi-brand architecture, and the
@@ -157,6 +159,11 @@ Recorded so these are not re-raised later, and so the deck cannot be accused of 
 | Screaming Frog crawl | Local install is v24.3 **unlicensed** (`"licenced": false` in sf-analytics) — free tier has no CLI, no headless, no JS rendering, no export | Replaced with purpose-built crawler over the 420 sitemap URLs |
 
 ## Corrections
+
+Six in total across the audit. Corrections 1 and 2 are below, correction 3 sits with the
+measurement evidence above, and three more from the internal-link work are documented at the
+foot of `linkgraph.md` — including one striking finding that turned out to be an artefact of
+the measurement script and never reached the deck.
 
 **CORRECTION 1 — 2026-08-26.** First pass concluded "181 of 250 trip pages (72%) cannot be
 booked". That was wrong twice over, and both errors were caught by verifying the mechanism

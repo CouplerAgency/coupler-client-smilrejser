@@ -1,0 +1,22 @@
+path,http_status,sessions_90d,action
+/italien/trentino-og-dolomitterne,404,432,redirect to closest live trip or hub
+/italien/et-syditaliensk-eventyreventyr,404,39,redirect to closest live trip or hub
+/italien/smag-paa-amalfikysten,404,11,redirect to closest live trip or hub
+/portugal/azorerne-d,404,3,redirect to closest live trip or hub
+/amalfi,404,1,redirect to closest live trip or hub
+/amalfikysten,404,1,redirect to closest live trip or hub
+/checkout/tak-for-din-henvendelse,404,1,redirect to closest live trip or hub
+/favicon/smilrejser-dk/favicon-16x16.png,404,1,redirect to closest live trip or hub
+/grupper,404,1,redirect to closest live trip or hub
+/i,404,1,redirect to closest live trip or hub
+/italien/kulinariske-vandringer-paa-amalfikysten-septe,404,1,redirect to closest live trip or hub
+/klassiske-sicilien,404,1,redirect to closest live trip or hub
+/madeira/portugal,404,1,redirect to closest live trip or hub
+/portugal/azorerne-dk,404,1,redirect to closest live trip or hub
+/sitemap_index.xml,404,1,redirect to closest live trip or hub
+/skotland/skotland-haverejse-til-skotland,404,1,redirect to closest live trip or hub
+/spanien/andalusiens_lys_med_cadiz_og_sevilla,404,1,redirect to closest live trip or hub
+/syditalien,404,1,redirect to closest live trip or hub
+/tak-for-din-betaling,404,1,redirect to closest live trip or hub
+/verden,404,1,redirect to closest live trip or hub
+/solorejser,200,16,add to sitemap if indexable

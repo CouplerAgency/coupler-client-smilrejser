@@ -1,0 +1,422 @@
+path,kind,departure_state,inbound_raw,inbound_contextual,outbound_contextual,depth_contextual,is_orphan,word_count
+/,,,420,0,33,0,1,805
+/afrika,,,14,14,12,2,0,2319
+/albanien,,,420,4,6,2,0,2222
+/albanien/autentiske-albanien,trip,A bookable online,13,13,6,2,0,2570
+/armenien,,,420,3,3,2,0,1909
+/asien,,,9,9,25,2,0,2920
+/balkan,,,6,4,22,3,0,2316
+/balkan/betagende-nord-balkan,trip,D empty (Afgange ikke tilgængelige),17,17,0,2,0,2887
+/balkan/betagende-syd-balkan,trip,D empty (Afgange ikke tilgængelige),12,12,0,2,0,3617
+/baltikum,,,5,4,11,3,0,1649
+/baltikum/den-baltiske-odysse,trip,D empty (Afgange ikke tilgængelige),16,16,0,2,0,2443
+/belgien,,,420,3,0,2,0,2105
+/belgien/antwerpen,editorial-city,n/a — no departures section,0,0,7,,1,1948
+/belgien/bruxelles,editorial-city,n/a — no departures section,0,0,6,,1,2241
+/blog,,,420,2,67,1,0,2566
+/blog/10-ting-du-ikke-vidste-om-portugal,,,1,1,9,2,0,300
+/blog/4-ting-du-bor-se-i-madrid,,,1,1,7,2,0,1975
+/blog/6-ting-du-bare-maa-opleve-paa-din-rejse-til-amalfikysten,,,1,1,7,2,0,1062
+/blog/6-tips-til-at-planlaegge-vandreferien,,,3,3,6,2,0,680
+/blog/baltikum-og-de-oversete-fortaellinger,,,1,1,8,2,0,907
+/blog/barcelonas-bedste-bydele,,,1,1,3,2,0,1496
+/blog/blomsterfestival-paa-madeira,,,1,1,3,2,0,276
+/blog/caminito-del-rey-malaga-andalusien,,,1,1,2,2,0,396
+/blog/cataloniens-mad-og-vin,,,3,3,6,2,0,1045
+/blog/cinque-terre-fem-smaa-byer,,,1,1,11,2,0,1738
+/blog/coimbra-portugals-gamle-universitetsby,,,1,1,2,2,0,368
+/blog/dagbog-fra-madeira,,,1,1,6,2,0,3875
+/blog/det-skaeve-taarn-i-pisa,,,1,1,2,2,0,622
+/blog/det-specielle-guggenheim-museum-i-bilbao,,,1,1,2,2,0,643
+/blog/dette-kan-du-ogsaa-opleve-paa-sicilien,,,1,1,8,2,0,2047
+/blog/en-lidenskabelig-rejse-gennem-myternes-rige,,,1,1,5,2,0,919
+/blog/en-rejseberetning-fra-sicilien,,,1,1,5,2,0,1566
+/blog/en-rejseberetning-fra-toscana-og-umbrien,,,1,1,6,2,0,8101
+/blog/fabelagtige-faeroeerne-en-rejseberetning,,,1,1,3,2,0,653
+/blog/fra-sten-til-vin-pa-azorerne,,,1,1,2,2,0,444
+/blog/funchal-atlanterhavets-kulturelle-skat,,,2,2,8,2,0,1967
+/blog/graesk-vin-en-overset-perle,,,1,1,8,2,0,1175
+/blog/h-c-andersen-paa-amalfikysten,,,1,1,11,2,0,1567
+/blog/haverejser-og-havebegreber,,,1,1,3,2,0,666
+/blog/jordan-en-rejseberetning,,,2,2,2,1,0,928
+/blog/jul-og-nytaar-paa-madeira,,,1,1,3,2,0,288
+/blog/kender-du-disse-tre-kirker-i-rom,,,1,1,2,2,0,1383
+/blog/kroatien-en-personlig-kaerlighedshistorie,,,2,2,4,1,0,1076
+/blog/kunst-og-kultur-under-renaessancen-i-italien,,,1,1,9,2,0,1580
+/blog/mad-og-vin-i-italien,,,2,2,5,2,0,1865
+/blog/mad-og-vin-i-porto,,,1,1,4,2,0,354
+/blog/mad-og-vin-i-portugal,,,2,2,5,2,0,507
+/blog/madeira-vejr-og-klima,,,1,1,7,2,0,917
+/blog/middelhavsoen-malta,,,1,1,6,2,0,2191
+/blog/moderne-kulturturisme-arkaeologiens-muligheder,,,1,1,10,2,0,1468
+/blog/ni-ting-at-se-i-lucca,,,1,1,11,2,0,3757
+/blog/nytaar-i-portugal,,,1,1,6,2,0,396
+/blog/oman-rejs-sikkert-til-den-arabiske-halvoe,,,1,1,3,2,0,579
+/blog/opera-i-verona,,,1,1,10,2,0,1114
+/blog/oplev-det-bedste-af-porto-i-portugal,,,1,1,13,2,0,1655
+/blog/oplev-sevilla,,,1,1,6,2,0,758
+/blog/paa-douroflodens-gronne-vand,,,1,1,6,2,0,1543
+/blog/perler-omkring-lissabon,,,1,1,4,2,0,546
+/blog/portugal-classic-auto-parade-en-koeretur-gennem-tiden,,,1,1,1,2,0,381
+/blog/portugal-fado,,,1,1,4,2,0,585
+/blog/portugal-igors-opskrifter-paa-poncha,,,1,1,1,2,0,261
+/blog/portugal-lissabon,,,1,1,4,2,0,1226
+/blog/prado-museet-i-madrid-med-ny-fantastisk-saerudstilling,,,1,1,7,2,0,398
+/blog/rejseguide-til-gardasoeen,,,1,1,16,2,0,2466
+/blog/rejsetrends-i-2025,,,1,1,0,2,0,1106
+/blog/restauranter-i-lissabon,,,1,1,4,2,0,833
+/blog/rom-og-arkitekturen,,,2,2,8,2,0,1840
+/blog/sagrada-familia-gaudis-livsvaerk,,,1,1,2,2,0,1212
+/blog/seoul-stress-selfie,,,2,2,0,1,0,759
+/blog/spanien-gibraltar,,,1,1,5,2,0,634
+/blog/spanien-picasso,,,1,1,7,2,0,2900
+/blog/spanien-pilgrimsrute,,,1,1,10,2,0,1965
+/blog/sri-lanka-5-grunde,,,2,2,0,1,0,857
+/blog/tag-med-paa-byvandring-i-siena,,,1,1,6,2,0,1773
+/blog/ti-fantastiske-fiestas-i-spanien,,,1,1,6,2,0,1927
+/blog/top-10-i-verona,,,1,1,8,2,0,2118
+/blog/tyskland-en-personlig-rejseberetning-fra-rhinen,,,1,1,5,2,0,1437
+/blog/varmt-velkommen-til-andalusien,,,1,1,3,2,0,561
+/blog/vejret-paa-amalfikysten-i-italien,,,1,1,6,2,0,489
+/blog/velkommen-til-madeira-en-frodig-oase,,,1,1,5,2,0,714
+/blog/vidste-du-det-om-etruskerne,,,1,1,9,2,0,1586
+/blog/vin-og-delikatesser-i-lissabon,,,1,1,4,2,0,456
+/bosnien,,,420,6,12,2,0,2033
+/bosnien/mostar,editorial-city,n/a — no departures section,3,3,6,3,0,2060
+/bosnien/sarajevo,editorial-city,n/a — no departures section,2,2,6,3,0,2229
+/bulgarien,,,420,1,1,4,0,2350
+/bulgarien/bulgariens-skjulte-skatte,trip,D empty (Afgange ikke tilgængelige),12,12,0,2,0,2505
+/cookie-politik,,,420,0,0,,1,976
+/cypern,,,420,4,9,2,0,2529
+/cypern/charmerende-cypern-kultur-og-livsnydelse,trip,D empty (Afgange ikke tilgængelige),13,13,4,2,0,1814
+/cypern/cypern-afrodites-smukke-oe,trip,A bookable online,13,13,4,1,0,2123
+/danmark,,,0,0,0,,1,240
+/efteraarsrejser,,,1,1,49,,0,2855
+/egypten,,,420,2,1,2,0,367
+/egypten/cairo-og-nilkrydstogt,trip,A bookable online,10,10,0,2,0,5489
+/england,,,420,12,13,1,0,2273
+/england/bath,editorial-city,n/a — no departures section,3,3,7,2,0,1877
+/england/chester,editorial-city,n/a — no departures section,1,1,3,2,0,1562
+/england/cornwall,editorial-city,n/a — no departures section,2,2,7,2,0,1841
+/england/haverejse-i-det-sydoestlige-england,trip,A bookable online,12,12,1,2,0,3880
+/england/haverejse-i-england-med-chelsea-flower-show,trip,A bookable online,12,12,3,2,0,2851
+/england/haverejser-england,editorial-thin,n/a — no departures section,1,1,2,3,0,270
+/england/liverpool,editorial-city,n/a — no departures section,1,1,3,2,0,1891
+/england/london,editorial-city,n/a — no departures section,8,8,7,2,0,1692
+/england/oxford,editorial-city,n/a — no departures section,4,4,7,2,0,2106
+/england/rundrejser-england,editorial-thin,n/a — no departures section,0,0,2,,1,232
+/england/sydengland,editorial-city,n/a — no departures section,1,1,11,2,0,2499
+/england/sydenglands-stolthed-og-charme-fra-stonehenge-og-shakespeare-til-downton-abbey,trip,D empty (Afgange ikke tilgængelige),12,12,4,2,0,3050
+/england/vandreferie-i-lake-district,trip,D empty (Afgange ikke tilgængelige),10,10,4,2,0,3764
+/estland,,,420,5,4,2,0,2115
+/estland/tallinn,editorial-city,n/a — no departures section,3,3,8,3,0,1618
+/europa,,,116,115,160,2,0,6613
+/europa/kulturrejser,editorial-city,n/a — no departures section,0,0,108,,1,4873
+/faeroeerne,,,420,5,7,2,0,1989
+/faeroeerne/fabelagtige-faeroerne,trip,D empty (Afgange ikke tilgængelige),9,9,0,2,0,3254
+/faeroeerne/torshavn,editorial-city,n/a — no departures section,2,2,7,3,0,2261
+/faq,,,420,0,1,,1,1521
+/flere-generationer,,,420,1,3,2,0,298
+/flodkrydstogter,,,420,3,12,1,0,1035
+/flodkrydstogter/douro-deluxe-flodkrydstogt-paa-dourofloden,trip,D empty (Afgange ikke tilgængelige),15,15,0,2,0,1749
+/flodkrydstogter/flodkrydstogt-fra-alsace-til-toppen-af-de-schweiziske-alper,trip,D empty (Afgange ikke tilgængelige),15,15,4,2,0,1359
+/flodkrydstogter/flodkrydstogt-paa-donaufloden,trip,D empty (Afgange ikke tilgængelige),16,16,5,2,0,3081
+/flodkrydstogter/flodkrydstogt-paa-douro-floden,trip,D empty (Afgange ikke tilgængelige),13,13,4,2,0,3234
+/flodkrydstogter/flodkrydstogt-paa-rhinen,trip,D empty (Afgange ikke tilgængelige),15,15,8,2,0,3195
+/flodkrydstogter/flodkrydstogt-paa-rhone-floden,trip,A bookable online,16,16,1,2,0,3431
+/flodkrydstogter/flodkrydstogt-paa-rhone-floden-2027,trip,"E departures section, no visible state",15,15,0,2,0,3425
+/flodkrydstogter/flodkrydstogt-paa-seinen,trip,A bookable online,16,16,5,2,0,3298
+/flyrejser,,,2,0,62,,1,2864
+/flyrejser/flyrejser-fra-aalborg-lufthavn,,,0,0,2,,1,227
+/flyrejser/flyrejser-fra-billund-lufthavn,,,0,0,0,,1,132
+/foraarsrejser,,,1,1,0,,0,129
+/frankrig,,,420,22,25,1,0,2580
+/frankrig/cannes,editorial-city,n/a — no departures section,2,2,6,2,0,2001
+/frankrig/flodkrydstogt-paa-rhinen-og-tur-med-gletsjerekspressen,trip,A bookable online,13,13,0,2,0,3885
+/frankrig/normandiet,editorial-city,n/a — no departures section,2,2,6,2,0,2062
+/frankrig/paris,editorial-city,n/a — no departures section,11,11,5,2,0,2243
+/frankrig/paris-mon-amour-storbyliv-og-stemning-paa-seinen,trip,A bookable online,12,12,1,2,0,1924
+/frankrig/provence,editorial-city,n/a — no departures section,4,4,6,2,0,1986
+/frankrig/rouen,editorial-city,n/a — no departures section,3,3,6,2,0,2042
+/frankrig/saint-tropez,editorial-city,n/a — no departures section,2,2,7,2,0,1943
+/frankrig/seinen,editorial-city,n/a — no departures section,3,3,7,2,0,2037
+/frankrig/strasbourg,editorial-city,n/a — no departures section,3,3,8,2,0,1767
+/frankrig/sydfranske-eventyr-i-provence,trip,A bookable online,16,16,7,2,0,2786
+/gavekort,,,420,0,0,,1,210
+/georgien,,,420,3,10,2,0,2264
+/georgien/vandreferie-i-georgien-svaneti,trip,D empty (Afgange ikke tilgængelige),11,11,5,2,0,2234
+/graekenland,,,420,14,16,2,0,2573
+/graekenland/athen,editorial-city,n/a — no departures section,9,9,7,2,0,2080
+/graekenland/mykonos,editorial-city,n/a — no departures section,1,1,5,3,0,1902
+/graekenland/nordgraekenland-mellem-himmel-og-hav,trip,A bookable online,15,15,5,1,0,2503
+/graekenland/oe-hop-i-graekenland,trip,A bookable online,12,12,4,2,0,3194
+/graekenland/peloponnes,editorial-city,n/a — no departures section,4,4,5,2,0,2208
+/graekenland/santorini,editorial-city,n/a — no departures section,2,2,5,3,0,2126
+/graekenland/smagen-af-kreta,trip,D empty (Afgange ikke tilgængelige),11,11,2,2,0,1754
+/graekenland/unik-rundrejse-paa-peloponnes,trip,A bookable online,15,15,8,1,0,3417
+/graekenland/vandreferie-i-graekenland,trip,D empty (Afgange ikke tilgængelige),11,11,1,2,0,2959
+/historiske-rejser,,,420,149,104,2,0,4713
+/holland,,,420,6,10,2,0,2165
+/holland/amsterdam,editorial-city,n/a — no departures section,5,5,8,3,0,1569
+/indien,,,420,6,4,2,0,2072
+/indien/rajasthan-indiens-juvel,trip,A bookable online,11,11,2,2,0,5455
+/indien/sydindiens-guddommelige-hjerte-kerala,trip,A bookable online,12,12,2,2,0,4591
+/inspiration,,,420,0,2,,1,569
+/irland,,,420,6,11,2,0,2314
+/irland/dublin,editorial-city,n/a — no departures section,4,4,9,3,0,2144
+/irland/fortryllende-irland,trip,A bookable online,12,12,9,2,0,4302
+/irland/kilkenny,editorial-city,n/a — no departures section,3,3,9,3,0,1858
+/irland/musikfestival-i-dublin,trip,A bookable online,12,12,2,2,0,1941
+/irland/vandreferie-i-irland,trip,D empty (Afgange ikke tilgængelige),9,9,4,2,0,3060
+/island,,,5,5,7,2,0,2406
+/italien,,,420,32,46,1,0,3739
+/italien/amalfi,editorial-city,n/a — no departures section,13,12,15,2,0,2520
+/italien/amalfi-a-la-carte,trip,A bookable online,19,19,16,1,0,4654
+/italien/amalfi/amalfi-kulturrejser,editorial-city,n/a — no departures section,0,0,8,,1,518
+/italien/amalfikysten,editorial-city,n/a — no departures section,16,16,12,2,0,1349
+/italien/amalfikysten-til-foraarspris,trip,D empty (Afgange ikke tilgængelige),10,10,6,2,0,3832
+/italien/andrea-bocelli-i-toscana,trip,D empty (Afgange ikke tilgængelige),13,13,4,2,0,1663
+/italien/apulien,editorial-city,n/a — no departures section,4,3,16,2,0,2007
+/italien/apulien/apulien-kulturrejser,editorial-thin,n/a — no departures section,0,0,1,,1,191
+/italien/charmerende-cinque-terre,trip,A bookable online,12,12,7,2,0,2414
+/italien/cilento-det-hemmelige-syditalienske-paradis,trip,A bookable online,12,12,8,2,0,2337
+/italien/cinque-terre,editorial-city,n/a — no departures section,3,3,6,3,0,1918
+/italien/det-ukendte-norditalien,trip,D empty (Afgange ikke tilgængelige),9,9,0,2,0,2659
+/italien/et-syditaliensk-eventyr,trip,A bookable online,14,14,11,2,0,2910
+/italien/firenze,editorial-city,n/a — no departures section,11,11,9,2,0,1979
+/italien/gardasoeen,editorial-city,n/a — no departures section,7,7,18,2,0,2457
+/italien/gardasoeens-herligheder,trip,A bookable online,14,14,11,2,0,2636
+/italien/genova,editorial-city,n/a — no departures section,3,3,6,2,0,2279
+/italien/hjertet-af-italien-paa-elcykel,trip,D empty (Afgange ikke tilgængelige),11,11,4,2,0,2051
+/italien/ischia,editorial-city,n/a — no departures section,2,2,6,3,0,2259
+/italien/klassiske-sicilien,trip,A bookable online,12,12,8,2,0,3485
+/italien/kulinariske-vandringer-paa-amalfikysten,trip,A bookable online,17,17,16,2,0,4080
+/italien/kulinariske-vandringer-paa-amalfikysten-september-2026,trip,A bookable online,20,20,7,1,0,3989
+/italien/lago-maggiore,editorial-city,n/a — no departures section,2,2,5,3,0,2513
+/italien/madlavningskursus-paa-amalfikysten,trip,D empty (Afgange ikke tilgængelige),8,8,0,2,0,2443
+/italien/milano,editorial-city,n/a — no departures section,9,9,2,3,0,1763
+/italien/napoli,editorial-city,n/a — no departures section,12,12,8,2,0,2343
+/italien/napoli-og-amalfikysten-storbyens-puls-og-kystens-hoejdepunkter,trip,D empty (Afgange ikke tilgængelige),15,15,0,2,0,3067
+/italien/norditalien,editorial-city,n/a — no departures section,8,8,19,3,0,2337
+/italien/nytaar-i-det-historiske-rom,trip,A bookable online,15,15,4,1,0,1852
+/italien/opera-verona,trip,A bookable online,15,15,5,2,0,2405
+/italien/piemonte,editorial-city,n/a — no departures section,3,3,12,3,0,2083
+/italien/pompeji,editorial-city,n/a — no departures section,13,13,3,2,0,2191
+/italien/puccini-operarejse-til-toscana,trip,D empty (Afgange ikke tilgængelige),13,13,8,2,0,2263
+/italien/ravello,editorial-city,n/a — no departures section,9,9,15,2,0,2247
+/italien/rom,editorial-city,n/a — no departures section,18,18,4,2,0,2187
+/italien/rom-den-evige-stad,trip,A bookable online,11,11,6,2,0,3439
+/italien/sicilien,editorial-city,n/a — no departures section,8,8,11,2,0,2410
+/italien/siciliens-riviera,trip,D empty (Afgange ikke tilgængelige),10,10,0,2,0,2767
+/italien/sommer-paa-amalfikysten,trip,D empty (Afgange ikke tilgængelige),15,15,6,2,0,2296
+/italien/sommer-ved-gardasoeen,trip,D empty (Afgange ikke tilgængelige),12,12,0,2,0,2489
+/italien/sorrento,editorial-city,n/a — no departures section,3,3,6,3,0,2102
+/italien/stresa,editorial-city,n/a — no departures section,2,2,10,3,0,2275
+/italien/syditalien,editorial-city,n/a — no departures section,11,11,17,2,0,2625
+/italien/toscana,editorial-city,n/a — no departures section,12,12,10,3,0,2019
+/italien/umbrien,editorial-city,n/a — no departures section,2,2,6,3,0,2036
+/italien/vandreferie-i-cinque-terre,trip,D empty (Afgange ikke tilgængelige),13,13,3,2,0,2312
+/italien/vandreferie-ved-gardasoeen,trip,D empty (Afgange ikke tilgængelige),9,9,3,2,0,2202
+/italien/venedig,editorial-city,n/a — no departures section,9,9,3,2,0,2240
+/italien/verona,editorial-city,n/a — no departures section,9,9,7,2,0,1992
+/italien/vesuvs-arkaeologiske-skygge,trip,A bookable online,16,16,8,2,0,2977
+/italien/vidunderlige-amalfi,trip,A bookable online,20,20,30,1,0,5354
+/italien/vidunderlige-norditalien,trip,A bookable online,15,15,8,2,0,2122
+/italien/vidunderlige-toscana,trip,A bookable online,16,16,8,2,0,2783
+/italien/vin-og-gastronomi-i-piemonte,trip,A bookable online,12,12,5,2,0,2147
+/jordan,,,420,4,5,2,0,2039
+/jordan/jordan-et-magisk-kongerige,trip,D empty (Afgange ikke tilgængelige),4,4,3,3,0,3172
+/jordan/vandreferie-i-jordan,trip,D empty (Afgange ikke tilgængelige),11,11,0,2,0,3338
+/jul-og-nytaar,,,420,7,8,2,0,556
+/jul-og-nytaar/julerejser,editorial-thin,n/a — no departures section,30,30,1,2,0,177
+/jul-og-nytaar/nytaars-rejser,editorial-thin,n/a — no departures section,9,9,5,1,0,352
+/katalog,,,420,0,0,,1,390
+/kina,,,420,1,3,3,0,1866
+/kina/beijing,editorial-city,n/a — no departures section,0,0,3,,1,1675
+/kina/kina-og-tibet-ekspressen,trip,A bookable online,9,9,1,2,0,4478
+/kina/kina-pagoder-pandaer-og-paladser,trip,A bookable online,13,13,1,2,0,5001
+/kina/vandreferie-paa-den-kinesiske-mur,trip,A bookable online,11,11,2,2,0,4300
+/kroatien,,,420,5,14,2,0,1910
+/kroatien/dubrovnik,editorial-city,n/a — no departures section,3,3,7,3,0,2076
+/kroatien/kroatiens-smukke-kyst,trip,D empty (Afgange ikke tilgængelige),14,14,6,2,0,1739
+/kroatien/split,editorial-city,n/a — no departures section,4,4,8,3,0,2309
+/kroatien/trogir,editorial-city,n/a — no departures section,1,1,6,3,0,2022
+/kulturrejser,,,420,145,130,1,0,5871
+/laeserrejser,,,420,1,5,2,0,364
+/laeserrejser/laeserrejser-kristeligt-dagblad,,,1,1,2,3,0,292
+/langtidsferier,,,420,2,6,1,0,884
+/letland,,,420,5,13,2,0,2388
+/letland/riga,editorial-city,n/a — no departures section,4,4,7,3,0,1891
+/litauen,,,420,5,4,2,0,2253
+/litauen/vilnius,editorial-city,n/a — no departures section,3,3,10,3,0,1721
+/madrejser,,,420,59,27,2,0,1445
+/madrejser/gastronomirejser,editorial-city,n/a — no departures section,33,33,9,2,0,513
+/malta,,,420,3,4,2,0,2377
+/marokko,,,420,4,14,2,0,2323
+/marokko/farverige-marokko-fra-tanger-til-marrakech,trip,D empty (Afgange ikke tilgængelige),13,13,0,2,0,3530
+/marokko/magiske-marrakech-og-essaouira,trip,A bookable online,12,12,4,2,0,3775
+/marokko/marokko-blandt-berbere-og-beduiner,trip,A bookable online,11,11,7,2,0,4159
+/marokko/marrakech,editorial-city,n/a — no departures section,3,3,11,3,0,2000
+/marokko/rabat,editorial-city,n/a — no departures section,0,0,10,,1,2052
+/marokko/tanger,editorial-city,n/a — no departures section,0,0,11,,1,1920
+/mellemoesten,,,0,0,5,,1,1762
+/montenegro,,,420,5,4,2,0,1947
+/musik-og-underholdning,,,420,33,9,2,0,553
+/musik-og-underholdning/koncert-rejser,editorial-thin,n/a — no departures section,10,9,2,2,0,222
+/musik-og-underholdning/koncert-rejser/andrea-bocelli,editorial-thin,n/a — no departures section,0,0,1,,1,180
+/musik-og-underholdning/operarejser,editorial-thin,n/a — no departures section,420,9,7,2,0,372
+/naturrejser,,,420,117,95,2,0,4531
+/naturrejser/blomsterrejser,editorial-city,n/a — no departures section,420,18,9,2,0,847
+/naturrejser/haverejser,editorial-city,n/a — no departures section,420,27,7,1,0,733
+/naturrejser/solfoermoerkelsesrejser,editorial-thin,n/a — no departures section,420,0,3,,1,367
+/norge,,,420,3,12,3,0,2515
+/norge/haverejse-til-stavanger,trip,D empty (Afgange ikke tilgængelige),8,8,0,2,0,2008
+/nyhedsbrev,,,420,0,0,,1,652
+/oestrig,,,420,9,8,2,0,2068
+/oestrig/innsbruck,editorial-city,n/a — no departures section,2,2,6,3,0,2011
+/oestrig/kultur-i-alperne,trip,D empty (Afgange ikke tilgængelige),14,14,10,2,0,1759
+/oestrig/salzburg,editorial-city,n/a — no departures section,3,3,11,3,0,2095
+/oestrig/tyrol,editorial-city,n/a — no departures section,2,2,6,3,0,1904
+/oestrig/wien,editorial-city,n/a — no departures section,5,5,5,3,0,1962
+/om-os,,,420,1,0,1,0,667
+/om-os/job,,,420,0,0,,1,666
+/om-os/kontakt,,,420,0,0,,1,348
+/om-os/medarbejdere,,,420,0,0,,1,184
+/om-os/rejseledere,,,420,0,0,,1,687
+/oman,,,420,4,10,2,0,2285
+/oman/oman-det-fortryllende-oerkenland,trip,D empty (Afgange ikke tilgængelige),10,10,1,2,0,2963
+/paaskerejser,,,2,2,67,4,0,3655
+/polen,,,420,5,8,2,0,1939
+/polen/krakow,editorial-city,n/a — no departures section,2,2,9,3,0,2025
+/polen/kulturel-kvalitetstid-i-krakow,trip,D empty (Afgange ikke tilgængelige),9,9,7,2,0,1922
+/portugal,,,420,25,37,1,0,3297
+/portugal/algarve,editorial-city,n/a — no departures section,7,7,9,2,0,2233
+/portugal/azorerne,editorial-city,n/a — no departures section,5,5,10,2,0,2293
+/portugal/azorerne-den-groenne-oe-sao-miguel,trip,D empty (Afgange ikke tilgængelige),11,11,3,2,0,1984
+/portugal/cascais,editorial-city,n/a — no departures section,4,4,7,2,0,2204
+/portugal/cascais-portugals-riviera,trip,A bookable online,14,14,7,1,0,2753
+/portugal/essensen-af-madeira,trip,D empty (Afgange ikke tilgængelige),13,13,4,2,0,3166
+/portugal/haverejse-til-nordportugal,trip,A bookable online,16,16,1,2,0,2844
+/portugal/idylliske-tavira,trip,D empty (Afgange ikke tilgængelige),11,11,4,2,0,1886
+/portugal/jul-paa-madeira,trip,A bookable online,13,13,1,2,0,3708
+/portugal/lissabon,editorial-city,n/a — no departures section,17,17,7,2,0,2511
+/portugal/lissabon-a-la-carte,trip,A bookable online,14,14,1,2,0,2281
+/portugal/lissabon-og-alentejos-herligheder,trip,D empty (Afgange ikke tilgængelige),15,15,0,2,0,3118
+/portugal/madeira,editorial-city,n/a — no departures section,22,18,18,1,0,2528
+/portugal/madeira/madeira-blomsterfestival,editorial-thin,n/a — no departures section,0,0,2,,1,214
+/portugal/madeira/madeira-langtidsferie,editorial-thin,n/a — no departures section,0,0,0,,1,134
+/portugal/madeira/madeira-rundrejser,editorial-thin,n/a — no departures section,0,0,1,,1,185
+/portugal/madeira/madeira-vandreferie,editorial-thin,n/a — no departures section,0,0,2,,1,215
+/portugal/mageloese-madeira,trip,A bookable online,14,14,44,2,0,6771
+/portugal/mageloese_madeira_med_blomsterfestival,trip,A bookable online,12,12,1,2,0,3946
+/portugal/mageloese_madeira_med_blomsterfestivalen,trip,D empty (Afgange ikke tilgængelige),12,12,0,2,0,2918
+/portugal/nytaar-i-porto,trip,A bookable online,15,15,1,2,0,2842
+/portugal/nytaar-paa-algarvekysten,trip,D empty (Afgange ikke tilgængelige),13,13,4,2,0,2255
+/portugal/nytaarsrejse-til-lissabon,trip,A bookable online,17,17,1,1,0,2368
+/portugal/nytaarsrejse-til-madeira,trip,A bookable online,15,15,7,2,0,4367
+/portugal/paa-opdagelse-i-portugal,trip,A bookable online,18,18,7,2,0,4637
+/portugal/porto,editorial-city,n/a — no departures section,12,12,11,2,0,2630
+/portugal/porto-og-douro-dalens-herligheder,trip,A bookable online,16,16,4,2,0,4331
+/portugal/portugal-flodkrydstogter,editorial-thin,n/a — no departures section,0,0,2,,1,239
+/portugal/portugal-kulturrejser,editorial-city,n/a — no departures section,0,0,26,,1,1328
+/portugal/portugal-langtidsferie,editorial-thin,n/a — no departures section,0,0,0,,1,130
+/portugal/portugal-rundrejser,editorial-thin,n/a — no departures section,0,0,7,,1,428
+/portugal/portugals-groenne-oerige-azorerne-og-madeira,trip,A bookable online,14,14,2,2,0,4682
+/portugal/praegtige-portugal,trip,D empty (Afgange ikke tilgængelige),16,16,4,2,0,2588
+/portugal/tavira,editorial-city,n/a — no departures section,3,3,11,2,0,2228
+/portugal/vandreferie-i-portugal,trip,D empty (Afgange ikke tilgængelige),16,16,4,2,0,3147
+/portugal/vandreferie-paa-algarvekysten,trip,A bookable online,15,15,9,2,0,3995
+/portugal/vandreferie-paa-madeira,trip,A bookable online,14,14,11,1,0,4526
+/portugal/vidunderlige-madeira,trip,D empty (Afgange ikke tilgængelige),14,14,5,2,0,2282
+/privatlivspolitik,,,420,0,0,,1,3207
+/rejsebetingelser,,,420,1,0,,0,5374
+/rejseforedrag,,,420,1,0,,0,120
+/rejseforsikring,,,420,0,0,,1,1012
+/rejsekalender,,,420,0,131,,1,4131
+/rejsemal,,,420,1,44,1,0,214
+/rejsetyper,,,420,1,23,1,0,186
+/rundrejser,,,420,4,52,2,0,2498
+/saeson,,,0,0,10,,1,127
+/safarirejser,,,420,4,4,2,0,481
+/samvirke,,,1,1,1,3,0,362
+/schweiz,,,420,7,11,2,0,2358
+/schweiz/schweiz-togrejser,editorial-thin,n/a — no departures section,0,0,2,,1,218
+/schweiz/toppen-af-alperne-med-gletsjer-ekspressen,trip,"E departures section, no visible state",17,17,0,2,0,2643
+/seniorrejser,,,0,0,174,,1,6206
+/serbien,,,420,4,6,2,0,2257
+/serbien/beograd,editorial-city,n/a — no departures section,2,2,8,3,0,1769
+/skotland,,,420,3,16,2,0,2248
+/skotland/edinburgh,editorial-city,n/a — no departures section,3,3,5,3,0,2400
+/skotland/haverejse-til-skotland,trip,A bookable online,13,13,2,2,0,4283
+/skotland/sagnomspundne-skotland,trip,A bookable online,12,12,9,2,0,3878
+/skotland/sommer-i-skotland,trip,D empty (Afgange ikke tilgængelige),9,9,0,2,0,3080
+/skotland/vandreferie-i-skotland,trip,A bookable online,12,12,5,2,0,4102
+/slovenien,,,420,4,7,2,0,2242
+/slovenien/ljubljana-og-de-slovenske-perler,trip,D empty (Afgange ikke tilgængelige),10,10,6,2,0,1809
+/sommerrejser,,,34,34,5,2,0,438
+/spanien,,,420,28,35,1,0,3174
+/spanien/andalusien,editorial-city,n/a — no departures section,13,13,11,2,0,2376
+/spanien/andalusien-til-saerpris,trip,D empty (Afgange ikke tilgængelige),11,11,7,2,0,1894
+/spanien/andalusiens-herligheder,trip,A bookable online,12,12,6,2,0,2368
+/spanien/andalusiens-lys-med-cadiz-og-sevilla,trip,A bookable online,13,13,2,2,0,3313
+/spanien/autentiske-catalonien-og-costa-brava,trip,A bookable online,12,12,6,2,0,3034
+/spanien/barcelona,editorial-city,n/a — no departures section,10,10,9,2,0,2312
+/spanien/bilbao,editorial-city,n/a — no departures section,4,4,11,2,0,1985
+/spanien/caminoen,editorial-city,n/a — no departures section,3,3,9,2,0,1861
+/spanien/det-gode-liv-langtidsferie-i-andalusien,trip,A bookable online,11,11,5,2,0,1854
+/spanien/fra-bilbao-til-bordeaux-en-kulturel-rejse-gennem-baskerland-og-sydfrankrig,trip,A bookable online,15,15,1,2,0,3347
+/spanien/fra-bilbao-til-toulouse,trip,D empty (Afgange ikke tilgængelige),15,15,8,2,0,2244
+/spanien/granada,editorial-city,n/a — no departures section,7,6,7,2,0,2209
+/spanien/granada/alhambra,editorial-thin,n/a — no departures section,3,3,4,3,0,377
+/spanien/madrid,editorial-city,n/a — no departures section,7,7,7,2,0,1976
+/spanien/madrid-spaniens-hjerte,trip,A bookable online,11,11,7,2,0,1980
+/spanien/malaga,editorial-city,n/a — no departures section,7,7,2,2,0,2284
+/spanien/maleriske-mallorca,trip,D empty (Afgange ikke tilgængelige),13,13,5,2,0,1735
+/spanien/mallorca,editorial-city,n/a — no departures section,4,2,7,2,0,2107
+/spanien/mallorca/palma,editorial-city,n/a — no departures section,2,2,5,3,0,1812
+/spanien/mallorca/soller,editorial-city,n/a — no departures section,1,1,7,3,0,1753
+/spanien/ronda,editorial-city,n/a — no departures section,2,2,3,3,0,1928
+/spanien/rundrejse-i-andalusien-med-tog,trip,A bookable online,11,11,1,2,0,3373
+/spanien/san-sebastian,editorial-city,n/a — no departures section,3,3,12,2,0,1980
+/spanien/solformoerkelse-i-spanien-bilbao,trip,D empty (Afgange ikke tilgængelige),10,10,0,2,0,2018
+/spanien/solformoerkelse-i-spanien-med-astrofysiker-michael-linden-voernle,trip,D empty (Afgange ikke tilgængelige),9,9,0,2,0,2038
+/spanien/solformoerkelse-i-spanien-valencia,trip,D empty (Afgange ikke tilgængelige),11,11,0,2,0,1642
+/spanien/tenerife,editorial-city,n/a — no departures section,4,4,6,2,0,2398
+/spanien/tenerife-det-evige-foraars-oe,trip,D empty (Afgange ikke tilgængelige),11,11,5,2,0,1760
+/spanien/vandreferie-paa-caminoen,trip,D empty (Afgange ikke tilgængelige),17,17,8,2,0,2115
+/sri-lanka,,,420,3,4,2,0,2493
+/sri-lanka/klassiske-sri-lanka,trip,A bookable online,12,12,8,2,0,5452
+/sri-lanka/sri-lanka-for-livsnydere,trip,A bookable online,10,10,1,2,0,3706
+/storbyferier,,,420,36,25,1,0,1549
+/sverige,,,420,5,7,2,0,2169
+/sverige/gotland,editorial-city,n/a — no departures section,1,1,3,3,0,2438
+/sverige/gotland-svensk-sommeridyl,trip,A bookable online,11,11,1,2,0,2339
+/sydafrika,,,420,4,6,2,0,2322
+/sydafrika/sydafrika-cape-cabernet-og-safari,trip,A bookable online,15,15,8,2,0,4481
+/sydafrika/sydafrika-et-eventyr-i-tre-akter,trip,D empty (Afgange ikke tilgængelige),11,11,0,2,0,4545
+/sydafrika/sydafrika-for-livsnydere,trip,D empty (Afgange ikke tilgængelige),10,10,0,2,0,3462
+/sydkorea,,,420,3,7,2,0,1885
+/sydkorea/essensen-af-sydkorea,trip,A bookable online,14,14,6,2,0,4066
+/thailand,,,420,3,1,2,0,355
+/thailand/thailand-smilets-land,trip,A bookable online,8,8,2,2,0,3879
+/tjekkiet,,,420,3,1,2,0,1819
+/tjekkiet/magiske-prag-en-kulturrejse-i-europas-hjerte,trip,D empty (Afgange ikke tilgængelige),12,12,0,2,0,2070
+/tjekkiet/prag,editorial-city,n/a — no departures section,0,0,1,,1,1666
+/togrejser,,,420,9,14,1,0,936
+/transformation,,,420,0,0,,1,351
+/tryghed,,,420,0,0,,1,387
+/tyrkiet,,,420,6,6,2,0,2057
+/tyrkiet/istanbul,editorial-city,n/a — no departures section,2,2,7,3,0,2357
+/tyrkiet/maegtige-istanbul,trip,D empty (Afgange ikke tilgængelige),10,10,2,2,0,1532
+/tyskland,,,420,19,11,2,0,2080
+/tyskland/koln,editorial-city,n/a — no departures section,3,3,4,3,0,1799
+/tyskland/munchen,editorial-city,n/a — no departures section,3,3,5,3,0,2082
+/ungarn,,,420,6,10,2,0,2075
+/ungarn/budapest,editorial-city,n/a — no departures section,2,2,10,3,0,2089
+/vandreferier,,,420,83,21,1,0,1628
+/vietnam,,,420,3,1,2,0,448
+/vietnam/det-bedste-af-vietnam,trip,A bookable online,10,10,1,2,0,3530
+/vinrejser,,,420,76,41,2,0,2249
+/vinrejser/portvinsrejser,editorial-city,n/a — no departures section,6,6,13,3,0,830
+/vinterrejser,,,31,31,4,2,0,326
+/wales,,,420,4,3,2,0,2027
