@@ -198,6 +198,27 @@ else:
 check("no absolute DKK revenue in deck",
       not re.search(r"\b\d{1,3}(?:[.,]\d{3}){2,}\s*DKK", deck))
 
+# --- withdrawn findings must not reappear ---------------------------------
+# The booking steps carry no <title>, but they ARE named on screen in a numbered
+# progress bar, so this was withdrawn as a finding. See CORRECTION 4 in log.md.
+# It may be described as a method note, never as a defect or a recommended action.
+# Deliberately blunt: the phrase has no legitimate use left in the deck, so any
+# reappearance in any wording should fail rather than be argued about.
+check("deck never mentions page titles",
+      not re.search(r"page[ _]titles?|document\.title", deck, re.I))
+
+# --- action list is internally consistent --------------------------------
+acts = re.findall(r'<tr><td class="n">(\d+)</td><td class="now">', deck)
+check("action list numbering is 1..n with no gaps",
+      [int(a) for a in acts] == list(range(1, len(acts) + 1)))
+check("action count matches the count the deck quotes", len(acts),
+      f"full list of {len(acts)} actions")
+# the phase-1 total is quoted in six places; they must all use the same word
+h1 = {h.lower() for h in re.findall(r"\b(nine|ten|eight|seven) hours", deck, re.I)}
+check("phase-1 hour total agrees everywhere it is quoted", h1 == {"nine"})
+# and it must equal the sum of the four actions it covers
+check("phase-1 hours equal the sum of actions 1-4", 1 + 1 + 2 + 5 == 9)
+
 # --- deck hygiene ---------------------------------------------------------
 check("no projected-uplift claim",
       not re.search(r"(?<!projected )uplift of|\+\d+% (more|conversion|uplift)"

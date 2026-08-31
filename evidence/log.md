@@ -84,7 +84,7 @@ Dummy data only, nothing submitted, no payment details ever entered.
 | **No phone number anywhere in the funnel** (`has_phone: false` at every step), despite a `tel:` link on all 421 public pages | Field inventory, all steps both viewports | 2026-08-26 | Y |
 | **Mobile hides the price.** Steps 1 and 2 report no visible total on mobile; desktop shows 10.090 DKK then 11.085 DKK | `evidence/funnel.md`, `price_visible` and `total` per viewport | 2026-08-26 | Y |
 | **Mobile drops the step names** from the progress indicator: "1 Overnatning 2 3 4 5" versus all five labelled on desktop and tablet | Body text at 390px vs 768px vs 1440px | 2026-08-26 | Y |
-| `document.title` is **empty on every funnel step** | `document.title` returned `''` at steps 1-3 | 2026-08-26 | Y |
+| `document.title` is **empty on every funnel step** | `document.title` returned `''` at steps 1-3; re-verified 2026-08-31 with a 6s settle and four samples 2s apart, still `''`, and no `<title>` element present | 2026-08-26 | Y, but **withdrawn as a finding** — see CORRECTION 4 |
 | Cancel is offered twice per step — "Annuller booking" top-left and "Annuller" bottom-left | Button inventory, every step | 2026-08-26 | Y |
 | The +/- traveller and room counters have **no text and no `aria-label`** | Button inventory: 6 buttons with empty `txt` and `null` `aria` | 2026-08-26 | Y |
 | Selecting a single room raises the total from 10.090 to 11.085 DKK (+995 single-room supplement) | Totals at step 1 vs step 2, desktop | 2026-08-26 | Y |
@@ -160,10 +160,46 @@ Recorded so these are not re-raised later, and so the deck cannot be accused of 
 
 ## Corrections
 
-Six in total across the audit. Corrections 1 and 2 are below, correction 3 sits with the
+Seven in total across the audit. Corrections 1, 2 and 4 are below, correction 3 sits with the
 measurement evidence above, and three more from the internal-link work are documented at the
 foot of `linkgraph.md` — including one striking finding that turned out to be an artefact of
 the measurement script and never reached the deck.
+
+**CORRECTION 4 — 2026-08-31.** The deck carried a finding, and a *Critical*-rated action,
+saying the five booking steps had no page title and recommending we add one. Smilrejser
+pointed out that the booking steps are titled, with what reads as a breadcrumb in the header.
+They are right about what matters, and the finding has been removed from the deck.
+
+What we measured was correct as far as it went. Re-checked on 2026-08-31 in a real browser
+with a six-second settle and four title samples two seconds apart, `document.title` is `''`
+on `/booking/travel/49000/6095/accommodation` and there is no `<title>` element in the
+document at all. A control trip page in the same session returned
+`"Nytårsrejse til Lissabon | Fejr nytår i Portugals hovedstad"`, so the measurement method
+was sound.
+
+What we got wrong was the significance, in two ways.
+
+1. *We described a reporting gap as if it were a customer-facing one.* The booking page
+   renders a numbered progress bar in its header — `1 Overnatning 2 Tilvalg 3 Personlige
+   oplysninger 4 Opsummering 5 Betaling` — with all five steps named on desktop. A customer
+   always knows which step they are on. Writing "give each booking step a page title" reads
+   as plainly false to anyone with the site open, because the step names are right there.
+2. *We rated it Critical.* It cost no customer anything. The only consequence was that our
+   own funnel had to be keyed on `page_path` rather than `page_title`, which took no extra
+   effort and changed none of the numbers. A tidiness item for analytics reporting does not
+   belong beside defects that turn buyers away.
+
+Consequences of the removal: the action list drops from 17 items to 16 and is renumbered
+throughout; the phase-1 total falls from ten hours to nine; the checkout proposal drops from
+nine changes to eight. No measured figure in the deck changes — the 71.4% and 69.0% drops,
+the 2,516 starts and the 159 confirmations were all derived from `page_path` and never
+depended on titles.
+
+One thing genuinely worth noting, and now recorded only here rather than as a
+recommendation: on mobile the same progress bar shows only step 1 by name and renders the
+rest as bare numbers. That is a real customer-facing gap, and it is already covered by
+finding 6 and its action, which is about the mobile booking experience.
+
 
 **CORRECTION 1 — 2026-08-26.** First pass concluded "181 of 250 trip pages (72%) cannot be
 booked". That was wrong twice over, and both errors were caught by verifying the mechanism

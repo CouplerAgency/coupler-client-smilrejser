@@ -176,10 +176,13 @@ and blog findings.
 2. **Landing-page attribution.** Revenue is session-scoped and credited to the
    entry page. It answers "which entry points precede revenue", not "which pages
    persuade".
-3. **`page_title` is blank throughout the checkout**, exactly as predicted from
-   the missing `document.title`. Every funnel figure here keys on `page_path`.
-   Any GA4 exploration built on page titles will show the checkout as one
-   undifferentiated blob until that is fixed.
+3. **Every funnel figure here keys on `page_path`, not `page_title`.** The
+   booking steps carry no `<title>` tag, so `page_title` is blank across the
+   checkout and cannot be used to separate the steps. This is a note on our
+   method, not a finding: the five steps *are* named on screen, in a numbered
+   progress bar in the page header, so customers are never in doubt which step
+   they are on. See CORRECTION 4 in `log.md` — we originally wrote this up as a
+   defect and withdrew it.
 4. **Seasonality.** 30 May to 27 August is the Danish summer. A tour operator
    selling autumn and winter departures may show a different pattern.
 5. **Step 1 is not purely intent.** Some users click "Bestil" to see prices with

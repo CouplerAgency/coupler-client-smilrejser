@@ -449,11 +449,11 @@ code.inline{
       </div>
       <div class="callout callout--fix">
         <h5>Why this is cheap to fix</h5>
-        <p>The first five actions on our list come to about ten hours of developer time and all sit inside those two screens. None need new design, new trips to sell, or a decision from anyone outside the team.</p>
+        <p>The first four actions on our list come to about nine hours of developer time and all sit inside those two screens. None need new design, new trips to sell, or a decision from anyone outside the team.</p>
       </div>
     </div>
 
-    <h4 class="mini" style="margin-top:22px">The first five changes, ten hours of work in total</h4>
+    <h4 class="mini" style="margin-top:22px">The first four changes, nine hours of work in total</h4>
     <table class="tbl tbl--compact">
       <thead><tr><th style="width:42%">Change</th><th style="width:16%">Where</th><th style="width:13%">Effort</th><th>Why it is first</th></tr></thead>
       <tbody>
@@ -461,10 +461,9 @@ code.inline{
         <tr><td class="now"><b>Put the error messages into Danish</b></td><td>Step 3</td><td class="n">1 hour</td><td>A Danish checkout currently says “Required”, three times</td></tr>
         <tr><td class="now"><b>Mark the required fields as required</b></td><td>Step 3</td><td class="n">5 hours</td><td>Nothing is flagged until the customer presses the button</td></tr>
         <tr><td class="now"><b>Use one name for each room type</b></td><td>Step 1 and 3</td><td class="n">2 hours</td><td>A single room is billed as “double room for one person”</td></tr>
-        <tr><td class="now"><b>Give each booking step a page title</b></td><td>All steps</td><td class="n">1 hour</td><td>Analytics cannot currently tell the five steps apart by name</td></tr>
       </tbody>
     </table>
-    <div class="src" style="margin-top:8px">Effort is our estimate for a developer who knows this codebase. The full list of 17 actions comes later in the deck.</div>
+    <div class="src" style="margin-top:8px">Effort is our estimate for a developer who knows this codebase. The full list of 16 actions comes later in the deck.</div>
   </div>
 </section>
 
@@ -492,8 +491,8 @@ code.inline{
         <div class="src" style="margin-top:8px">Screenshots were taken in a real browser set to Danish, with the cookie banner already accepted, at both desktop and phone sizes. Full working in the <code>evidence/</code> folder.</div>
 
         <div class="callout callout--note" style="margin-top:16px">
-          <h5>Six things we corrected in our own work</h5>
-          <p>Two findings from our first pass were <b>wrong</b>, and we say so on the slides where they appeared. Four other numbers were revised as better evidence arrived. All six are logged.</p>
+          <h5>Seven things we corrected in our own work</h5>
+          <p>Two findings from our first pass were <b>wrong</b>, and we say so on the slides where they appeared. One more was withdrawn after Smilrejser corrected us. Four other numbers were revised as better evidence arrived. All seven are logged.</p>
           <p style="margin-top:9px">We mention it because it is the reason to trust the rest: <b>every number here survived someone trying to break it.</b></p>
         </div>
       </div>
@@ -792,13 +791,12 @@ code.inline{
           <thead><tr><th style="width:16%">Where</th><th style="width:44%">What the customer meets</th><th style="width:14%">Effort</th><th>Action</th></tr></thead>
           <tbody>
             <tr><td class="was"><b>Step 1</b></td><td>1 traveller but 0 rooms, and no warning until the button is pressed</td><td class="n">1 hour</td><td class="n">1</td></tr>
-            <tr><td class="was"><b>Step 1</b></td><td>The same room named two different ways, 995 DKK apart</td><td class="n">2 hours</td><td class="n">4</td></tr>
+            <tr><td class="was"><b>Step 1</b></td><td>The same room named two different ways, 995 DKK apart</td><td class="n">2 hours</td><td class="n">3</td></tr>
             <tr><td class="was"><b>Step 3</b></td><td>27 fields in one screen, three errors written in English</td><td class="n">1 hour</td><td class="n">2</td></tr>
-            <tr><td class="was"><b>Step 3</b></td><td>Required fields are not marked, so nothing is flagged until you submit</td><td class="n">5 hours</td><td class="n">5</td></tr>
-            <tr><td class="u"><b>All steps</b></td><td>No page titles, so reporting cannot tell the five steps apart</td><td class="n">1 hour</td><td class="n">3</td></tr>
+            <tr><td class="was"><b>Step 3</b></td><td>Required fields are not marked, so nothing is flagged until you submit</td><td class="n">5 hours</td><td class="n">4</td></tr>
           </tbody>
         </table>
-        <div class="src" style="margin-top:7px">Around ten hours of work, against the two steps where 2,293 of 2,516 booking attempts end.</div>
+        <div class="src" style="margin-top:7px">Around nine hours of work, against the two steps where 2,293 of 2,516 booking attempts end.</div>
       </div>
       <div>
         <div class="callout callout--risk">
@@ -965,11 +963,12 @@ booking.
           <div class="callout callout--risk"><h5>Why it matters here</h5><p>Choosing a single room adds 995 DKK between step 1 and step 2. On a phone that increase happens out of sight, and the customer first meets it at payment.</p></div>
           <div class="callout callout--fix"><h5>The fix — one to two days</h5><p>Fix a slim bar to the bottom of the phone screen showing the running total, with a tap to see the breakdown. And show the step names again, or at least “step 3 of 5”.</p></div>
         </div>
+
+        <div class="callout callout--note" style="margin-top:14px">
+          <h5>The desktop version of this is a genuine strength</h5>
+          <p>On a computer the header names all five steps in order — <b>1 Overnatning · 2 Tilvalg · 3 Personlige oplysninger · 4 Opsummering · 5 Betaling</b> — so the customer always knows where they are and how much is left. That is exactly right, and it is why this finding is about the phone only. The phone build simply drops four of those five labels.</p>
+        </div>
       </div>
-    </div>
-    <div class="callout callout--warn">
-      <h5>One more, cheap and worth doing</h5>
-      <p>None of the five booking steps has a page title. The browser tab is blank, the browser history is blank, and in Google Analytics the entire booking process appears as one unnamed row. That is why the step-by-step numbers in this deck had to be built from web addresses instead. Five titles, one hour, and the booking process becomes readable in reporting by default.</p>
     </div>
   </div>
 </section>
@@ -1117,10 +1116,10 @@ booking.
 <section class="slide slide--cover" data-title="Part 2: What to do" data-sec="Proposals">
   <div class="sheet">
     <div class="cover__kicker">Part 2 of 2</div>
-    <h1 class="cover__h" style="font-size:48px">Ten hours of work sits against the two steps where 91% of bookings are lost</h1>
+    <h1 class="cover__h" style="font-size:48px">Nine hours of work sits against the two steps where 91% of bookings are lost</h1>
     <p class="cover__p">Nothing in part one was a criticism of how the site was built. It is well made and well measured, and its biggest problem is not structural at all — it is two forms that turn people away without telling them why. That is where we would start, and the analytics are the reason we changed the order.</p>
     <div class="grid g3" style="margin-top:14px">
-      <div class="card card--bad"><div class="num">TRACK 1 · WEEK 1</div><h5>Unblock the booking process</h5><p>Stop step 1 opening on an error, put the error messages into Danish, and use one name per room. Around ten hours of work, against 2,293 lost booking attempts.</p></div>
+      <div class="card card--bad"><div class="num">TRACK 1 · WEEK 1</div><h5>Unblock the booking process</h5><p>Stop step 1 opening on an error, put the error messages into Danish, and use one name per room. Around nine hours of work, against 2,293 lost booking attempts.</p></div>
       <div class="card card--warn"><div class="num">TRACK 2 · WEEKS 2–6</div><h5>Make the catalogue honest</h5><p>Give the 60 unbuyable trips something a customer can actually do, redirect the broken page taking 432 visits, and show prices consistently.</p></div>
       <div class="card card--good"><div class="num">TRACK 3 · WEEKS 4–12</div><h5>Follow the money upstream</h5><p>Start recording which trips people see and click, then test moving marketing spend towards the page types that already earn the most per visit.</p></div>
     </div>
@@ -1182,15 +1181,14 @@ booking.
 <section class="slide" data-title="Proposal 2: The booking process" data-sec="Proposals">
   <div class="sheet">
     <span class="eyebrow is-good">Proposal 2 of 3</span>
-    <h2 class="title">Nine checkout changes, ready to hand to a developer</h2>
-    <p class="lede">The booking process is well designed — five clear steps, a running price, honest totals. These are faults sitting on top of that good design, listed cheapest first. <strong>The first four take less than a day between them.</strong></p>
+    <h2 class="title">Eight changes to the booking process, ready to hand to a developer</h2>
+    <p class="lede">The booking process is well designed — five clear steps, a running price, honest totals. These are faults sitting on top of that good design, listed cheapest first. <strong>The first three take barely half a day between them.</strong></p>
 
     <table class="tbl tbl--compact" style="margin-bottom:14px">
       <thead><tr><th style="width:17%">Where</th><th style="width:30%">Today</th><th style="width:38%">Proposed</th><th style="width:15%">Effort</th></tr></thead>
       <tbody>
         <tr><td class="u">Step 3 error messages</td><td class="was">“Required”, in English</td><td class="now">Danish, and say which field is missing</td><td>1 hour</td></tr>
         <tr><td class="u">Step 1 starting state</td><td class="was">1 traveller, 0 rooms — errors on first click</td><td class="now">One traveller starts with one single room</td><td>1 hour</td></tr>
-        <tr><td class="u">All five steps</td><td class="was">No page title at all</td><td class="now">“Booking 1 of 5 — Rooms | Smilrejser”</td><td>1 hour</td></tr>
         <tr><td class="u">Room naming</td><td class="was">A single room is billed as a double</td><td class="now">One name per room, everywhere it appears</td><td>2 hours</td></tr>
         <tr><td class="u">Steps 1–2 on a phone</td><td class="was">No price on screen</td><td class="now">A fixed bar at the bottom showing the running total</td><td>1–2 days</td></tr>
         <tr><td class="u">All 27 fields</td><td class="was">Not marked as required, so nothing is checked early</td><td class="now">Marked properly, so problems surface as you type</td><td>3 hours</td></tr>
@@ -1262,21 +1260,20 @@ booking.
       <tbody>
         <tr><td class="n">1</td><td class="now"><b>Start step 1 with one room selected</b>, so it never opens on an error</td><td>Booking</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>1,796 people lost here</td></tr>
         <tr><td class="n">2</td><td class="now"><b>Put the error messages into Danish</b> and name the missing field</td><td>Booking</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>497 people lost at step 3</td></tr>
-        <tr><td class="n">3</td><td class="now"><b>Give each of the five booking steps a page title</b></td><td>Booking</td><td class="n">1 hour</td><td><span class="pill pill--bad">Critical</span></td><td>Reporting cannot name the steps</td></tr>
-        <tr><td class="n">4</td><td class="now"><b>Use one name per room type</b> wherever it appears</td><td>Booking</td><td class="n">2 hours</td><td><span class="pill pill--bad">Critical</span></td><td>Step 1 is loaded 1.6× per person</td></tr>
-        <tr><td class="n">5</td><td class="now"><b>Mark required fields as required</b>; label the +/− buttons</td><td>Booking</td><td class="n">5 hours</td><td><span class="pill pill--bad">Critical</span></td><td>Moved up seven places</td></tr>
-        <tr><td class="n">6</td><td class="now"><b>Keep the price on screen</b> on phones, steps 1–2</td><td>Booking</td><td class="n">1–2 days</td><td><span class="pill pill--bad">Critical</span></td><td>Needs a device split to size</td></tr>
-        <tr><td class="n">7</td><td class="now"><b>Redirect the 20 dead addresses</b> still receiving visits</td><td>Routing</td><td class="n">1 hour</td><td><span class="pill pill--warn">High</span></td><td>New — 501 visits wasted</td></tr>
-        <tr><td class="n">8</td><td class="now"><b>Rewrite the insurance choice</b> as one clear comparison</td><td>Booking</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>Sits inside the 69% loss at step 3</td></tr>
-        <tr><td class="n">9</td><td class="now"><b>Replace the empty dates table</b> with enquiry and waiting-list</td><td>Trip pages</td><td class="n">3–5 days</td><td><span class="pill pill--warn">High</span></td><td>8.2% of visits, ~1.4% of revenue</td></tr>
-        <tr><td class="n">10</td><td class="now"><b>Start measuring which trips people see and click</b></td><td>Tracking</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>The last blind spot on the site</td></tr>
-        <tr><td class="n">11</td><td class="now"><b>Point marketing at country and holiday-type pages</b></td><td>Marketing</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>New — 2.7× revenue per visit</td></tr>
-        <tr><td class="n">12</td><td class="now"><b>Link the 10 best-read blog posts</b> to trips people can book</td><td>Content</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>New — 4,118 visits, zero revenue</td></tr>
-        <tr><td class="n">13</td><td class="now"><b>Show a price on every trip page</b>, “from …” if exact is unknown</td><td>Trip pages</td><td class="n">1 day</td><td><span class="pill">Medium</span></td><td>55 of 131 pages show no price</td></tr>
-        <tr><td class="n">14</td><td class="now"><b>Fix the “Rejser til Frankrig” label</b> on 103 pages</td><td>Templates</td><td class="n">1 hour</td><td><span class="pill">Medium</span></td><td>Affects search, not visits</td></tr>
-        <tr><td class="n">15</td><td class="now"><b>Load the main image and logo first</b> on every page type</td><td>Templates</td><td class="n">1 day</td><td><span class="pill">Medium</span></td><td>No measurable harm visible yet</td></tr>
-        <tr><td class="n">16</td><td class="now"><b>Generate text descriptions</b> for 4,167 images</td><td>CMS</td><td class="n">2–3 days</td><td><span class="pill">Medium</span></td><td>Accessibility, not sales</td></tr>
-        <tr><td class="n">17</td><td class="now"><b>Tidying</b> — search snippets, unlinked pages, old settings</td><td>CMS</td><td class="n">4 days</td><td><span class="pill">Low</span></td><td>Demoted — 273 visits</td></tr>
+        <tr><td class="n">3</td><td class="now"><b>Use one name per room type</b> wherever it appears</td><td>Booking</td><td class="n">2 hours</td><td><span class="pill pill--bad">Critical</span></td><td>Step 1 is loaded 1.6× per person</td></tr>
+        <tr><td class="n">4</td><td class="now"><b>Mark required fields as required</b>; label the +/− buttons</td><td>Booking</td><td class="n">5 hours</td><td><span class="pill pill--bad">Critical</span></td><td>Part of the 497 lost at step 3</td></tr>
+        <tr><td class="n">5</td><td class="now"><b>Keep the price on screen</b> on phones, steps 1–2</td><td>Booking</td><td class="n">1–2 days</td><td><span class="pill pill--bad">Critical</span></td><td>Needs a device split to size</td></tr>
+        <tr><td class="n">6</td><td class="now"><b>Redirect the 20 dead addresses</b> still receiving visits</td><td>Routing</td><td class="n">1 hour</td><td><span class="pill pill--warn">High</span></td><td>New — 501 visits wasted</td></tr>
+        <tr><td class="n">7</td><td class="now"><b>Rewrite the insurance choice</b> as one clear comparison</td><td>Booking</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>Sits inside the 69% loss at step 3</td></tr>
+        <tr><td class="n">8</td><td class="now"><b>Replace the empty dates table</b> with enquiry and waiting-list</td><td>Trip pages</td><td class="n">3–5 days</td><td><span class="pill pill--warn">High</span></td><td>8.2% of visits, ~1.4% of revenue</td></tr>
+        <tr><td class="n">9</td><td class="now"><b>Start measuring which trips people see and click</b></td><td>Tracking</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>The last blind spot on the site</td></tr>
+        <tr><td class="n">10</td><td class="now"><b>Point marketing at country and holiday-type pages</b></td><td>Marketing</td><td class="n">1–2 days</td><td><span class="pill pill--warn">High</span></td><td>New — 2.7× revenue per visit</td></tr>
+        <tr><td class="n">11</td><td class="now"><b>Link the 10 best-read blog posts</b> to trips people can book</td><td>Content</td><td class="n">1 day</td><td><span class="pill pill--warn">High</span></td><td>New — 4,118 visits, zero revenue</td></tr>
+        <tr><td class="n">12</td><td class="now"><b>Show a price on every trip page</b>, “from …” if exact is unknown</td><td>Trip pages</td><td class="n">1 day</td><td><span class="pill">Medium</span></td><td>55 of 131 pages show no price</td></tr>
+        <tr><td class="n">13</td><td class="now"><b>Fix the “Rejser til Frankrig” label</b> on 103 pages</td><td>Templates</td><td class="n">1 hour</td><td><span class="pill">Medium</span></td><td>Affects search, not visits</td></tr>
+        <tr><td class="n">14</td><td class="now"><b>Load the main image and logo first</b> on every page type</td><td>Templates</td><td class="n">1 day</td><td><span class="pill">Medium</span></td><td>No measurable harm visible yet</td></tr>
+        <tr><td class="n">15</td><td class="now"><b>Generate text descriptions</b> for 4,167 images</td><td>CMS</td><td class="n">2–3 days</td><td><span class="pill">Medium</span></td><td>Accessibility, not sales</td></tr>
+        <tr><td class="n">16</td><td class="now"><b>Tidying</b> — search snippets, unlinked pages, old settings</td><td>CMS</td><td class="n">4 days</td><td><span class="pill">Low</span></td><td>Demoted — 273 visits</td></tr>
       </tbody>
     </table>
   </div>
@@ -1294,20 +1291,20 @@ booking.
         <div class="phase__hd"><b>Phase 1</b><span>Week 1 · Unblock the booking</span></div>
         <div class="phase__bd">
           <ul class="list tight" style="font-size:13.5px">
-            <li>Actions 1–5: the step-1 starting state, Danish error messages, page titles, room naming, required fields</li>
-            <li>Action 7: redirect the 20 dead addresses</li>
+            <li>Actions 1–4: the step-1 starting state, Danish error messages, room naming, required fields</li>
+            <li>Action 6: redirect the 20 dead addresses</li>
             <li>Record today's 71% and 69% first, so the improvement can be proven</li>
           </ul>
-          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> ten hours of work aimed at the two steps where 2,293 of 2,516 booking attempts currently end, plus an hour of redirects.</p>
+          <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> nine hours of work aimed at the two steps where 2,293 of 2,516 booking attempts currently end, plus an hour of redirects.</p>
         </div>
       </div>
       <div class="phase">
         <div class="phase__hd"><b>Phase 2</b><span>Weeks 2–6 · Fix the catalogue</span></div>
         <div class="phase__bd">
           <ul class="list tight" style="font-size:13.5px">
-            <li>Action 9: give all 60 unbuyable trips a real next step</li>
-            <li>Actions 6 and 8: the price on screen on phones, and the insurance choice</li>
-            <li>Actions 10 and 13: the two missing measurements, a price on every trip page</li>
+            <li>Action 8: give all 60 unbuyable trips a real next step</li>
+            <li>Actions 5 and 7: the price on screen on phones, and the insurance choice</li>
+            <li>Actions 9 and 12: the two missing measurements, a price on every trip page</li>
           </ul>
           <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> every trip page offers the customer something to do, and you can finally see which trips get seen and clicked.</p>
         </div>
@@ -1317,7 +1314,7 @@ booking.
         <div class="phase__bd">
           <ul class="list tight" style="font-size:13.5px">
             <li>Re-measure the booking process and compare it against phase 1</li>
-            <li>Actions 11–12: test where marketing points, and link the blog to bookable trips</li>
+            <li>Actions 10–11: test where marketing points, and link the blog to bookable trips</li>
             <li>Run this whole audit again and compare it with today</li>
           </ul>
           <p style="font-size:13px;margin-top:10px;color:var(--muted)"><b>Result:</b> the first decisions made on a measured before-and-after, rather than on anyone's ranking.</p>
@@ -1327,7 +1324,7 @@ booking.
 
     <div class="callout callout--warn">
       <h5>One limit we want to be explicit about</h5>
-      <p>Our data covers 90 days of one Danish summer and contains 201 bookings. That is plenty to compare groups of pages and to read the booking process with confidence. It is <b>not</b> enough to quote a conversion rate for any single page, and we have not quoted one anywhere in this deck. It also means the honest test of phase 1 is a before-and-after on the booking steps themselves rather than a revenue figure — which is exactly why action 3, giving the steps page titles, belongs in the first week rather than the last.</p>
+      <p>Our data covers 90 days of one Danish summer and contains 201 bookings. That is plenty to compare groups of pages and to read the booking process with confidence. It is <b>not</b> enough to quote a conversion rate for any single page, and we have not quoted one anywhere in this deck. It also means the honest test of phase 1 is a before-and-after on the booking steps themselves rather than a revenue figure, which is why phase 1 records today’s numbers before anything ships.</p>
     </div>
   </div>
 </section>
@@ -1337,17 +1334,17 @@ booking.
   <div class="sheet">
     <img class="cover__logo" src="assets/coupler-logo.png" alt="Coupler">
     <div class="cover__kicker">Next steps</div>
-    <h1 class="cover__h" style="font-size:47px">Ten hours of work sits between 2,516 booking attempts and 159 bookings</h1>
+    <h1 class="cover__h" style="font-size:47px">Nine hours of work sits between 2,516 booking attempts and 159 bookings</h1>
     <p class="cover__p">Smilrejser has 35 years of trips, better measurement than most of its competitors, and 2,357 people a quarter who start a booking and never finish it. The work here is not building something new. It is fixing two forms that turn people away without telling them why.</p>
     <div class="grid g3" style="margin:8px 0 26px">
-      <div class="card card--bad"><h5>This week</h5><p>Actions 1–5: ten hours, all inside booking steps 1 and 3, plus an hour of redirects.</p></div>
+      <div class="card card--bad"><h5>This week</h5><p>Actions 1–4: nine hours, all inside booking steps 1 and 3, plus an hour of redirects.</p></div>
       <div class="card card--warn"><h5>Weeks 2–6</h5><p>A real next step on all 60 unbuyable trips, the price kept on screen on phones, the two missing measurements.</p></div>
       <div class="card card--good"><h5>Weeks 6–12</h5><p>Re-measure the booking process against today's 71% and 69%, then test where marketing points.</p></div>
     </div>
     <div class="cover__meta">
       <div><b>Coupler</b>Audit 26 August 2026, revised with analytics 28 August</div>
       <div><b>Every finding is documented</b>421 pages, 9,617 internal links, one booking walked, 90 days of data</div>
-      <div><b>6 corrections logged</b>including two findings we disproved ourselves</div>
+      <div><b>7 corrections logged</b>including three findings we withdrew</div>
       <div><b>Next meeting</b>Sign off the booking fixes and the 60 trip pages</div>
     </div>
   </div>
